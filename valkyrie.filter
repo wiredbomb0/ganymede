@@ -3,3 +3,23 @@
 #    VERSION: 1.0    #
 # EDITED: 2017/12/16 #
 ######################
+
+#########
+# QUEST #
+#########
+
+Show
+  Class Quest
+  SetFontSize 45
+  PlayAlertSound ItemFilterAlert10 150
+  SetBorderColor 74 230 58
+  SetBackgroundColor 18 57 14
+  SetTextColor 74 230 58
+  
+Show
+  Class "Pantheon Soul" Piece
+  SetFontSize 45
+  PlayAlertSound ItemFilterAlert10 300
+  SetBorderColor 74 230 58
+  SetBackgroundColor 18 57 14
+  SetTextColor 74 230 58

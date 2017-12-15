@@ -1,0 +1,38 @@
+######################
+#      VALKYRIE      #
+#    VERSION: 1.0    #
+# EDITED: 2017/12/16 #
+######################
+
+
+
+
+
+#########
+# QUEST #
+#########
+
+Show
+  Class Quest
+  BaseType "Shaper's Orb"
+  SetFontSize 45
+  PlayAlertSound ItemFilterAlert10 300
+  SetBorderColor @COLOR_QUEST_LIGHT
+  SetBackgroundColor @COLOR_QUEST_DARK
+  SetTextColor @COLOR_QUEST_LIGHT
+  
+Show
+  Class Quest
+  SetFontSize 45
+  PlayAlertSound ItemFilterAlert10 150
+  SetBorderColor @COLOR_QUEST_LIGHT
+  SetBackgroundColor @COLOR_QUEST_DARK
+  SetTextColor @COLOR_QUEST_LIGHT
+  
+Show
+  Class "Pantheon Soul" Piece
+  SetFontSize 45
+  PlayAlertSound ItemFilterAlert10 300
+  SetBorderColor @COLOR_QUEST_LIGHT
+  SetBackgroundColor @COLOR_QUEST_DARK
+  SetTextColor @COLOR_QUEST_LIGHT

@@ -1,0 +1,31 @@
+Preview	RGB	    Note
+========================================
+200 200 200  	Normal item
+136 136 255  	Magic item
+255 255 119  	Rare item
+175 96 37  	    Unique item
+27 162 155  	Skill gem
+170 158 130  	Currency
+74 230 58  	    Quest item
+14 186 255  	Divination card
+127 127 127  	Default text
+255 255 255  	Value text
+136 136 255  	Augmented value text
+150 0 0  	    Fire damage
+54 100 146  	Cold damage
+255 215 0  	    Lightning damage
+208 32 144  	Chaos damage
+184 218 242  	Crafted mod
+210 0 0  	    Corrupted
+180 96 0  	    Supporter pack new item
+163 141 109  	Supporter pack item
+255 200 0  	    Nemesis mod
+255 40 0  	    Nemesis mod outline
+210 0 220  	    Bloodline mod
+74 0 160  	    Bloodline mod outline
+50 230 100  	Torment mod
+0 100 150  	    Torment mod outline
+231 180 120  	Title
+170 158 120  	Favour
+255 192 203  	
+30 144 255  	
