@@ -6,7 +6,20 @@
 
 
 
+##########
+# BREACH #
+##########
+  
+Show
+  Class "Stackable Currency"
+  BaseType "Blessing"
+  SetFontSize 45
+  PlayAlertSound ItemFilterAlert14 300
 
+Show
+  Class "Misc Map Items"
+  BaseType Breachstone
+  SetFontSize 45
 
 #########
 # QUEST #
@@ -36,3 +49,185 @@ Show
   SetBorderColor @COLOR_QUEST_LIGHT
   SetBackgroundColor @COLOR_QUEST_DARK
   SetTextColor @COLOR_QUEST_LIGHT
+  
+##############
+# DIVINATION #
+##############
+
+Show
+  Class "Divination Card"
+  SetFontSize 45
+  PlayAlertSound 4 300
+  SetBorderColor @COLOR_DIVINATION_LIGHT
+  SetBackgroundColor @COLOR_DIVINATION_DARK
+  SetTextColor @COLOR_DIVINATION_LIGHT
+  
+Show
+  Class Currency
+  BaseType "Stacked Deck"
+  SetFontSize 45
+  PlayAlertSound 4 300
+  SetBorderColor @COLOR_DIVINATION_LIGHT
+  SetBackgroundColor @COLOR_DIVINATION_DARK
+  SetTextColor @COLOR_DIVINATION_LIGHT
+  
+###########
+# ESSENCE #
+###########
+
+Show
+  Class Currency
+  BaseType Essence "Remnant of Corruption" Splinter
+  SetFontSize 45
+  SetBorderColor @COLOR_ESSENCE_LIGHT
+  SetBackgroundColor @COLOR_ESSENCE_DARK
+  SetTextColor @COLOR_ESSENCE_LIGHT
+  PlayAlertSound ItemFilterAlert6 300
+  
+############
+# CURRENCY #
+############
+
+Show
+  Class Currency
+  BaseType "Mirror of Kalandra" 
+  SetFontSize 45
+  PlayAlertSound ShMirror 300
+  SetBorderColor @COLOR_CURRENCY_LIGHT
+  SetBackgroundColor @COLOR_CURRENCY_DARK
+  SetTextColor @COLOR_CURRENCY_LIGHT
+  
+Show
+  Class Currency
+  BaseType "Exalted Orb"
+  SetFontSize 45
+  PlayAlertSound ShExalted 300
+  SetBorderColor @COLOR_CURRENCY_LIGHT
+  SetBackgroundColor @COLOR_CURRENCY_DARK
+  SetTextColor @COLOR_CURRENCY_LIGHT
+
+Show
+  Class Currency
+  BaseType "Divine Orb" "Albino Rhoa Feather" "Eternal Orb"
+  SetFontSize 45
+  PlayAlertSound 8 300
+  SetBorderColor @COLOR_CURRENCY_LIGHT
+  SetBackgroundColor @COLOR_CURRENCY_DARK
+  SetTextColor @COLOR_CURRENCY_LIGHT
+
+Show
+  Class Currency
+  BaseType "Blessed Orb" "Chaos Orb" "Divine Orb" "Eternal Orb" "Gemcutter's Prism" "Orb of Alchemy" "Orb of Fusing" "Orb of Regret" "Orb of Scouring" "Regal Orb" "Vaal Orb" "Master Cartographer's Sextant" "Master Cartographer's Seal" "Cartographer's Sextant" "Cartographer's Seal" "Unshaping Orb" "Silver Coin"
+  SetFontSize 45
+  PlayAlertSound 9 300
+  SetBorderColor @COLOR_CURRENCY_LIGHT
+  SetBackgroundColor @COLOR_CURRENCY_DARK
+  SetTextColor @COLOR_CURRENCY_LIGHT
+
+Hide
+  Class Currency
+  BaseType "Scroll of Wisdom" "Portal Scroll"
+  SetBorderColor @COLOR_CURRENCY_LIGHT
+  SetBackgroundColor @COLOR_CURRENCY_DARK
+  SetTextColor @COLOR_CURRENCY_LIGHT
+
+Show
+  Class Currency
+  SetBorderColor @COLOR_CURRENCY_LIGHT
+  SetBackgroundColor @COLOR_CURRENCY_DARK
+  SetTextColor @COLOR_CURRENCY_LIGHT
+  
+########
+# MAPS #
+########
+
+Show
+  Class Map
+  SetBorderColor @COLOR_MAP_LIGHT
+  SetBackgroundColor @COLOR_MAP_DARK
+  SetTextColor @COLOR_MAP_LIGHT
+
+########
+# GEMS #
+########
+
+Show
+  Class Gem
+  BaseType Portal Empower Enlighten Enhance "Detonate Mines" "Item Quantity" "Vaal Haste" "Vaal Breach" "Added Chaos Damage"
+  SetFontSize 45
+  SetBorderColor @COLOR_GEM_LIGHT
+  SetBackgroundColor @COLOR_GEM_DARK
+  SetTextColor @COLOR_GEM_LIGHT 
+  PlayAlertSound 13 300
+
+Show
+  Class Gem
+  Quality >= 5
+  SetBorderColor @COLOR_GEM_LIGHT
+  SetBackgroundColor @COLOR_GEM_DARK
+  SetTextColor @COLOR_GEM_LIGHT 
+
+Show
+  Class Gem
+  SetBorderColor @COLOR_GEM_LIGHT
+  SetBackgroundColor @COLOR_GEM_DARK
+  SetTextColor @COLOR_GEM_LIGHT 
+
+#############
+# EQUIPMENT #
+#############
+
+Show
+  Sockets = 6
+  SetFontSize 45
+  PlayAlertSound 1 300
+  SetBorderColor @COLOR_ITEM_SOCKETS_LIGHT
+  SetBackgroundColor @COLOR_ITEM_SOCKETS_DARK
+  SetTextColor @COLOR_ITEM_SOCKETS_LIGHT
+  
+Show
+  LinkedSockets >= 5
+  SetFontSize 45
+  PlayAlertSound 1 300
+  SetBorderColor @COLOR_ITEM_SOCKETS_LIGHT
+  SetBackgroundColor @COLOR_ITEM_SOCKETS_DARK
+  SetTextColor @COLOR_ITEM_SOCKETS_LIGHT
+
+Show
+  Rarity Unique
+  Class "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quivers" "Belts" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Ring" "Amulet" "Jewel" "Flask"
+  SetBorderColor @COLOR_ITEM_UNIQUE_LIGHT
+  SetBackgroundColor @COLOR_ITEM_UNIQUE_DARK
+  SetTextColor @COLOR_ITEM_UNIQUE_LIGHT
+  
+Show
+  Rarity Rare
+  Class "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quivers" "Belts" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Ring" "Amulet" "Jewel" "Flask"
+  SetBorderColor @COLOR_ITEM_RARE_LIGHT
+  SetBackgroundColor @COLOR_ITEM_RARE_DARK
+  SetTextColor @COLOR_ITEM_RARE_LIGHT
+
+Hide
+  Rarity Magic
+  Class "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quivers" "Belts" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Ring" "Amulet" "Jewel" "Flask"
+  SetBorderColor @COLOR_ITEM_MAGIC_LIGHT
+  SetBackgroundColor @COLOR_ITEM_MAGIC_DARK
+  SetTextColor @COLOR_ITEM_MAGIC_LIGHT
+
+Hide
+  Rarity Normal
+  Class "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quivers" "Belts" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Ring" "Amulet" "Jewel" "Flask"
+  SetBorderColor @COLOR_ITEM_NORMAL_LIGHT
+  SetBackgroundColor @COLOR_ITEM_NORMAL_DARK
+  SetTextColor @COLOR_ITEM_NORMAL_LIGHT
+
+#############
+# REMAINING #
+#############
+
+Show
+  PlayAlertSound 3 300
+  SetBorderColor 255 255 255
+  SetBackgroundColor 255 255 255
+  SetTextColor 255 255 255
+  SetFontSize 45

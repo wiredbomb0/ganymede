@@ -4,10 +4,36 @@
 # EDITED: 2017/12/16 #
 ######################
 
+
+
+##########
+# BREACH #
+##########
+  
+Show
+  Class "Stackable Currency"
+  BaseType "Blessing"
+  SetFontSize 45
+  PlayAlertSound ItemFilterAlert14 300
+
+Show
+  Class "Misc Map Items"
+  BaseType Breachstone
+  SetFontSize 45
+
 #########
 # QUEST #
 #########
 
+Show
+  Class Quest
+  BaseType "Shaper's Orb"
+  SetFontSize 45
+  PlayAlertSound ItemFilterAlert10 300
+  SetBorderColor 74 230 58
+  SetBackgroundColor 18 57 14
+  SetTextColor 74 230 58
+  
 Show
   Class Quest
   SetFontSize 45
@@ -23,3 +49,185 @@ Show
   SetBorderColor 74 230 58
   SetBackgroundColor 18 57 14
   SetTextColor 74 230 58
+  
+##############
+# DIVINATION #
+##############
+
+Show
+  Class "Divination Card"
+  SetFontSize 45
+  PlayAlertSound 4 300
+  SetBorderColor 14 186 255
+  SetBackgroundColor 3 46 63
+  SetTextColor 14 186 255
+  
+Show
+  Class Currency
+  BaseType "Stacked Deck"
+  SetFontSize 45
+  PlayAlertSound 4 300
+  SetBorderColor 14 186 255
+  SetBackgroundColor 3 46 63
+  SetTextColor 14 186 255
+  
+###########
+# ESSENCE #
+###########
+
+Show
+  Class Currency
+  BaseType Essence "Remnant of Corruption" Splinter
+  SetFontSize 45
+  SetBorderColor 255 165 0
+  SetBackgroundColor 63 41 0
+  SetTextColor 255 165 0
+  PlayAlertSound ItemFilterAlert6 300
+  
+############
+# CURRENCY #
+############
+
+Show
+  Class Currency
+  BaseType "Mirror of Kalandra" 
+  SetFontSize 45
+  PlayAlertSound ShMirror 300
+  SetBorderColor 170 158 130
+  SetBackgroundColor 42 39 32
+  SetTextColor 170 158 130
+  
+Show
+  Class Currency
+  BaseType "Exalted Orb"
+  SetFontSize 45
+  PlayAlertSound ShExalted 300
+  SetBorderColor 170 158 130
+  SetBackgroundColor 42 39 32
+  SetTextColor 170 158 130
+
+Show
+  Class Currency
+  BaseType "Divine Orb" "Albino Rhoa Feather" "Eternal Orb"
+  SetFontSize 45
+  PlayAlertSound 8 300
+  SetBorderColor 170 158 130
+  SetBackgroundColor 42 39 32
+  SetTextColor 170 158 130
+
+Show
+  Class Currency
+  BaseType "Blessed Orb" "Chaos Orb" "Divine Orb" "Eternal Orb" "Gemcutter's Prism" "Orb of Alchemy" "Orb of Fusing" "Orb of Regret" "Orb of Scouring" "Regal Orb" "Vaal Orb" "Master Cartographer's Sextant" "Master Cartographer's Seal" "Cartographer's Sextant" "Cartographer's Seal" "Unshaping Orb" "Silver Coin"
+  SetFontSize 45
+  PlayAlertSound 9 300
+  SetBorderColor 170 158 130
+  SetBackgroundColor 42 39 32
+  SetTextColor 170 158 130
+
+Hide
+  Class Currency
+  BaseType "Scroll of Wisdom" "Portal Scroll"
+  SetBorderColor 170 158 130
+  SetBackgroundColor 42 39 32
+  SetTextColor 170 158 130
+
+Show
+  Class Currency
+  SetBorderColor 170 158 130
+  SetBackgroundColor 42 39 32
+  SetTextColor 170 158 130
+  
+########
+# MAPS #
+########
+
+Show
+  Class Map
+  SetBorderColor 210 0 220
+  SetBackgroundColor 52 0 55
+  SetTextColor 210 0 220
+
+########
+# GEMS #
+########
+
+Show
+  Class Gem
+  BaseType Portal Empower Enlighten Enhance "Detonate Mines" "Item Quantity" "Vaal Haste" "Vaal Breach" "Added Chaos Damage"
+  SetFontSize 45
+  SetBorderColor 27 162 155
+  SetBackgroundColor 6 40 38
+  SetTextColor 27 162 155 
+  PlayAlertSound 13 300
+
+Show
+  Class Gem
+  Quality >= 5
+  SetBorderColor 27 162 155
+  SetBackgroundColor 6 40 38
+  SetTextColor 27 162 155 
+
+Show
+  Class Gem
+  SetBorderColor 27 162 155
+  SetBackgroundColor 6 40 38
+  SetTextColor 27 162 155 
+
+#############
+# EQUIPMENT #
+#############
+
+Show
+  Sockets = 6
+  SetFontSize 45
+  PlayAlertSound 1 300
+  SetBorderColor 119 119 255
+  SetBackgroundColor 30 30 64
+  SetTextColor 119 119 255
+  
+Show
+  LinkedSockets >= 5
+  SetFontSize 45
+  PlayAlertSound 1 300
+  SetBorderColor 119 119 255
+  SetBackgroundColor 30 30 64
+  SetTextColor 119 119 255
+
+Show
+  Rarity Unique
+  Class "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quivers" "Belts" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Ring" "Amulet" "Jewel" "Flask"
+  SetBorderColor 175 96 37
+  SetBackgroundColor 44 24 9
+  SetTextColor 175 96 37
+  
+Show
+  Rarity Rare
+  Class "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quivers" "Belts" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Ring" "Amulet" "Jewel" "Flask"
+  SetBorderColor 255 255 119
+  SetBackgroundColor 64 64 30
+  SetTextColor 255 255 119
+
+Hide
+  Rarity Magic
+  Class "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quivers" "Belts" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Ring" "Amulet" "Jewel" "Flask"
+  SetBorderColor 136 136 255
+  SetBackgroundColor 34 34 64
+  SetTextColor 136 136 255
+
+Hide
+  Rarity Normal
+  Class "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quivers" "Belts" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Ring" "Amulet" "Jewel" "Flask"
+  SetBorderColor 200 200 200
+  SetBackgroundColor 50 50 50
+  SetTextColor 200 200 200
+
+#############
+# REMAINING #
+#############
+
+Show
+  PlayAlertSound 3 300
+  SetBorderColor 255 255 255
+  SetBackgroundColor 255 255 255
+  SetTextColor 255 255 255
+  SetFontSize 45
