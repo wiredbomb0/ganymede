@@ -4,7 +4,21 @@
 # EDITED: 2017/12/16 #
 ######################
 
+##########
+# SHAPED #
+##########
 
+Show
+  ShaperItem True
+  SetBorderColor @COLOR_SHAPED_LIGHT
+  SetBackgroundColor @COLOR_SHAPED_DARK
+  SetTextColor @COLOR_SHAPED_LIGHT
+  
+Show
+  ElderItem True
+  SetBorderColor @COLOR_SHAPED_LIGHT
+  SetBackgroundColor @COLOR_SHAPED_DARK
+  SetTextColor @COLOR_SHAPED_LIGHT
 
 ##########
 # BREACH #

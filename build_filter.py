@@ -30,7 +30,10 @@ color_swap = {
   "@COLOR_GEM_DARK":  "6 40 38",
   
   "@COLOR_ESSENCE_LIGHT": "255 165 0",
-  "@COLOR_ESSENCE_DARK": "63 41 0"
+  "@COLOR_ESSENCE_DARK": "63 41 0",
+  
+  "@COLOR_SHAPED_LIGHT": "128 64 128",
+  "@COLOR_SHAPED_DARK":  "32 16 32"
 }
 
 item_filter = None

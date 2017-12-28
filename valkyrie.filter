@@ -4,7 +4,21 @@
 # EDITED: 2017/12/16 #
 ######################
 
+##########
+# SHAPED #
+##########
 
+Show
+  ShaperItem True
+  SetBorderColor 128 64 128
+  SetBackgroundColor 32 16 32
+  SetTextColor 128 64 128
+  
+Show
+  ElderItem True
+  SetBorderColor 128 64 128
+  SetBackgroundColor 32 16 32
+  SetTextColor 128 64 128
 
 ##########
 # BREACH #
