@@ -1,19 +1,37 @@
 ######################
 #      VALKYRIE      #
-#    VERSION: 1.0    #
+#   VERSION: 1.0.3   #
 # EDITED: 2017/12/16 #
 ######################
+
+############
+# BESTIARY #
+############
+
+Show
+  BaseType Net "Bestiary Orb" "Imprinted Bestiary"
+  Class "Stackable Currency"
+  SetBorderColor @COLOR_BESTIARY_LIGHT
+  SetBackgroundColor @COLOR_BESTIARY_DARK
+  SetTextColor @COLOR_BESTIARY_LIGHT
 
 ##########
 # SHAPED #
 ##########
 
 Show
+  Class "The Shaper's Key"
+  SetBorderColor @COLOR_SHAPED_LIGHT
+  SetBackgroundColor @COLOR_SHAPED_DARK
+  SetTextColor @COLOR_SHAPED_LIGHT
+  SetFontSize 45
+
+Show
   ShaperItem True
   SetBorderColor @COLOR_SHAPED_LIGHT
   SetBackgroundColor @COLOR_SHAPED_DARK
   SetTextColor @COLOR_SHAPED_LIGHT
-  
+
 Show
   ElderItem True
   SetBorderColor @COLOR_SHAPED_LIGHT
@@ -23,7 +41,7 @@ Show
 ##########
 # BREACH #
 ##########
-  
+
 Show
   Class "Stackable Currency"
   BaseType "Blessing"
@@ -47,7 +65,7 @@ Show
   SetBorderColor @COLOR_QUEST_LIGHT
   SetBackgroundColor @COLOR_QUEST_DARK
   SetTextColor @COLOR_QUEST_LIGHT
-  
+
 Show
   Class Quest
   SetFontSize 45
@@ -55,7 +73,7 @@ Show
   SetBorderColor @COLOR_QUEST_LIGHT
   SetBackgroundColor @COLOR_QUEST_DARK
   SetTextColor @COLOR_QUEST_LIGHT
-  
+
 Show
   Class "Pantheon Soul" Piece
   SetFontSize 45
@@ -63,7 +81,7 @@ Show
   SetBorderColor @COLOR_QUEST_LIGHT
   SetBackgroundColor @COLOR_QUEST_DARK
   SetTextColor @COLOR_QUEST_LIGHT
-  
+
 ##############
 # DIVINATION #
 ##############
@@ -75,7 +93,7 @@ Show
   SetBorderColor @COLOR_DIVINATION_LIGHT
   SetBackgroundColor @COLOR_DIVINATION_DARK
   SetTextColor @COLOR_DIVINATION_LIGHT
-  
+
 Show
   Class Currency
   BaseType "Stacked Deck"
@@ -84,7 +102,7 @@ Show
   SetBorderColor @COLOR_DIVINATION_LIGHT
   SetBackgroundColor @COLOR_DIVINATION_DARK
   SetTextColor @COLOR_DIVINATION_LIGHT
-  
+
 ###########
 # ESSENCE #
 ###########
@@ -97,20 +115,20 @@ Show
   SetBackgroundColor @COLOR_ESSENCE_DARK
   SetTextColor @COLOR_ESSENCE_LIGHT
   PlayAlertSound ItemFilterAlert6 300
-  
+
 ############
 # CURRENCY #
 ############
 
 Show
   Class Currency
-  BaseType "Mirror of Kalandra" 
+  BaseType "Mirror of Kalandra"
   SetFontSize 45
   PlayAlertSound ShMirror 300
   SetBorderColor @COLOR_CURRENCY_LIGHT
   SetBackgroundColor @COLOR_CURRENCY_DARK
   SetTextColor @COLOR_CURRENCY_LIGHT
-  
+
 Show
   Class Currency
   BaseType "Exalted Orb"
@@ -150,7 +168,7 @@ Show
   SetBorderColor @COLOR_CURRENCY_LIGHT
   SetBackgroundColor @COLOR_CURRENCY_DARK
   SetTextColor @COLOR_CURRENCY_LIGHT
-  
+
 ########
 # MAPS #
 ########
@@ -171,7 +189,7 @@ Show
   SetFontSize 45
   SetBorderColor @COLOR_GEM_LIGHT
   SetBackgroundColor @COLOR_GEM_DARK
-  SetTextColor @COLOR_GEM_LIGHT 
+  SetTextColor @COLOR_GEM_LIGHT
   PlayAlertSound 13 300
 
 Show
@@ -179,13 +197,13 @@ Show
   Quality >= 5
   SetBorderColor @COLOR_GEM_LIGHT
   SetBackgroundColor @COLOR_GEM_DARK
-  SetTextColor @COLOR_GEM_LIGHT 
+  SetTextColor @COLOR_GEM_LIGHT
 
 Show
   Class Gem
   SetBorderColor @COLOR_GEM_LIGHT
   SetBackgroundColor @COLOR_GEM_DARK
-  SetTextColor @COLOR_GEM_LIGHT 
+  SetTextColor @COLOR_GEM_LIGHT
 
 #############
 # EQUIPMENT #
@@ -198,7 +216,7 @@ Show
   SetBorderColor @COLOR_ITEM_SOCKETS_LIGHT
   SetBackgroundColor @COLOR_ITEM_SOCKETS_DARK
   SetTextColor @COLOR_ITEM_SOCKETS_LIGHT
-  
+
 Show
   LinkedSockets >= 5
   SetFontSize 45
@@ -213,7 +231,7 @@ Show
   SetBorderColor @COLOR_ITEM_UNIQUE_LIGHT
   SetBackgroundColor @COLOR_ITEM_UNIQUE_DARK
   SetTextColor @COLOR_ITEM_UNIQUE_LIGHT
-  
+
 Show
   Rarity Rare
   Class "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quivers" "Belts" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Ring" "Amulet" "Jewel" "Flask"
