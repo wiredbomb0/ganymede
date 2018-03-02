@@ -20,7 +20,7 @@ Show
 ##########
 
 Show
-  Class "The Shaper's Key"
+  BaseType "The Shaper's Key"
   SetBorderColor @COLOR_SHAPED_LIGHT
   SetBackgroundColor @COLOR_SHAPED_DARK
   SetTextColor @COLOR_SHAPED_LIGHT
@@ -239,14 +239,14 @@ Show
   SetBackgroundColor @COLOR_ITEM_RARE_DARK
   SetTextColor @COLOR_ITEM_RARE_LIGHT
 
-Hide
+Show
   Rarity Magic
   Class "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quivers" "Belts" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Ring" "Amulet" "Jewel" "Flask"
   SetBorderColor @COLOR_ITEM_MAGIC_LIGHT
   SetBackgroundColor @COLOR_ITEM_MAGIC_DARK
   SetTextColor @COLOR_ITEM_MAGIC_LIGHT
 
-Hide
+Show
   Rarity Normal
   Class "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quivers" "Belts" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Ring" "Amulet" "Jewel" "Flask"
   SetBorderColor @COLOR_ITEM_NORMAL_LIGHT
