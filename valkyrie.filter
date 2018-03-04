@@ -1,6 +1,6 @@
 ######################
 #      VALKYRIE      #
-#   VERSION: 1.0.3   #
+#   VERSION: 1.0.5   #
 # EDITED: 2017/12/16 #
 ######################
 
@@ -266,7 +266,7 @@ Show
   SetBackgroundColor 30 30 64
   SetTextColor 119 119 255
 
-Show
+Hide
   SocketGroup RGB
   LinkedSockets >= 3
   SetBorderColor 64 64 64
