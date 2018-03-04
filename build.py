@@ -3,6 +3,7 @@ import sys
 import time
 import logging
 import json
+import shutil
 
 from watchdog.observers import Observer
 from watchdog.events import LoggingEventHandler
@@ -31,8 +32,15 @@ def RebuildFilter(file):
     item_filter = item_filter.replace(key, value)
 
   # Write file
-  with open(file.replace(".filterplus", ".filter"), "w+") as _f:
+  filter_file = file.replace(".filterplus", ".filter")
+  with open(filter_file, "w+") as _f:
     _f.write(item_filter)
+
+  # Copying file from here to PoE folder
+  my_documents = os.path.expanduser('~\\Documents\\My Games\\Path of Exile')
+  if os.path.exists(my_documents):
+    filter_path = os.path.join(my_documents, filter_file)
+    shutil.copyfile(filter_file, filter_path)
 
   # Calculate end time
   end_time = int(round(time.time() * 1000))
