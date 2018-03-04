@@ -269,15 +269,9 @@ Show
 Show
   SocketGroup RGB
   LinkedSockets >= 3
-  SetBorderColor 0 255 0
-  SetBackgroundColor 255 0 0
-  SetTextColor 0 0 255
-
-#Show
-#  BaseType "Imperial Claw"
-#  SetBorderColor @COLOR_WANTED_ITEM_LIGHT
-#  SetBackgroundColor @COLOR_WANTED_ITEM_DARK
-#  SetTextColor @COLOR_WANTED_ITEM_LIGHT
+  SetBorderColor 64 64 64
+  SetBackgroundColor 0 0 0
+  SetTextColor 64 64 64
 
 Show
   Rarity Unique
