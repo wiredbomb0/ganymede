@@ -36,7 +36,15 @@ color_swap = {
   "@COLOR_SHAPED_DARK":  "32 16 32",
 
   "@COLOR_BESTIARY_LIGHT": "255 0 0",
-  "@COLOR_BESTIARY_DARK":  "64 0 0"
+  "@COLOR_BESTIARY_DARK":  "64 0 0",
+
+  "@COLOR_WANTED_ITEM_LIGHT": "255 51 255",
+  "@COLOR_WANTED_ITEM_DARK":  "64 13 64",
+
+  "@COLOR_FLASK_LIGHT": "60 179 113",
+  "@COLOR_FLASK_DARK":  "15 45 28",
+
+  "SEXTANT": "MAKE ME!"
 }
 
 def PrintColors():

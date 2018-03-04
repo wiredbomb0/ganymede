@@ -9,6 +9,14 @@
 ############
 
 Show
+  BaseType "Thaumaturgical Net"
+  Class "Stackable Currency"
+  SetBorderColor @COLOR_BESTIARY_LIGHT
+  SetBackgroundColor @COLOR_BESTIARY_DARK
+  SetTextColor @COLOR_BESTIARY_LIGHT
+  SetFontSize 45
+
+Show
   BaseType Net "Bestiary Orb" "Imprinted Bestiary"
   Class "Stackable Currency"
   SetBorderColor @COLOR_BESTIARY_LIGHT
@@ -37,6 +45,14 @@ Show
   SetBorderColor @COLOR_SHAPED_LIGHT
   SetBackgroundColor @COLOR_SHAPED_DARK
   SetTextColor @COLOR_SHAPED_LIGHT
+
+#############
+# LABYRINTH #
+#############
+
+Show
+  BaseType "Treasure Key"
+  SetFontSize 45
 
 ##########
 # BREACH #
@@ -156,7 +172,7 @@ Show
   SetBackgroundColor @COLOR_CURRENCY_DARK
   SetTextColor @COLOR_CURRENCY_LIGHT
 
-Hide
+Show
   Class Currency
   BaseType "Scroll of Wisdom" "Portal Scroll"
   SetBorderColor @COLOR_CURRENCY_LIGHT
@@ -172,6 +188,14 @@ Show
 ########
 # MAPS #
 ########
+
+Show
+  BaseType "Divine Vessel" "Offering to the Goddess"
+  SetFontSize 45
+  SetBorderColor @COLOR_MAP_LIGHT
+  SetBackgroundColor @COLOR_MAP_DARK
+  SetTextColor @COLOR_MAP_LIGHT
+  PlayAlertSound 13 300
 
 Show
   Class Map
@@ -205,6 +229,23 @@ Show
   SetBackgroundColor @COLOR_GEM_DARK
   SetTextColor @COLOR_GEM_LIGHT
 
+#########
+# FLASK #
+#########
+
+Show
+  Class "Flask"
+  Quality >= 5
+  SetBorderColor @COLOR_FLASK_LIGHT
+  SetBackgroundColor @COLOR_FLASK_DARK
+  SetTextColor @COLOR_FLASK_LIGHT
+
+Show
+  Class "Utility Flasks" "Critical Utility Flasks"
+  SetBorderColor @COLOR_FLASK_LIGHT
+  SetBackgroundColor @COLOR_FLASK_DARK
+  SetTextColor @COLOR_FLASK_LIGHT
+
 #############
 # EQUIPMENT #
 #############
@@ -226,6 +267,19 @@ Show
   SetTextColor @COLOR_ITEM_SOCKETS_LIGHT
 
 Show
+  SocketGroup RGB
+  LinkedSockets >= 3
+  SetBorderColor 0 255 0
+  SetBackgroundColor 255 0 0
+  SetTextColor 0 0 255
+
+#Show
+#  BaseType "Imperial Claw"
+#  SetBorderColor @COLOR_WANTED_ITEM_LIGHT
+#  SetBackgroundColor @COLOR_WANTED_ITEM_DARK
+#  SetTextColor @COLOR_WANTED_ITEM_LIGHT
+
+Show
   Rarity Unique
   Class "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quivers" "Belts" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Ring" "Amulet" "Jewel" "Flask"
   SetBorderColor @COLOR_ITEM_UNIQUE_LIGHT
@@ -239,14 +293,30 @@ Show
   SetBackgroundColor @COLOR_ITEM_RARE_DARK
   SetTextColor @COLOR_ITEM_RARE_LIGHT
 
-Show
+Hide
+  Rarity Magic
+  LinkedSockets >= 3
+  Class "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quivers" "Belts" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Ring" "Amulet" "Jewel" "Flask"
+  SetBorderColor @COLOR_ITEM_MAGIC_LIGHT
+  SetBackgroundColor @COLOR_ITEM_MAGIC_DARK
+  SetTextColor @COLOR_ITEM_MAGIC_LIGHT
+
+Hide
+  Rarity Normal
+  LinkedSockets >= 3
+  Class "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quivers" "Belts" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Ring" "Amulet" "Jewel" "Flask"
+  SetBorderColor @COLOR_ITEM_NORMAL_LIGHT
+  SetBackgroundColor @COLOR_ITEM_NORMAL_DARK
+  SetTextColor @COLOR_ITEM_NORMAL_LIGHT
+
+Hide
   Rarity Magic
   Class "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quivers" "Belts" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Ring" "Amulet" "Jewel" "Flask"
   SetBorderColor @COLOR_ITEM_MAGIC_LIGHT
   SetBackgroundColor @COLOR_ITEM_MAGIC_DARK
   SetTextColor @COLOR_ITEM_MAGIC_LIGHT
 
-Show
+Hide
   Rarity Normal
   Class "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quivers" "Belts" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Ring" "Amulet" "Jewel" "Flask"
   SetBorderColor @COLOR_ITEM_NORMAL_LIGHT

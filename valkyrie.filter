@@ -9,6 +9,14 @@
 ############
 
 Show
+  BaseType "Thaumaturgical Net"
+  Class "Stackable Currency"
+  SetBorderColor 255 0 0
+  SetBackgroundColor 64 0 0
+  SetTextColor 255 0 0
+  SetFontSize 45
+
+Show
   BaseType Net "Bestiary Orb" "Imprinted Bestiary"
   Class "Stackable Currency"
   SetBorderColor 255 0 0
@@ -37,6 +45,14 @@ Show
   SetBorderColor 128 64 128
   SetBackgroundColor 32 16 32
   SetTextColor 128 64 128
+
+#############
+# LABYRINTH #
+#############
+
+Show
+  BaseType "Treasure Key"
+  SetFontSize 45
 
 ##########
 # BREACH #
@@ -156,7 +172,7 @@ Show
   SetBackgroundColor 42 39 32
   SetTextColor 170 158 130
 
-Hide
+Show
   Class Currency
   BaseType "Scroll of Wisdom" "Portal Scroll"
   SetBorderColor 170 158 130
@@ -172,6 +188,14 @@ Show
 ########
 # MAPS #
 ########
+
+Show
+  BaseType "Divine Vessel" "Offering to the Goddess"
+  SetFontSize 45
+  SetBorderColor 210 0 220
+  SetBackgroundColor 52 0 55
+  SetTextColor 210 0 220
+  PlayAlertSound 13 300
 
 Show
   Class Map
@@ -205,6 +229,23 @@ Show
   SetBackgroundColor 6 40 38
   SetTextColor 27 162 155
 
+#########
+# FLASK #
+#########
+
+Show
+  Class "Flask"
+  Quality >= 5
+  SetBorderColor 60 179 113
+  SetBackgroundColor 15 45 28
+  SetTextColor 60 179 113
+
+Show
+  Class "Utility Flasks" "Critical Utility Flasks"
+  SetBorderColor 60 179 113
+  SetBackgroundColor 15 45 28
+  SetTextColor 60 179 113
+
 #############
 # EQUIPMENT #
 #############
@@ -226,6 +267,19 @@ Show
   SetTextColor 119 119 255
 
 Show
+  SocketGroup RGB
+  LinkedSockets >= 3
+  SetBorderColor 0 255 0
+  SetBackgroundColor 255 0 0
+  SetTextColor 0 0 255
+
+#Show
+#  BaseType "Imperial Claw"
+#  SetBorderColor 255 51 255
+#  SetBackgroundColor 64 13 64
+#  SetTextColor 255 51 255
+
+Show
   Rarity Unique
   Class "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quivers" "Belts" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Ring" "Amulet" "Jewel" "Flask"
   SetBorderColor 175 96 37
@@ -239,14 +293,30 @@ Show
   SetBackgroundColor 64 64 30
   SetTextColor 255 255 119
 
-Show
+Hide
+  Rarity Magic
+  LinkedSockets >= 3
+  Class "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quivers" "Belts" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Ring" "Amulet" "Jewel" "Flask"
+  SetBorderColor 136 136 255
+  SetBackgroundColor 34 34 64
+  SetTextColor 136 136 255
+
+Hide
+  Rarity Normal
+  LinkedSockets >= 3
+  Class "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quivers" "Belts" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Ring" "Amulet" "Jewel" "Flask"
+  SetBorderColor 200 200 200
+  SetBackgroundColor 50 50 50
+  SetTextColor 200 200 200
+
+Hide
   Rarity Magic
   Class "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quivers" "Belts" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Ring" "Amulet" "Jewel" "Flask"
   SetBorderColor 136 136 255
   SetBackgroundColor 34 34 64
   SetTextColor 136 136 255
 
-Show
+Hide
   Rarity Normal
   Class "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Quivers" "Belts" "Gloves" "Boots" "Body Armours" "Helmets" "Shields" "Sceptres" "Ring" "Amulet" "Jewel" "Flask"
   SetBorderColor 200 200 200
