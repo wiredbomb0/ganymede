@@ -266,12 +266,12 @@ Show
   SetBackgroundColor 30 30 64
   SetTextColor 119 119 255
 
-Hide
+Show
   SocketGroup RGB
   LinkedSockets >= 3
-  SetBorderColor 64 64 64
-  SetBackgroundColor 0 0 0
-  SetTextColor 64 64 64
+  SetBorderColor 128 128 128
+  SetBackgroundColor 32 32 32
+  SetTextColor 128 128 128
 
 Show
   Rarity Unique

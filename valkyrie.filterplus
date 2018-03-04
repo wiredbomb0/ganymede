@@ -266,12 +266,12 @@ Show
   SetBackgroundColor @COLOR_ITEM_SOCKETS_DARK
   SetTextColor @COLOR_ITEM_SOCKETS_LIGHT
 
-Hide
+Show
   SocketGroup RGB
   LinkedSockets >= 3
-  SetBorderColor 64 64 64
-  SetBackgroundColor 0 0 0
-  SetTextColor 64 64 64
+  SetBorderColor @COLOR_ITEM_CHROME_LIGHT
+  SetBackgroundColor @COLOR_ITEM_CHROME_DARK
+  SetTextColor @COLOR_ITEM_CHROME_LIGHT
 
 Show
   Rarity Unique
