@@ -10,7 +10,7 @@ from watchdog.events import LoggingEventHandler
 
 class RebuildFilterEvent(LoggingEventHandler):
   def dispatch(self, event):
-    if ".filterplus" in event.src_path:
+    if event.src_path.endswith(".filterplus"):
       RebuildFilter(event.src_path)
 
 def RebuildFilter(file):
