@@ -9,7 +9,7 @@
 ############
 
 Show
-  BaseType "Thaumaturgical Net"
+  BaseType "Thaumaturgical Net" "Necromancy Net"
   Class "Stackable Currency"
   SetBorderColor 255 0 0
   SetBackgroundColor 64 0 0
