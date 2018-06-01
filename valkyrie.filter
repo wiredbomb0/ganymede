@@ -268,8 +268,127 @@ Show
   SetTextColor 60 179 113
 
 Show
-  BaseType "Light Flask"
-  ItemLevel < 6
+  BaseType "Small Life Flask" "Small Mana Flask"
+  ItemLevel <= 3
+  SetBorderColor 60 179 113
+  SetBackgroundColor 15 45 28
+  SetTextColor 60 179 113
+
+Show
+  BaseType "Medium Life Flask" "Medium Mana Flask"
+  ItemLevel <= 6
+  SetBorderColor 60 179 113
+  SetBackgroundColor 15 45 28
+  SetTextColor 60 179 113
+
+Show
+  BaseType "Large Life Flask" "Large Mana Flask"
+  ItemLevel <= 12
+  SetBorderColor 60 179 113
+  SetBackgroundColor 15 45 28
+  SetTextColor 60 179 113
+
+Show
+  BaseType "Greater Life Flask" "Greater Mana Flask"
+  ItemLevel <= 18
+  SetBorderColor 60 179 113
+  SetBackgroundColor 15 45 28
+  SetTextColor 60 179 113
+
+Show
+  BaseType "Small Hybrid Flask"
+  ItemLevel <= 20
+  SetBorderColor 60 179 113
+  SetBackgroundColor 15 45 28
+  SetTextColor 60 179 113
+
+Show
+  BaseType "Grand Life Flask" "Grand Mana Flask"
+  ItemLevel <= 24
+  SetBorderColor 60 179 113
+  SetBackgroundColor 15 45 28
+  SetTextColor 60 179 113
+
+Show
+  BaseType "Giant Life Flask" "Giant Mana Flask"
+  ItemLevel <= 30
+  SetBorderColor 60 179 113
+  SetBackgroundColor 15 45 28
+  SetTextColor 60 179 113
+
+Show
+  BaseType "Medium Hybrid Flask"
+  ItemLevel <= 30
+  SetBorderColor 60 179 113
+  SetBackgroundColor 15 45 28
+  SetTextColor 60 179 113
+
+Show
+  BaseType "Colossal Life Flask" "Colossal Mana Flask"
+  ItemLevel <= 36
+  SetBorderColor 60 179 113
+  SetBackgroundColor 15 45 28
+  SetTextColor 60 179 113
+
+Show
+  BaseType "Large Hybrid Flask"
+  ItemLevel <= 40
+  SetBorderColor 60 179 113
+  SetBackgroundColor 15 45 28
+  SetTextColor 60 179 113
+
+Show
+  BaseType "Sacred Life Flask" "Sacred Mana Flask"
+  ItemLevel <= 42
+  SetBorderColor 60 179 113
+  SetBackgroundColor 15 45 28
+  SetTextColor 60 179 113
+
+Show
+  BaseType "Hallowed Life Flask" "Hallowed Mana Flask"
+  ItemLevel <= 50
+  SetBorderColor 60 179 113
+  SetBackgroundColor 15 45 28
+  SetTextColor 60 179 113
+
+Show
+  BaseType "Colossal Hybrid Flask"
+  ItemLevel <= 50
+  SetBorderColor 60 179 113
+  SetBackgroundColor 15 45 28
+  SetTextColor 60 179 113
+
+Show
+  BaseType "Sanctified Life Flask" "Sanctified Mana Flask"
+  ItemLevel <= 60
+  SetBorderColor 60 179 113
+  SetBackgroundColor 15 45 28
+  SetTextColor 60 179 113
+
+Show
+  BaseType "Sacred Hybrid Flask"
+  ItemLevel <= 60
+  SetBorderColor 60 179 113
+  SetBackgroundColor 15 45 28
+  SetTextColor 60 179 113
+
+Show
+  BaseType "Divine Life Flask" "Divine Mana Flask"
+  ItemLevel <= 65
+  SetBorderColor 60 179 113
+  SetBackgroundColor 15 45 28
+  SetTextColor 60 179 113
+
+Show
+  BaseType "Eternal Life Flask" "Eternal Mana Flask"
+  ItemLevel <= 70
+  SetBorderColor 60 179 113
+  SetBackgroundColor 15 45 28
+  SetTextColor 60 179 113
+
+Show
+  BaseType "Hallowed Hybrid Flask"
+  ItemLevel <= 70
   SetBorderColor 60 179 113
   SetBackgroundColor 15 45 28
   SetTextColor 60 179 113

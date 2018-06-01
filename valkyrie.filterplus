@@ -268,8 +268,127 @@ Show
   SetTextColor @COLOR_FLASK_LIGHT
 
 Show
-  BaseType "Light Flask"
-  ItemLevel < 6
+  BaseType "Small Life Flask" "Small Mana Flask"
+  ItemLevel <= 3
+  SetBorderColor @COLOR_FLASK_LIGHT
+  SetBackgroundColor @COLOR_FLASK_DARK
+  SetTextColor @COLOR_FLASK_LIGHT
+
+Show
+  BaseType "Medium Life Flask" "Medium Mana Flask"
+  ItemLevel <= 6
+  SetBorderColor @COLOR_FLASK_LIGHT
+  SetBackgroundColor @COLOR_FLASK_DARK
+  SetTextColor @COLOR_FLASK_LIGHT
+
+Show
+  BaseType "Large Life Flask" "Large Mana Flask"
+  ItemLevel <= 12
+  SetBorderColor @COLOR_FLASK_LIGHT
+  SetBackgroundColor @COLOR_FLASK_DARK
+  SetTextColor @COLOR_FLASK_LIGHT
+
+Show
+  BaseType "Greater Life Flask" "Greater Mana Flask"
+  ItemLevel <= 18
+  SetBorderColor @COLOR_FLASK_LIGHT
+  SetBackgroundColor @COLOR_FLASK_DARK
+  SetTextColor @COLOR_FLASK_LIGHT
+
+Show
+  BaseType "Small Hybrid Flask"
+  ItemLevel <= 20
+  SetBorderColor @COLOR_FLASK_LIGHT
+  SetBackgroundColor @COLOR_FLASK_DARK
+  SetTextColor @COLOR_FLASK_LIGHT
+
+Show
+  BaseType "Grand Life Flask" "Grand Mana Flask"
+  ItemLevel <= 24
+  SetBorderColor @COLOR_FLASK_LIGHT
+  SetBackgroundColor @COLOR_FLASK_DARK
+  SetTextColor @COLOR_FLASK_LIGHT
+
+Show
+  BaseType "Giant Life Flask" "Giant Mana Flask"
+  ItemLevel <= 30
+  SetBorderColor @COLOR_FLASK_LIGHT
+  SetBackgroundColor @COLOR_FLASK_DARK
+  SetTextColor @COLOR_FLASK_LIGHT
+
+Show
+  BaseType "Medium Hybrid Flask"
+  ItemLevel <= 30
+  SetBorderColor @COLOR_FLASK_LIGHT
+  SetBackgroundColor @COLOR_FLASK_DARK
+  SetTextColor @COLOR_FLASK_LIGHT
+
+Show
+  BaseType "Colossal Life Flask" "Colossal Mana Flask"
+  ItemLevel <= 36
+  SetBorderColor @COLOR_FLASK_LIGHT
+  SetBackgroundColor @COLOR_FLASK_DARK
+  SetTextColor @COLOR_FLASK_LIGHT
+
+Show
+  BaseType "Large Hybrid Flask"
+  ItemLevel <= 40
+  SetBorderColor @COLOR_FLASK_LIGHT
+  SetBackgroundColor @COLOR_FLASK_DARK
+  SetTextColor @COLOR_FLASK_LIGHT
+
+Show
+  BaseType "Sacred Life Flask" "Sacred Mana Flask"
+  ItemLevel <= 42
+  SetBorderColor @COLOR_FLASK_LIGHT
+  SetBackgroundColor @COLOR_FLASK_DARK
+  SetTextColor @COLOR_FLASK_LIGHT
+
+Show
+  BaseType "Hallowed Life Flask" "Hallowed Mana Flask"
+  ItemLevel <= 50
+  SetBorderColor @COLOR_FLASK_LIGHT
+  SetBackgroundColor @COLOR_FLASK_DARK
+  SetTextColor @COLOR_FLASK_LIGHT
+
+Show
+  BaseType "Colossal Hybrid Flask"
+  ItemLevel <= 50
+  SetBorderColor @COLOR_FLASK_LIGHT
+  SetBackgroundColor @COLOR_FLASK_DARK
+  SetTextColor @COLOR_FLASK_LIGHT
+
+Show
+  BaseType "Sanctified Life Flask" "Sanctified Mana Flask"
+  ItemLevel <= 60
+  SetBorderColor @COLOR_FLASK_LIGHT
+  SetBackgroundColor @COLOR_FLASK_DARK
+  SetTextColor @COLOR_FLASK_LIGHT
+
+Show
+  BaseType "Sacred Hybrid Flask"
+  ItemLevel <= 60
+  SetBorderColor @COLOR_FLASK_LIGHT
+  SetBackgroundColor @COLOR_FLASK_DARK
+  SetTextColor @COLOR_FLASK_LIGHT
+
+Show
+  BaseType "Divine Life Flask" "Divine Mana Flask"
+  ItemLevel <= 65
+  SetBorderColor @COLOR_FLASK_LIGHT
+  SetBackgroundColor @COLOR_FLASK_DARK
+  SetTextColor @COLOR_FLASK_LIGHT
+
+Show
+  BaseType "Eternal Life Flask" "Eternal Mana Flask"
+  ItemLevel <= 70
+  SetBorderColor @COLOR_FLASK_LIGHT
+  SetBackgroundColor @COLOR_FLASK_DARK
+  SetTextColor @COLOR_FLASK_LIGHT
+
+Show
+  BaseType "Hallowed Hybrid Flask"
+  ItemLevel <= 70
   SetBorderColor @COLOR_FLASK_LIGHT
   SetBackgroundColor @COLOR_FLASK_DARK
   SetTextColor @COLOR_FLASK_LIGHT
