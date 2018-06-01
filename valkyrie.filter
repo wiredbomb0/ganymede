@@ -1,8 +1,29 @@
 ######################
 #      VALKYRIE      #
-#   VERSION: 1.1.0   #
-# EDITED: 05/02/2018 #
+#   VERSION: 1.1.1   #
+# EDITED: 01/06/2018 #
 ######################
+
+#############
+# INCURSION #
+#############
+
+Show
+  BaseType "Vial of"
+  Class "Stackable Currency"
+  SetBorderColor 255 0 0
+  SetBackgroundColor 64 0 0
+  SetTextColor 255 0 0
+  SetFontSize 45
+  PlayAlertSound 5 300
+
+Show
+  Class "Incursion Item"
+  SetBorderColor 255 0 0
+  SetBackgroundColor 64 0 0
+  SetTextColor 255 0 0
+  SetFontSize 45
+  PlayAlertSound 5 300
 
 ############
 # BESTIARY #
@@ -209,7 +230,7 @@ Show
 
 Show
   Class Gem
-  BaseType Portal Empower Enlighten Enhance "Detonate Mines" "Item Quantity" "Vaal Haste" "Vaal Breach" "Added Chaos Damage"
+  BaseType Portal Empower Enlighten Enhance "Detonate Mines" "Item Quantity" "Added Chaos Damage" Vaal
   SetFontSize 45
   SetBorderColor 27 162 155
   SetBackgroundColor 6 40 38
@@ -242,6 +263,13 @@ Show
 
 Show
   Class "Utility Flasks" "Critical Utility Flasks"
+  SetBorderColor 60 179 113
+  SetBackgroundColor 15 45 28
+  SetTextColor 60 179 113
+
+Show
+  BaseType "Light Flask"
+  ItemLevel < 6
   SetBorderColor 60 179 113
   SetBackgroundColor 15 45 28
   SetTextColor 60 179 113
