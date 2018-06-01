@@ -17,6 +17,11 @@ def RebuildFilter(file):
   # Calculate start time
   start_time = int(round(time.time() * 1000))
 
+  # Load settings
+  settings = None
+  with open("settings.json", "r") as _f:
+    settings = json.load(_f)
+
   # Load color changes
   color_swap = None
   with open("colors.json", "r") as _f:
@@ -37,8 +42,10 @@ def RebuildFilter(file):
     _f.write(item_filter)
 
   # Copying file from here to PoE folder
-  my_documents = os.path.expanduser('~\\Documents\\My Games\\Path of Exile')
-  if os.path.exists(my_documents):
+  if settings["build_copy"]:
+    my_documents = os.path.expanduser('~\\Documents\\My Games\\Path of Exile')
+    if not os.path.exists(my_documents):
+      os.makedirs(my_documents)
     filter_path = os.path.join(my_documents, filter_file)
     shutil.copyfile(filter_file, filter_path)
 
