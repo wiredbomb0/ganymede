@@ -1,7 +1,7 @@
 ######################
 #      VALKYRIE      #
-#   VERSION: 1.1.1   #
-# EDITED: 01/06/2018 #
+#   VERSION: 1.1.2   #
+# EDITED: 05/06/2018 #
 ######################
 
 #############
@@ -72,8 +72,12 @@ Show
 #############
 
 Show
-  BaseType "Treasure Key"
+  Class "Labyrinth Item" "Labyrinth Trinket"
   SetFontSize 45
+  SetBorderColor 254 179 37
+  SetBackgroundColor 64 45 9
+  SetTextColor 254 179 37
+  PlayAlertSound 7 300
 
 ##########
 # BREACH #
@@ -83,7 +87,7 @@ Show
   Class "Stackable Currency"
   BaseType "Blessing"
   SetFontSize 45
-  PlayAlertSound ItemFilterAlert14 300
+  PlayAlertSound 14 300
 
 Show
   Class "Misc Map Items"
@@ -98,7 +102,7 @@ Show
   Class Quest
   BaseType "Shaper's Orb"
   SetFontSize 45
-  PlayAlertSound ItemFilterAlert10 300
+  PlayAlertSound 10 300
   SetBorderColor 74 230 58
   SetBackgroundColor 18 57 14
   SetTextColor 74 230 58
@@ -106,7 +110,7 @@ Show
 Show
   Class Quest
   SetFontSize 45
-  PlayAlertSound ItemFilterAlert10 150
+  PlayAlertSound 10 150
   SetBorderColor 74 230 58
   SetBackgroundColor 18 57 14
   SetTextColor 74 230 58
@@ -114,7 +118,7 @@ Show
 Show
   Class "Pantheon Soul" Piece
   SetFontSize 45
-  PlayAlertSound ItemFilterAlert10 300
+  PlayAlertSound 10 300
   SetBorderColor 74 230 58
   SetBackgroundColor 18 57 14
   SetTextColor 74 230 58
@@ -151,7 +155,7 @@ Show
   SetBorderColor 255 165 0
   SetBackgroundColor 63 41 0
   SetTextColor 255 165 0
-  PlayAlertSound ItemFilterAlert6 300
+  PlayAlertSound 6 300
 
 ############
 # CURRENCY #
@@ -396,6 +400,14 @@ Show
 #############
 # EQUIPMENT #
 #############
+
+Show
+  Class "Fishing Rod"
+  SetFontSize 45
+  PlayAlertSound 1 300
+  SetBorderColor 119 119 255
+  SetBackgroundColor 30 30 64
+  SetTextColor 119 119 255
 
 Show
   Sockets = 6

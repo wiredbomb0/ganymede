@@ -1,7 +1,7 @@
 ######################
 #      VALKYRIE      #
-#   VERSION: 1.1.1   #
-# EDITED: 01/06/2018 #
+#   VERSION: 1.1.2   #
+# EDITED: 05/06/2018 #
 ######################
 
 #############
@@ -72,8 +72,12 @@ Show
 #############
 
 Show
-  BaseType "Treasure Key"
+  Class "Labyrinth Item" "Labyrinth Trinket"
   SetFontSize 45
+  SetBorderColor 254 179 37
+  SetBackgroundColor 64 45 9
+  SetTextColor 254 179 37
+  PlayAlertSound 7 300
 
 ##########
 # BREACH #
@@ -83,7 +87,7 @@ Show
   Class "Stackable Currency"
   BaseType "Blessing"
   SetFontSize 45
-  PlayAlertSound ItemFilterAlert14 300
+  PlayAlertSound 14 300
 
 Show
   Class "Misc Map Items"
@@ -98,7 +102,7 @@ Show
   Class Quest
   BaseType "Shaper's Orb"
   SetFontSize 45
-  PlayAlertSound ItemFilterAlert10 300
+  PlayAlertSound 10 300
   SetBorderColor @COLOR_QUEST_LIGHT
   SetBackgroundColor @COLOR_QUEST_DARK
   SetTextColor @COLOR_QUEST_LIGHT
@@ -106,7 +110,7 @@ Show
 Show
   Class Quest
   SetFontSize 45
-  PlayAlertSound ItemFilterAlert10 150
+  PlayAlertSound 10 150
   SetBorderColor @COLOR_QUEST_LIGHT
   SetBackgroundColor @COLOR_QUEST_DARK
   SetTextColor @COLOR_QUEST_LIGHT
@@ -114,7 +118,7 @@ Show
 Show
   Class "Pantheon Soul" Piece
   SetFontSize 45
-  PlayAlertSound ItemFilterAlert10 300
+  PlayAlertSound 10 300
   SetBorderColor @COLOR_QUEST_LIGHT
   SetBackgroundColor @COLOR_QUEST_DARK
   SetTextColor @COLOR_QUEST_LIGHT
@@ -151,7 +155,7 @@ Show
   SetBorderColor @COLOR_ESSENCE_LIGHT
   SetBackgroundColor @COLOR_ESSENCE_DARK
   SetTextColor @COLOR_ESSENCE_LIGHT
-  PlayAlertSound ItemFilterAlert6 300
+  PlayAlertSound 6 300
 
 ############
 # CURRENCY #
@@ -396,6 +400,14 @@ Show
 #############
 # EQUIPMENT #
 #############
+
+Show
+  Class "Fishing Rod"
+  SetFontSize 45
+  PlayAlertSound 1 300
+  SetBorderColor @COLOR_ITEM_SOCKETS_LIGHT
+  SetBackgroundColor @COLOR_ITEM_SOCKETS_DARK
+  SetTextColor @COLOR_ITEM_SOCKETS_LIGHT
 
 Show
   Sockets = 6
