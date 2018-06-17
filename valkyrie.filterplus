@@ -79,6 +79,18 @@ Show
   SetTextColor 254 179 37
   PlayAlertSound 7 300
 
+#########
+# ABYSS #
+#########
+
+Show
+  BaseType "Ghastly Eye Jewel" "Hypnotic Eye Jewel" "Murderous Eye Jewel" "Searching Eye Jewel" "Stygian Vise"
+  SetFontSize 45
+  PlayAlertSound 14 300
+  SetBorderColor @COLOR_BESTIARY_LIGHT
+  SetBackgroundColor @COLOR_BESTIARY_DARK
+  SetTextColor @COLOR_BESTIARY_LIGHT
+
 ##########
 # BREACH #
 ##########
