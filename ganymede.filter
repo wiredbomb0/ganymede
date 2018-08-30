@@ -1,0 +1,515 @@
+﻿################################
+# Ganymede                     #
+# Version 0.0.1-pre            #
+# Built at 2018-08-30 21:11:35 #
+################################
+
+# INFO #
+# CustomAlertSound (FILENAME or FILEPATH)
+# MinimapIcon (SIZE COLOR SHAPE) 0, 1, 2 & Red, Green, Blue, Brown, White, Yellow & Circle, Diamond, Hexagon, Square, Star, Triangle
+# PlayEffect (COLOR) [TEMP] Red, Green, Blue, Brown, White, Yellow
+
+######################
+# LEAGUE (INCURSION) #
+######################
+
+Show
+  BaseType "Flashpowder Keg" "Stone of Passage" "Vial of"
+  PlayAlertSound 5 300
+  SetBorderColor 255 165 0
+  SetBackgroundColor 63 41 0
+  SetTextColor 255 165 0
+
+Show
+  Class "Incursion Item"
+  PlayAlertSound 5 300
+  SetBorderColor 255 165 0
+  SetBackgroundColor 63 41 0
+  SetTextColor 255 165 0
+
+######################
+# LEAGUE (BESTIARY) #
+######################
+
+Show
+  BaseType "Bestiary Orb" "Rope Net" "Iron Net" "Steel Net" "Thaumaturgical Net" "Necromancy Net"
+  SetBorderColor 255 165 0
+  SetBackgroundColor 63 41 0
+  SetTextColor 255 165 0
+
+##################
+# LEAGUE (ABYSS) #
+##################
+
+Show
+  BaseType "Stygian Vise"
+  SetBorderColor 255 165 0
+  SetBackgroundColor 63 41 0
+  SetTextColor 255 165 0
+
+######################
+# LEAGUE (HARBINGER) #
+######################
+
+# OPTIONAL: INCLUDE SHARDS HERE AND ORBS RELATED TO HARBINGER
+
+###################
+# LEAGUE (LEGACY) #
+###################
+
+Show
+  BaseType "Ancient Reliquary Key"
+  SetFontSize 45
+  SetBorderColor 255 165 0
+  SetBackgroundColor 63 41 0
+  SetTextColor 255 165 0
+
+###################
+# LEAGUE (BREACH) #
+###################
+
+Show
+  Class Currency
+  BaseType Splinter Blessing
+  SetFontSize 45
+  SetBorderColor 255 165 0
+  SetBackgroundColor 63 41 0
+  SetTextColor 255 165 0
+
+Show
+  BaseType Breachstone
+  SetFontSize 45
+  SetBorderColor 255 165 0
+  SetBackgroundColor 63 41 0
+  SetTextColor 255 165 0
+
+####################
+# LEAGUE (ESSENCE) #
+####################
+
+Show
+  Class Currency
+  BaseType Essence "Remnant of Corruption"
+  SetFontSize 45
+  PlayAlertSound 6 300
+  SetBorderColor 255 165 0
+  SetBackgroundColor 63 41 0
+  SetTextColor 255 165 0
+
+#####################
+# LEAGUE (PROPHECY) #
+#####################
+
+Show
+  Class Currency
+  BaseType "Silver Coin"
+  SetBorderColor 255 165 0
+  SetBackgroundColor 63 41 0
+  SetTextColor 255 165 0
+
+#####################
+# LEAGUE (PERANDUS) #
+#####################
+
+Show
+  Class Currency
+  BaseType "Perandus Coin"
+  SetBorderColor 255 165 0
+  SetBackgroundColor 63 41 0
+  SetTextColor 255 165 0
+
+#####################
+# LEAGUE (TALISMAN) #
+#####################
+
+Show
+  BaseType Talisman
+  SetBorderColor 255 165 0
+  SetBackgroundColor 63 41 0
+  SetTextColor 255 165 0
+
+############
+# CURRENCY #
+############
+
+Show
+  Class Currency
+  BaseType "Mirror of Kalandra" "Exalted Orb" "Divine Orb" "Mirror Shard" "Eternal Orb" "Albino Rhoa Feather" "Orb of Annulment"
+  SetFontSize 45
+  PlayAlertSound 8 300
+  SetBorderColor 170 158 130
+  SetBackgroundColor 42 39 32
+  SetTextColor 170 158 130
+
+Show
+  Class Currency
+  BaseType "Master Cartographer's Sextant" "Journeyman Cartographer's Sextant" "Harbinger's Orb" "Ancient Orb" "Regal Orb" "Orb of Regret" "Chaos Orb" "Gemcutter's Prism" "Apprentice Cartographer's Sextant" "Stacked Deck" "Blessed Orb" "Orb of Fusing" "Orb of Alchemy" "Cartographer's Chisel" "Engineer's Orb" "Orb of Horizons" "Orb of Binding" "Bestiary Orb" "Orb of Scouring" "Vaal Orb" "Annulment Shard" "Harbinger's Shard" "Ancient Shard" "Exalted Shard" "Horizon Shard" "Engineer's Shard" "Binding Shard" "Regal Shard" "Chaos Shard"
+  SetFontSize 45
+  PlayAlertSound 10 300
+  SetBorderColor 170 158 130
+  SetBackgroundColor 42 39 32
+  SetTextColor 170 158 130
+
+Show
+  Class Currency
+  BaseType "Orb of Chance" "Orb of Alteration" "Chromatic Orb" "Jeweller's Orb" "Glassblower's Bauble" "Orb of Transmutation" "Blacksmith's Whetstone" "Alchemy Shard" "Armourer's Scrap" "Orb of Augmentation" "Transmutation Shard" "Alteration Shard"
+  SetBorderColor 170 158 130
+  SetBackgroundColor 42 39 32
+  SetTextColor 170 158 130
+
+Show
+  Class Currency
+  BaseType "Scroll of Wisdom" "Portal Scroll"
+  SetBorderColor 170 158 130
+  SetBackgroundColor 42 39 32
+  SetTextColor 170 158 130
+
+########
+# MAPS #
+########
+
+Show
+  BaseType "Divine Vessel" "Offering to the Goddess"
+  SetFontSize 45
+  PlayAlertSound 13 300
+  SetBorderColor 210 0 220
+  SetBackgroundColor 52 0 55
+  SetTextColor 210 0 220
+
+Show
+  Class "Map Fragments"
+  SetFontSize 45
+  PlayAlertSound 13 300
+  SetBorderColor 210 0 220
+  SetBackgroundColor 52 0 55
+  SetTextColor 210 0 220
+
+Show
+  Rarity Unique
+  Class Maps
+  SetBorderColor 175 96 37
+  SetBackgroundColor 43 24 9
+  SetTextColor 175 96 37
+
+Show
+  Rarity Rare
+  Class Maps
+  SetBorderColor 255 255 119
+  SetBackgroundColor 63 63 29
+  SetTextColor 255 255 119
+
+Show
+  Rarity Magic
+  Class Maps
+  SetBorderColor 136 136 255
+  SetBackgroundColor 34 34 63
+  SetTextColor 136 136 255
+
+Show
+  Rarity Normal
+  Class Maps
+  SetBorderColor 200 200 200
+  SetBackgroundColor 50 50 50
+  SetTextColor 200 200 200
+
+#########
+# QUEST #
+#########
+
+Show
+  Class Quest
+  SetFontSize 45
+  PlayAlertSound 10 300
+  SetBorderColor 74 230 58
+  SetBackgroundColor 18 57 14
+  SetTextColor 74 230 58
+
+Show
+  Class "Pantheon Soul" Piece
+  SetFontSize 45
+  PlayAlertSound 10 300
+  SetBorderColor 74 230 58
+  SetBackgroundColor 18 57 14
+  SetTextColor 74 230 58
+
+#########
+# FLASK #
+#########
+
+Show
+  Rarity Unique
+  Class Flask
+  SetBorderColor 175 96 37
+  SetBackgroundColor 43 24 9
+  SetTextColor 175 96 37
+
+Show
+  Rarity Rare
+  Class Flask
+  SetBorderColor 255 255 119
+  SetBackgroundColor 63 63 29
+  SetTextColor 255 255 119
+
+Show
+  Rarity Magic
+  Class Flask
+  SetBorderColor 136 136 255
+  SetBackgroundColor 34 34 63
+  SetTextColor 136 136 255
+
+Show
+  Rarity Normal
+  Class Flask
+  SetBorderColor 200 200 200
+  SetBackgroundColor 50 50 50
+  SetTextColor 200 200 200
+
+##############
+# DIVINATION #
+##############
+
+Show
+  Class "Divination Card"
+  SetFontSize 45
+  PlayAlertSound 4 300
+  SetBorderColor 14 186 255
+  SetBackgroundColor 3 46 63
+  SetTextColor 14 186 255
+
+Show
+  Class Currency
+  BaseType "Stacked Deck"
+  SetFontSize 45
+  PlayAlertSound 4 300
+  SetBorderColor 14 186 255
+  SetBackgroundColor 3 46 63
+  SetTextColor 14 186 255
+
+########
+# GEMS #
+########
+
+Show
+  Class Gem
+  BaseType Portal Empower Enlighten Enhance "Detonate Mines" "Item Quantity" "Added Chaos Damage" Vaal "Vaal Breach"
+  SetFontSize 45
+  PlayAlertSound 13 300
+  SetBorderColor 27 162 155
+  SetBackgroundColor 6 40 38
+  SetTextColor 27 162 155
+
+Show
+  Class Gem
+  Quality >= 5
+  SetFontSize 45
+  SetBorderColor 27 162 155
+  SetBackgroundColor 6 40 38
+  SetTextColor 27 162 155
+
+Show
+  Class Gem
+  SetBorderColor 27 162 155
+  SetBackgroundColor 6 40 38
+  SetTextColor 27 162 155
+
+#############
+# LABYRINTH #
+#############
+
+Show
+  Class "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item"
+  SetFontSize 45
+  PlayAlertSound 7 300
+  SetBorderColor 254 179 37
+  SetBackgroundColor 63 44 9
+  SetTextColor 254 179 37
+
+##########
+# SHAPED #
+##########
+
+Show
+  BaseType "The Shaper's Key"
+  SetFontSize 45
+  SetBorderColor 128 64 128
+  SetBackgroundColor 32 16 32
+  SetTextColor 128 64 128
+
+Show
+  ShaperItem True
+  SetBorderColor 128 64 128
+  SetBackgroundColor 32 16 32
+  SetTextColor 128 64 128
+
+Show
+  ElderItem True
+  SetBorderColor 128 64 128
+  SetBackgroundColor 32 16 32
+  SetTextColor 128 64 128
+
+#############
+# EQUIPMENT #
+#############
+
+Show
+  Sockets = 6
+  SetFontSize 45
+  PlayAlertSound 1 300
+  SetBorderColor 119 119 255
+  SetBackgroundColor 29 29 63
+  SetTextColor 119 119 255
+
+Show
+  LinkedSockets >= 5
+  SetFontSize 45
+  PlayAlertSound 1 300
+  SetBorderColor 119 119 255
+  SetBackgroundColor 29 29 63
+  SetTextColor 119 119 255
+
+Show
+  BaseType "Fishing Rod"
+  SetFontSize 45
+  PlayAlertSound 1 300
+  SetBorderColor 119 119 255
+  SetBackgroundColor 29 29 63
+  SetTextColor 119 119 255
+
+Show
+  SocketGroup RGB
+  LinkedSockets >= 3
+  SetBorderColor 128 128 128
+  SetBackgroundColor 32 32 32
+  SetTextColor 128 128 128
+
+Show
+  BaseType Amulet Ring
+  Rarity Rare
+  SetFontSize 45
+  SetBorderColor 255 255 119
+  SetBackgroundColor 63 63 29
+  SetTextColor 255 255 119
+
+Show
+  Rarity Unique
+  Class "Abyss Jewel"
+  SetBorderColor 175 96 37
+  SetBackgroundColor 43 24 9
+  SetTextColor 175 96 37
+
+Show
+  Rarity Rare
+  Class "Abyss Jewel"
+  SetBorderColor 255 255 119
+  SetBackgroundColor 63 63 29
+  SetTextColor 255 255 119
+
+Show
+  Rarity Magic
+  Class "Abyss Jewel"
+  SetBorderColor 136 136 255
+  SetBackgroundColor 34 34 63
+  SetTextColor 136 136 255
+
+Show
+  Rarity Normal
+  Class "Abyss Jewel"
+  SetBorderColor 200 200 200
+  SetBackgroundColor 50 50 50
+  SetTextColor 200 200 200
+
+Show
+  Rarity Unique
+  Class Claws Daggers Wands "One Hand" "Two Hand" Bows Staves Quivers Belts Gloves Boots "Body Armours" Helmets Shields Sceptres Amulet Ring Jewel
+  SetBorderColor 175 96 37
+  SetBackgroundColor 43 24 9
+  SetTextColor 175 96 37
+
+Show
+  Rarity Rare
+  Class Claws Daggers Wands "One Hand" "Two Hand" Bows Staves Quivers Belts Gloves Boots "Body Armours" Helmets Shields Sceptres Amulet Ring Jewel
+  SetBorderColor 255 255 119
+  SetBackgroundColor 63 63 29
+  SetTextColor 255 255 119
+
+Show
+  Rarity Magic
+  Class Claws Daggers Wands "One Hand" "Two Hand" Bows Staves Quivers Belts Gloves Boots "Body Armours" Helmets Shields Sceptres Amulet Ring Jewel
+  SetBorderColor 136 136 255
+  SetBackgroundColor 34 34 63
+  SetTextColor 136 136 255
+
+Show
+  Rarity Normal
+  Class Claws Daggers Wands "One Hand" "Two Hand" Bows Staves Quivers Belts Gloves Boots "Body Armours" Helmets Shields Sceptres Amulet Ring Jewel
+  SetBorderColor 200 200 200
+  SetBackgroundColor 50 50 50
+  SetTextColor 200 200 200
+
+#############
+# REMAINING #
+#############
+
+Show
+  PlayAlertSound 3 300
+  SetFontSize 45
+  SetBorderColor 255 255 255
+  SetBackgroundColor 63 63 63
+  SetTextColor 255 255 255
+
+#########################################################################################################
+#########################################################################################################
+#########################################################################################################
+#########################################################################################################
+#########################################################################################################
+#########################################################################################################
+#########################################################################################################
+#########################################################################################################
+#########################################################################################################
+#########################################################################################################
+#########################################################################################################
+#########################################################################################################
+#########################################################################################################
+#########################################################################################################
+#########################################################################################################
+#########################################################################################################
+#########################################################################################################
+#########################################################################################################
+#########################################################################################################
+#########################################################################################################
+#########################################################################################################
+#########################################################################################################
+#########################################################################################################
+#########################################################################################################
+#########################################################################################################
+#########################################################################################################
+#########################################################################################################
+#########################################################################################################
+#########################################################################################################
+#########################################################################################################
+#########################################################################################################
+#########################################################################################################
+
+
+# ? #
+#Small Relics
+#Medium Relics
+#Large Relics
+# ? #
+
+#Hideout Doodads
+#Microtransactions
+
+########################
+# LEAGUE SPECIFIC SHIT #
+########################
+
+#-------#
+# Delve #
+#-------#
+#Show
+#  BaseType "Relic" "Resonator"
+#  Leaguestones
+#  Pantheon Soul
+#  Piece
+#  Incursion Item
