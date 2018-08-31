@@ -1,7 +1,7 @@
 ﻿################################
 # Ganymede                     #
 # Version 0.0.1-pre            #
-# Built at 2018-08-30 21:18:14 #
+# Built at 2018-09-01 06:57:35 #
 ################################
 
 # INFO #
@@ -21,6 +21,7 @@ Show
   SetBorderColor 255 165 0
   SetBackgroundColor 63 41 0
   SetTextColor 255 165 0
+  PlayEffect Red
 
 Show
   BaseType Fossil Resonator
@@ -30,7 +31,7 @@ Show
   SetTextColor 255 165 0
 
 Show
-  Class Delve Socketable Currency
+  Class "Delve Socketable Currency"
   PlayAlertSound 5 300
   SetBorderColor 255 165 0
   SetBackgroundColor 63 41 0
@@ -46,6 +47,7 @@ Show
   SetBorderColor 255 165 0
   SetBackgroundColor 63 41 0
   SetTextColor 255 165 0
+  PlayEffect Red
 
 Show
   Class "Incursion Item"
@@ -63,6 +65,7 @@ Show
   SetBorderColor 255 165 0
   SetBackgroundColor 63 41 0
   SetTextColor 255 165 0
+  PlayEffect Red
 
 ##################
 # LEAGUE (ABYSS) #
@@ -102,6 +105,7 @@ Show
   SetBorderColor 255 165 0
   SetBackgroundColor 63 41 0
   SetTextColor 255 165 0
+  PlayEffect Red
 
 Show
   BaseType Breachstone
@@ -109,6 +113,7 @@ Show
   SetBorderColor 255 165 0
   SetBackgroundColor 63 41 0
   SetTextColor 255 165 0
+  PlayEffect Red
 
 ####################
 # LEAGUE (ESSENCE) #
@@ -122,6 +127,7 @@ Show
   SetBorderColor 255 165 0
   SetBackgroundColor 63 41 0
   SetTextColor 255 165 0
+  PlayEffect Red
 
 #####################
 # LEAGUE (PROPHECY) #
@@ -133,6 +139,7 @@ Show
   SetBorderColor 255 165 0
   SetBackgroundColor 63 41 0
   SetTextColor 255 165 0
+  PlayEffect Red
 
 #####################
 # LEAGUE (PERANDUS) #
@@ -144,6 +151,7 @@ Show
   SetBorderColor 255 165 0
   SetBackgroundColor 63 41 0
   SetTextColor 255 165 0
+  PlayEffect Red
 
 #####################
 # LEAGUE (TALISMAN) #
@@ -154,6 +162,7 @@ Show
   SetBorderColor 255 165 0
   SetBackgroundColor 63 41 0
   SetTextColor 255 165 0
+  PlayEffect Red
 
 ############
 # CURRENCY #
@@ -167,6 +176,7 @@ Show
   SetBorderColor 170 158 130
   SetBackgroundColor 42 39 32
   SetTextColor 170 158 130
+  PlayEffect Brown
 
 Show
   Class Currency
@@ -176,6 +186,7 @@ Show
   SetBorderColor 170 158 130
   SetBackgroundColor 42 39 32
   SetTextColor 170 158 130
+  PlayEffect Brown
 
 Show
   Class Currency

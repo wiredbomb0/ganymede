@@ -19,6 +19,7 @@ Show
   BaseType "Timeworn Reliquary Key"
   PlayAlertSound 5 300
   ${COLOR_LEAGUE_SPECIFIC}
+  PlayEffect Red
 
 Show
   BaseType Fossil Resonator
@@ -26,7 +27,7 @@ Show
   ${COLOR_LEAGUE_SPECIFIC}
 
 Show
-  Class Delve Socketable Currency
+  Class "Delve Socketable Currency"
   PlayAlertSound 5 300
   ${COLOR_LEAGUE_SPECIFIC}
 
@@ -38,6 +39,7 @@ Show
   BaseType "Flashpowder Keg" "Stone of Passage" "Vial of"
   PlayAlertSound 5 300
   ${COLOR_LEAGUE_SPECIFIC}
+  PlayEffect Red
 
 Show
   Class "Incursion Item"
@@ -51,6 +53,7 @@ Show
 Show
   BaseType "Bestiary Orb" "Rope Net" "Iron Net" "Steel Net" "Thaumaturgical Net" "Necromancy Net"
   ${COLOR_LEAGUE_SPECIFIC}
+  PlayEffect Red
 
 ##################
 # LEAGUE (ABYSS) #
@@ -84,11 +87,13 @@ Show
   BaseType Splinter Blessing
   SetFontSize 45
   ${COLOR_LEAGUE_SPECIFIC}
+  PlayEffect Red
 
 Show
   BaseType Breachstone
   SetFontSize 45
   ${COLOR_LEAGUE_SPECIFIC}
+  PlayEffect Red
 
 ####################
 # LEAGUE (ESSENCE) #
@@ -100,6 +105,7 @@ Show
   SetFontSize 45
   PlayAlertSound 6 300
   ${COLOR_LEAGUE_SPECIFIC}
+  PlayEffect Red
 
 #####################
 # LEAGUE (PROPHECY) #
@@ -109,6 +115,7 @@ Show
   Class Currency
   BaseType "Silver Coin"
   ${COLOR_LEAGUE_SPECIFIC}
+  PlayEffect Red
 
 #####################
 # LEAGUE (PERANDUS) #
@@ -118,6 +125,7 @@ Show
   Class Currency
   BaseType "Perandus Coin"
   ${COLOR_LEAGUE_SPECIFIC}
+  PlayEffect Red
 
 #####################
 # LEAGUE (TALISMAN) #
@@ -126,6 +134,7 @@ Show
 Show
   BaseType Talisman
   ${COLOR_LEAGUE_SPECIFIC}
+  PlayEffect Red
 
 ############
 # CURRENCY #
@@ -137,6 +146,7 @@ Show
   SetFontSize 45
   PlayAlertSound 8 300
   ${COLOR_CURRENCY}
+  PlayEffect Brown
 
 Show
   Class Currency
@@ -144,6 +154,7 @@ Show
   SetFontSize 45
   PlayAlertSound 10 300
   ${COLOR_CURRENCY}
+  PlayEffect Brown
 
 Show
   Class Currency
