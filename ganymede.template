@@ -4,6 +4,10 @@
 # Built at ${BUILD_DATE} #
 ################################
 
+# Characters used for Stash Tabs
+# ≡ Φ Θ ☼ ×
+# Θ¿®♪♫♫☼◄►☼©¢
+
 # INFO #
 # CustomAlertSound (FILENAME or FILEPATH)
 # MinimapIcon (SIZE COLOR SHAPE) 0, 1, 2 & Red, Green, Blue, Brown, White, Yellow & Circle, Diamond, Hexagon, Square, Star, Triangle
@@ -23,6 +27,7 @@ Show
 
 Show
   BaseType Fossil Resonator
+  Class "Currency"
   PlayAlertSound 5 300
   ${COLOR_LEAGUE_SPECIFIC}
 
@@ -114,8 +119,7 @@ Show
 Show
   Class Currency
   BaseType "Silver Coin"
-  ${COLOR_LEAGUE_SPECIFIC}
-  PlayEffect Red
+  ${COLOR_CURRENCY}
 
 #####################
 # LEAGUE (PERANDUS) #
@@ -124,7 +128,7 @@ Show
 Show
   Class Currency
   BaseType "Perandus Coin"
-  ${COLOR_LEAGUE_SPECIFIC}
+  ${COLOR_CURRENCY}
   PlayEffect Red
 
 #####################
@@ -147,6 +151,7 @@ Show
   PlayAlertSound 8 300
   ${COLOR_CURRENCY}
   PlayEffect Brown
+  MinimapIcon 0 Brown Circle
 
 Show
   Class Currency
@@ -154,7 +159,9 @@ Show
   SetFontSize 45
   PlayAlertSound 10 300
   ${COLOR_CURRENCY}
+  DisableDropSound True
   PlayEffect Brown
+  MinimapIcon 0 Brown Circle
 
 Show
   Class Currency
@@ -175,6 +182,7 @@ Show
   SetFontSize 45
   PlayAlertSound 13 300
   ${COLOR_MAPS}
+  MinimapIcon 2 White Triangle
 
 Show
   Class "Map Fragments"
@@ -186,21 +194,25 @@ Show
   Rarity Unique
   Class Maps
   ${COLOR_EQUIPMENT_UNIQUE}
+  MinimapIcon 2 White Triangle
 
 Show
   Rarity Rare
   Class Maps
   ${COLOR_EQUIPMENT_RARE}
+  MinimapIcon 2 White Triangle
 
 Show
   Rarity Magic
   Class Maps
   ${COLOR_EQUIPMENT_MAGIC}
+  MinimapIcon 2 White Triangle
 
 Show
   Rarity Normal
   Class Maps
   ${COLOR_EQUIPMENT_NORMAL}
+  MinimapIcon 2 White Triangle
 
 #########
 # QUEST #
@@ -211,16 +223,24 @@ Show
   SetFontSize 45
   PlayAlertSound 10 300
   ${COLOR_QUEST_ITEM}
+  PlayEffect Green
 
 Show
   Class "Pantheon Soul" Piece
   SetFontSize 45
   PlayAlertSound 10 300
   ${COLOR_QUEST_ITEM}
+  PlayEffect Green
 
 #########
 # FLASK #
 #########
+
+Show
+  Rarity Normal
+  Quality >= 5
+  Class Flask
+  ${COLOR_EQUIPMENT_NORMAL}
 
 Show
   Rarity Unique
@@ -251,6 +271,8 @@ Show
   SetFontSize 45
   PlayAlertSound 4 300
   ${COLOR_DIVINATION_ITEM}
+  PlayEffect Blue
+  MinimapIcon 2 Blue Circle
 
 Show
   Class Currency
@@ -258,6 +280,8 @@ Show
   SetFontSize 45
   PlayAlertSound 4 300
   ${COLOR_DIVINATION_ITEM}
+  PlayEffect Blue
+  MinimapIcon 2 Blue Circle
 
 ########
 # GEMS #
@@ -267,13 +291,14 @@ Show
   Class Gem
   BaseType Portal Empower Enlighten Enhance "Detonate Mines" "Item Quantity" "Added Chaos Damage" Vaal "Vaal Breach"
   SetFontSize 45
-  PlayAlertSound 13 300
+  CustomAlertSound "gem.wav"
   ${COLOR_GEMS}
 
 Show
   Class Gem
-  Quality >= 5
+  Quality >= 1
   SetFontSize 45
+  CustomAlertSound "gem.wav"
   ${COLOR_GEMS}
 
 Show
@@ -335,10 +360,22 @@ Show
   ${COLOR_EQUIPMENT_CHROMATIC}
 
 Show
-  BaseType Amulet Ring
+  Class Amulet
   Rarity Rare
+  ItemLevel >= 60
   SetFontSize 45
   ${COLOR_EQUIPMENT_RARE}
+  CustomAlertSound "amulet.wav"
+  MinimapIcon 2 Yellow Star
+
+Show
+  Class Ring
+  Rarity Rare
+  ItemLevel >= 60
+  SetFontSize 45
+  ${COLOR_EQUIPMENT_RARE}
+  CustomAlertSound "ring.wav"
+  MinimapIcon 2 Yellow Star
 
 Show
   Rarity Unique
@@ -370,12 +407,12 @@ Show
   Class Claws Daggers Wands "One Hand" "Two Hand" Bows Staves Quivers Belts Gloves Boots "Body Armours" Helmets Shields Sceptres Amulet Ring Jewel
   ${COLOR_EQUIPMENT_RARE}
 
-Show
+Hide
   Rarity Magic
   Class Claws Daggers Wands "One Hand" "Two Hand" Bows Staves Quivers Belts Gloves Boots "Body Armours" Helmets Shields Sceptres Amulet Ring Jewel
   ${COLOR_EQUIPMENT_MAGIC}
 
-Show
+Hide
   Rarity Normal
   Class Claws Daggers Wands "One Hand" "Two Hand" Bows Staves Quivers Belts Gloves Boots "Body Armours" Helmets Shields Sceptres Amulet Ring Jewel
   ${COLOR_EQUIPMENT_NORMAL}

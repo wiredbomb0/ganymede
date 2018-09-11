@@ -23,7 +23,7 @@ if __name__ == "__main__":
 
   # Perform the magic!
   result = s.substitute({
-    "BUILD_VERSION": "0.0.1-pre",
+    "BUILD_VERSION": "0.0.2-pre",
     "BUILD_DATE": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
 
     "COLOR_EQUIPMENT_NORMAL": create_color_statements(200, 200, 200),
@@ -47,4 +47,9 @@ if __name__ == "__main__":
 
   # Open the output and write
   with open("ganymede.filter", "w") as _f:
+    _f.write(result)
+
+  # "COPY" file to location
+  # Open the output and write
+  with open("C:\Users\Valkyria\Documents\My Games\Path of Exile\ganymede.filter", "w") as _f:
     _f.write(result)

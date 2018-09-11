@@ -1,8 +1,12 @@
 ﻿################################
 # Ganymede                     #
-# Version 0.0.1-pre            #
-# Built at 2018-09-01 06:57:35 #
+# Version 0.0.2-pre            #
+# Built at 2018-09-04 09:18:33 #
 ################################
+
+# Characters used for Stash Tabs
+# ≡ Φ Θ ☼ ×
+# Θ¿®♪♫♫☼◄►☼©¢
 
 # INFO #
 # CustomAlertSound (FILENAME or FILEPATH)
@@ -25,6 +29,7 @@ Show
 
 Show
   BaseType Fossil Resonator
+  Class "Currency"
   PlayAlertSound 5 300
   SetBorderColor 255 165 0
   SetBackgroundColor 63 41 0
@@ -136,10 +141,9 @@ Show
 Show
   Class Currency
   BaseType "Silver Coin"
-  SetBorderColor 255 165 0
-  SetBackgroundColor 63 41 0
-  SetTextColor 255 165 0
-  PlayEffect Red
+  SetBorderColor 170 158 130
+  SetBackgroundColor 42 39 32
+  SetTextColor 170 158 130
 
 #####################
 # LEAGUE (PERANDUS) #
@@ -148,9 +152,9 @@ Show
 Show
   Class Currency
   BaseType "Perandus Coin"
-  SetBorderColor 255 165 0
-  SetBackgroundColor 63 41 0
-  SetTextColor 255 165 0
+  SetBorderColor 170 158 130
+  SetBackgroundColor 42 39 32
+  SetTextColor 170 158 130
   PlayEffect Red
 
 #####################
@@ -177,6 +181,7 @@ Show
   SetBackgroundColor 42 39 32
   SetTextColor 170 158 130
   PlayEffect Brown
+  MinimapIcon 0 Brown Circle
 
 Show
   Class Currency
@@ -186,7 +191,9 @@ Show
   SetBorderColor 170 158 130
   SetBackgroundColor 42 39 32
   SetTextColor 170 158 130
+  DisableDropSound True
   PlayEffect Brown
+  MinimapIcon 0 Brown Circle
 
 Show
   Class Currency
@@ -213,6 +220,7 @@ Show
   SetBorderColor 210 0 220
   SetBackgroundColor 52 0 55
   SetTextColor 210 0 220
+  MinimapIcon 2 White Triangle
 
 Show
   Class "Map Fragments"
@@ -228,6 +236,7 @@ Show
   SetBorderColor 175 96 37
   SetBackgroundColor 43 24 9
   SetTextColor 175 96 37
+  MinimapIcon 2 White Triangle
 
 Show
   Rarity Rare
@@ -235,6 +244,7 @@ Show
   SetBorderColor 255 255 119
   SetBackgroundColor 63 63 29
   SetTextColor 255 255 119
+  MinimapIcon 2 White Triangle
 
 Show
   Rarity Magic
@@ -242,6 +252,7 @@ Show
   SetBorderColor 136 136 255
   SetBackgroundColor 34 34 63
   SetTextColor 136 136 255
+  MinimapIcon 2 White Triangle
 
 Show
   Rarity Normal
@@ -249,6 +260,7 @@ Show
   SetBorderColor 200 200 200
   SetBackgroundColor 50 50 50
   SetTextColor 200 200 200
+  MinimapIcon 2 White Triangle
 
 #########
 # QUEST #
@@ -261,6 +273,7 @@ Show
   SetBorderColor 74 230 58
   SetBackgroundColor 18 57 14
   SetTextColor 74 230 58
+  PlayEffect Green
 
 Show
   Class "Pantheon Soul" Piece
@@ -269,10 +282,19 @@ Show
   SetBorderColor 74 230 58
   SetBackgroundColor 18 57 14
   SetTextColor 74 230 58
+  PlayEffect Green
 
 #########
 # FLASK #
 #########
+
+Show
+  Rarity Normal
+  Quality >= 5
+  Class Flask
+  SetBorderColor 200 200 200
+  SetBackgroundColor 50 50 50
+  SetTextColor 200 200 200
 
 Show
   Rarity Unique
@@ -313,6 +335,8 @@ Show
   SetBorderColor 14 186 255
   SetBackgroundColor 3 46 63
   SetTextColor 14 186 255
+  PlayEffect Blue
+  MinimapIcon 2 Blue Circle
 
 Show
   Class Currency
@@ -322,6 +346,8 @@ Show
   SetBorderColor 14 186 255
   SetBackgroundColor 3 46 63
   SetTextColor 14 186 255
+  PlayEffect Blue
+  MinimapIcon 2 Blue Circle
 
 ########
 # GEMS #
@@ -331,15 +357,16 @@ Show
   Class Gem
   BaseType Portal Empower Enlighten Enhance "Detonate Mines" "Item Quantity" "Added Chaos Damage" Vaal "Vaal Breach"
   SetFontSize 45
-  PlayAlertSound 13 300
+  CustomAlertSound "gem.wav"
   SetBorderColor 27 162 155
   SetBackgroundColor 6 40 38
   SetTextColor 27 162 155
 
 Show
   Class Gem
-  Quality >= 5
+  Quality >= 1
   SetFontSize 45
+  CustomAlertSound "gem.wav"
   SetBorderColor 27 162 155
   SetBackgroundColor 6 40 38
   SetTextColor 27 162 155
@@ -421,12 +448,26 @@ Show
   SetTextColor 128 128 128
 
 Show
-  BaseType Amulet Ring
+  Class Amulet
   Rarity Rare
+  ItemLevel >= 60
   SetFontSize 45
   SetBorderColor 255 255 119
   SetBackgroundColor 63 63 29
   SetTextColor 255 255 119
+  CustomAlertSound "amulet.wav"
+  MinimapIcon 2 Yellow Star
+
+Show
+  Class Ring
+  Rarity Rare
+  ItemLevel >= 60
+  SetFontSize 45
+  SetBorderColor 255 255 119
+  SetBackgroundColor 63 63 29
+  SetTextColor 255 255 119
+  CustomAlertSound "ring.wav"
+  MinimapIcon 2 Yellow Star
 
 Show
   Rarity Unique
@@ -470,14 +511,14 @@ Show
   SetBackgroundColor 63 63 29
   SetTextColor 255 255 119
 
-Show
+Hide
   Rarity Magic
   Class Claws Daggers Wands "One Hand" "Two Hand" Bows Staves Quivers Belts Gloves Boots "Body Armours" Helmets Shields Sceptres Amulet Ring Jewel
   SetBorderColor 136 136 255
   SetBackgroundColor 34 34 63
   SetTextColor 136 136 255
 
-Show
+Hide
   Rarity Normal
   Class Claws Daggers Wands "One Hand" "Two Hand" Bows Staves Quivers Belts Gloves Boots "Body Armours" Helmets Shields Sceptres Amulet Ring Jewel
   SetBorderColor 200 200 200
