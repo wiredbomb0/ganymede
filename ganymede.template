@@ -5,7 +5,15 @@
 ################################
 
 # Characters used for Stash Tabs
-# ≡ Φ Θ ☼ ×
+#   Currency in Orange ≡
+#   Divination in Light Blue Φ 
+#   Maps in [COLOR] Θ 
+#   Essence in Dark Blue ☼ 
+#   Fragments in Pink ×
+#   Unique Tab in Dark Brown U
+#   Leveling in Yellow L
+#   Chaos Recipe in Black
+#   
 # Θ¿®♪♫♫☼◄►☼©¢
 
 # INFO #
@@ -15,6 +23,23 @@
 #
 # INCLUDE PANTHEON SOUL
 
+#####################
+# LEAGUE (BETRAYAL) #
+#####################
+
+Show
+  Class "Map Fragments"
+  BaseType "Scarab"
+  PlayAlertSound 5 300
+  ${COLOR_LEAGUE_SPECIFIC}
+  PlayEffect Red
+
+Show
+  HasExplicitMod "Veil"
+  PlayAlertSound 5 300
+  ${COLOR_LEAGUE_SPECIFIC}
+  PlayEffect Red
+  
 ##################
 # LEAGUE (DELVE) #
 ##################
@@ -183,36 +208,42 @@ Show
   PlayAlertSound 13 300
   ${COLOR_MAPS}
   MinimapIcon 2 White Triangle
+  PlayEffect White
 
 Show
   Class "Map Fragments"
   SetFontSize 45
   PlayAlertSound 13 300
   ${COLOR_MAPS}
+  PlayEffect White
 
 Show
   Rarity Unique
   Class Maps
   ${COLOR_EQUIPMENT_UNIQUE}
   MinimapIcon 2 White Triangle
+  PlayEffect White
 
 Show
   Rarity Rare
   Class Maps
   ${COLOR_EQUIPMENT_RARE}
   MinimapIcon 2 White Triangle
+  PlayEffect White Temp
 
 Show
   Rarity Magic
   Class Maps
   ${COLOR_EQUIPMENT_MAGIC}
   MinimapIcon 2 White Triangle
+  PlayEffect White Temp
 
 Show
   Rarity Normal
   Class Maps
   ${COLOR_EQUIPMENT_NORMAL}
   MinimapIcon 2 White Triangle
+  PlayEffect White Temp
 
 #########
 # QUEST #
@@ -247,17 +278,17 @@ Show
   Class Flask
   ${COLOR_EQUIPMENT_UNIQUE}
 
-Show
+Hide
   Rarity Rare
   Class Flask
   ${COLOR_EQUIPMENT_RARE}
 
-Show
+Hide
   Rarity Magic
   Class Flask
   ${COLOR_EQUIPMENT_MAGIC}
 
-Show
+Hide
   Rarity Normal
   Class Flask
   ${COLOR_EQUIPMENT_NORMAL}

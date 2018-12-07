@@ -1,11 +1,19 @@
 ﻿################################
 # Ganymede                     #
-# Version 0.0.2-pre            #
-# Built at 2018-09-04 09:18:33 #
+# Version 0.0.3-pre            #
+# Built at 2018-12-08 06:33:14 #
 ################################
 
 # Characters used for Stash Tabs
-# ≡ Φ Θ ☼ ×
+#   Currency in Orange ≡
+#   Divination in Light Blue Φ 
+#   Maps in [COLOR] Θ 
+#   Essence in Dark Blue ☼ 
+#   Fragments in Pink ×
+#   Unique Tab in Dark Brown U
+#   Leveling in Yellow L
+#   Chaos Recipe in Black
+#   
 # Θ¿®♪♫♫☼◄►☼©¢
 
 # INFO #
@@ -15,6 +23,27 @@
 #
 # INCLUDE PANTHEON SOUL
 
+#####################
+# LEAGUE (BETRAYAL) #
+#####################
+
+Show
+  Class "Map Fragments"
+  BaseType "Scarab"
+  PlayAlertSound 5 300
+  SetBorderColor 255 165 0
+  SetBackgroundColor 63 41 0
+  SetTextColor 255 165 0
+  PlayEffect Red
+
+Show
+  HasExplicitMod "Veil"
+  PlayAlertSound 5 300
+  SetBorderColor 255 165 0
+  SetBackgroundColor 63 41 0
+  SetTextColor 255 165 0
+  PlayEffect Red
+  
 ##################
 # LEAGUE (DELVE) #
 ##################
@@ -221,6 +250,7 @@ Show
   SetBackgroundColor 52 0 55
   SetTextColor 210 0 220
   MinimapIcon 2 White Triangle
+  PlayEffect White
 
 Show
   Class "Map Fragments"
@@ -229,6 +259,7 @@ Show
   SetBorderColor 210 0 220
   SetBackgroundColor 52 0 55
   SetTextColor 210 0 220
+  PlayEffect White
 
 Show
   Rarity Unique
@@ -237,6 +268,7 @@ Show
   SetBackgroundColor 43 24 9
   SetTextColor 175 96 37
   MinimapIcon 2 White Triangle
+  PlayEffect White
 
 Show
   Rarity Rare
@@ -245,6 +277,7 @@ Show
   SetBackgroundColor 63 63 29
   SetTextColor 255 255 119
   MinimapIcon 2 White Triangle
+  PlayEffect White Temp
 
 Show
   Rarity Magic
@@ -253,6 +286,7 @@ Show
   SetBackgroundColor 34 34 63
   SetTextColor 136 136 255
   MinimapIcon 2 White Triangle
+  PlayEffect White Temp
 
 Show
   Rarity Normal
@@ -261,6 +295,7 @@ Show
   SetBackgroundColor 50 50 50
   SetTextColor 200 200 200
   MinimapIcon 2 White Triangle
+  PlayEffect White Temp
 
 #########
 # QUEST #
@@ -303,21 +338,21 @@ Show
   SetBackgroundColor 43 24 9
   SetTextColor 175 96 37
 
-Show
+Hide
   Rarity Rare
   Class Flask
   SetBorderColor 255 255 119
   SetBackgroundColor 63 63 29
   SetTextColor 255 255 119
 
-Show
+Hide
   Rarity Magic
   Class Flask
   SetBorderColor 136 136 255
   SetBackgroundColor 34 34 63
   SetTextColor 136 136 255
 
-Show
+Hide
   Rarity Normal
   Class Flask
   SetBorderColor 200 200 200

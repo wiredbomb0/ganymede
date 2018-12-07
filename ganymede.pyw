@@ -3,6 +3,8 @@ import math
 from datetime import datetime
 from string import Template
 
+BUILD_VERSION = "0.0.3-pre"
+
 def create_color_statements(r, g, b):
   light = "{} {} {}".format(r, g, b)
   dark  = "{} {} {}".format(int(r/4), int(g/4), int(b/4))
@@ -23,7 +25,7 @@ if __name__ == "__main__":
 
   # Perform the magic!
   result = s.substitute({
-    "BUILD_VERSION": "0.0.2-pre",
+    "BUILD_VERSION": BUILD_VERSION,
     "BUILD_DATE": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
 
     "COLOR_EQUIPMENT_NORMAL": create_color_statements(200, 200, 200),
