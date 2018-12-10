@@ -70,6 +70,7 @@ Show
   PlayAlertSound 5 300
   ${COLOR_LEAGUE_SPECIFIC}
   PlayEffect Red
+  SetFontSize 45
 
 Show
   Class "Incursion Item"
@@ -145,6 +146,7 @@ Show
   Class Currency
   BaseType "Silver Coin"
   ${COLOR_CURRENCY}
+  SetFontSize 45
 
 #####################
 # LEAGUE (PERANDUS) #
