@@ -53,19 +53,35 @@ Show
 
 Show
   Rarity Unique
-  Class "Abyss Jewel" "Stygian Vise"
+  Class "Abyss Jewel"
+
+Show
+  Rarity Unique
+  BaseType "Stygian Vise"
 
 Show
   Rarity Rare
-  Class "Abyss Jewel" "Stygian Vise"
+  Class "Abyss Jewel"
+
+Show
+  Rarity Rare
+  BaseType "Stygian Vise"
 
 Show
   Rarity Magic
-  Class "Abyss Jewel" "Stygian Vise"
+  Class "Abyss Jewel"
+
+Show
+  Rarity Magic
+  BaseType "Stygian Vise"
 
 Show
   Rarity Normal
-  Class "Abyss Jewel" "Stygian Vise"
+  Class "Abyss Jewel"
+
+Show
+  Rarity Normal
+  BaseType "Stygian Vise"
 
 ##
 # Harbinger

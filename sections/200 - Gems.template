@@ -5,6 +5,8 @@
 Show
   Class Gem
   BaseType Portal Empower Enlighten Enhance "Detonate Mines" "Item Quantity" "Added Chaos Damage" Vaal "Vaal Breach"
+  DisableDropSound
+  CustomAlertSound "./audio/gem.wav"
 
 Show
   Class Gem

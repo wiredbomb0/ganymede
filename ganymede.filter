@@ -1,7 +1,7 @@
 ################################
 # Ganymede                     #
 # Version 0.1.0-pre            #
-# Built at 2018-12-11 20:38:48 #
+# Built at 2018-12-11 21:22:01 #
 ################################
 
 ##
@@ -59,19 +59,35 @@ Show
 
 Show
   Rarity Unique
-  Class "Abyss Jewel" "Stygian Vise"
+  Class "Abyss Jewel"
+
+Show
+  Rarity Unique
+  BaseType "Stygian Vise"
 
 Show
   Rarity Rare
-  Class "Abyss Jewel" "Stygian Vise"
+  Class "Abyss Jewel"
+
+Show
+  Rarity Rare
+  BaseType "Stygian Vise"
 
 Show
   Rarity Magic
-  Class "Abyss Jewel" "Stygian Vise"
+  Class "Abyss Jewel"
+
+Show
+  Rarity Magic
+  BaseType "Stygian Vise"
 
 Show
   Rarity Normal
-  Class "Abyss Jewel" "Stygian Vise"
+  Class "Abyss Jewel"
+
+Show
+  Rarity Normal
+  BaseType "Stygian Vise"
 
 ##
 # Harbinger
@@ -152,7 +168,7 @@ Hide
   BaseType "Scroll of Wisdom" "Portal Scroll"
 
 ##
-# Quest
+# Rare Items
 ##
 
 Show
@@ -248,12 +264,14 @@ Hide
   Class Claws Daggers Wands "One Hand" "Two Hand" Bows Staves Quivers Belts Gloves Boots "Body Armours" Helmets Shields Sceptres Amulet Ring Jewel
 
 ##
-# Quest
+# Gems
 ##
 
 Show
   Class Gem
   BaseType Portal Empower Enlighten Enhance "Detonate Mines" "Item Quantity" "Added Chaos Damage" Vaal "Vaal Breach"
+  DisableDropSound
+  CustomAlertSound "./audio/gem.wav"
 
 Show
   Class Gem
@@ -305,7 +323,7 @@ Hide
   Class Flask
 
 ##
-# Flasks
+# Maps
 ##
 
 Show

@@ -54,5 +54,11 @@ if __name__ == "__main__":
     _f.write(complete_text)
 
   # Copy all required files  
-  path_poe = os.path.expanduser('~\\My Documents\\My Games\\Path of Exile\\')
-  shutil.copy("ganymede.filter", path_poe)  
+  path_poe = os.path.expanduser("~\\My Documents\\My Games\\Path of Exile\\")
+  path_audio = os.path.expanduser("~\\My Documents\\My Games\\Path of Exile\\audio")
+  if not os.path.exists(path_audio):
+    os.makedirs(path_audio)
+
+  shutil.copy("ganymede.filter", path_poe)
+  for file in os.listdir("./audio"):
+    shutil.copy(os.path.join("./audio", file), path_audio)
