@@ -1,0 +1,28 @@
+##
+# Equipment
+##
+
+Show
+  Sockets 6
+
+Show
+  LinkedSockets 5
+
+Show
+  BaseType "The Shaper's Key"
+
+Show
+  ShaperItem True
+
+Show
+  ElderItem True
+
+Show
+  SocketGroup RGB
+  Width <= 2
+  Height <= 2
+
+Show
+  SocketGroup RGB
+  Width <= 1
+  Height <= 3

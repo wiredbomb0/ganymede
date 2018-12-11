@@ -1,0 +1,8 @@
+##
+# Perandus
+##
+
+Show
+	Class Currency
+  BaseType "Perandus Coin"
+	

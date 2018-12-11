@@ -1,0 +1,28 @@
+##
+# Currency
+##
+
+Show
+  Class Currency
+  BaseType "Mirror of Kalandra" "Exalted Orb" "Mirror Shard" "Eternal Orb" "Albino Rhoa Feather" "Divine Orb" "Orb of Annulment" "Harbinger's Orb" "Ancient Orb"
+
+Show
+  Class Currency
+  BaseType "Regal Orb" "Orb of Regret" "Chaos Orb" "Gemcutter's Prism" "Stacked Deck" "Apprentice Cartographer's Sextant" "Blessed Orb" "Orb of Fusing" "Orb of Alchemy" "Cartographer's Chisel" "Engineer's Orb" "Orb of Horizons" "Orb of Binding" "Bestiary Orb" "Orb of Scouring" "Vaal Orb"
+
+Show
+	Class Currency
+	BaseType "Silver Coin" "Orb of Transmutation" "Blacksmith's Whetstone" "Alchemy Shard" "Armourer's Scrap" "Orb of Augmentation" "Transmutation Shard" "Alteration Shard" "Orb of Chance" "Orb of Alteration" "Chromatic Orb" "Jeweller's Orb" "Glassblower's Bauble"
+
+Show
+	StackSize > 1
+	Class Currency
+	BaseType "Scroll of Wisdom" "Portal Scroll"
+
+Hide
+  Class Currency
+  BaseType "Portal Scroll"
+
+Hide
+	Class Currency
+	BaseType "Scroll of Wisdom"

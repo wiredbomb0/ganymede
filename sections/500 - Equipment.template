@@ -1,0 +1,32 @@
+##
+# Equipment
+##
+
+Show
+  Sockets 6
+
+Show
+  ShaperItem True
+
+Show
+  ElderItem True
+
+# Width < 4
+# Height < 4
+
+# 2x2 = Helmet/Gloves (OKAY)
+# 1x3 = Daggers/Swords (OKAY)
+# 2x3 = Sword (OKAYISH)
+# 2x4 = Two-Handed Swords (BAD)
+
+Show
+  SocketGroup RGB
+  Width <= 2
+  Height <= 2
+  ${COLOR_EQUIPMENT_CHROMATIC}
+
+Show
+  SocketGroup RGB
+  Width <= 1
+  Height <= 3
+  ${COLOR_EQUIPMENT_CHROMATIC}

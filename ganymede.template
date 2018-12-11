@@ -195,7 +195,7 @@ Show
   BaseType "Orb of Chance" "Orb of Alteration" "Chromatic Orb" "Jeweller's Orb" "Glassblower's Bauble" "Orb of Transmutation" "Blacksmith's Whetstone" "Alchemy Shard" "Armourer's Scrap" "Orb of Augmentation" "Transmutation Shard" "Alteration Shard"
   ${COLOR_CURRENCY}
 
-Show
+Hide
   Class Currency
   BaseType "Scroll of Wisdom" "Portal Scroll"
   ${COLOR_CURRENCY}
@@ -270,7 +270,6 @@ Show
 #########
 
 Show
-  Rarity Normal
   Quality >= 5
   Class Flask
   ${COLOR_EQUIPMENT_NORMAL}

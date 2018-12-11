@@ -1,0 +1,30 @@
+##
+# Flasks
+##
+
+Show
+  Rarity Unique
+  Quality >= 5
+  Class Flask
+
+Show
+  Rarity Magic
+  Quality >= 5
+  Class Flask
+
+Show
+  Rarity Normal
+  Quality >= 5
+  Class Flask
+
+Show
+  Rarity Unique
+  Class Flask
+
+Hide
+  Rarity Magic
+  Class Flask
+
+Hide
+  Rarity Normal
+  Class Flask

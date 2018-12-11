@@ -1,0 +1,126 @@
+##
+# League Specific
+##
+
+##
+# Betrayal
+##
+
+Show
+  Class "Map Fragments"
+  BaseType "Scarab"
+
+Show
+  HasExplicitMod "Veil"
+  
+##
+# Delve
+##
+
+Show
+  BaseType "Timeworn Reliquary Key"
+
+Show
+  BaseType Fossil Resonator
+  Class "Currency"
+
+Show
+  Class "Delve Socketable Currency"
+
+##
+# Incursion
+##
+
+Show
+  BaseType "Flashpowder Keg" "Stone of Passage" "Vial of"
+  PlayAlertSound 5 300
+
+# IS QUEST ITEM BELOW
+Show
+  Class "Incursion Item"
+
+
+##
+# Bestiary
+##
+
+Show
+  BaseType "Bestiary Orb" "Rope Net" "Iron Net" "Steel Net" "Thaumaturgical Net" "Necromancy Net"
+
+##
+# Abyss
+##
+
+Show
+  Rarity Unique
+  Class "Abyss Jewel" "Stygian Vise"
+
+Show
+  Rarity Rare
+  Class "Abyss Jewel" "Stygian Vise"
+
+Show
+  Rarity Magic
+  Class "Abyss Jewel" "Stygian Vise"
+
+Show
+  Rarity Normal
+  Class "Abyss Jewel" "Stygian Vise"
+
+##
+# Harbinger
+##
+
+##
+# Legacy
+##
+
+Show
+  BaseType "Ancient Reliquary Key"
+
+##
+# Breach
+##
+
+Show
+  Class Currency
+  BaseType Splinter Blessing
+
+Show
+  BaseType Breachstone
+  SetFontSize 45
+
+##
+# Essence
+##
+
+Show
+  Class Currency
+  BaseType Essence "Remnant of Corruption"
+
+##
+# Prophecy
+##
+
+Show
+  Class Currency
+  BaseType "Silver Coin"
+
+Show
+  Class Currency
+  BaseType Prophecy
+
+##
+# Perandus
+##
+
+Show
+  Class Currency
+  BaseType "Perandus Coin"
+
+##
+# Talisman
+##
+
+Show
+  BaseType Talisman

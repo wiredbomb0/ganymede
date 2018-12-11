@@ -1,0 +1,8 @@
+##
+# Remaining
+##
+
+Show
+  PlayAlertSound 3 300
+  SetFontSize 25
+  ${COLOR_REMAINING}

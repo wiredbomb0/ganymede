@@ -1,0 +1,9 @@
+##
+# Quest
+##
+
+Show
+	Class Quest
+
+Show
+  Class "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item"

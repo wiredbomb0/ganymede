@@ -1,0 +1,25 @@
+##
+# Quest
+##
+
+Show
+	Class "Incursion Item"
+  ${COLOR_QUEST_ITEM}
+  SetFontSize 45
+  PlayAlertSound 10 300
+  PlayEffect Green
+
+Show
+	Class Quest
+	BaseType "Shaper's Orb" "Elder's Orb"
+  ${COLOR_QUEST_ITEM}
+  SetFontSize 45
+  PlayAlertSound 10 300
+  PlayEffect Green
+
+Show
+	Class Quest
+  ${COLOR_QUEST_ITEM}
+  SetFontSize 45
+  PlayAlertSound 10 300
+  PlayEffect Green

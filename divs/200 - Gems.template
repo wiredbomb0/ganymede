@@ -1,0 +1,14 @@
+##
+# Gems
+##
+
+Show
+  Class Gem
+  BaseType Portal Empower Enlighten Enhance "Detonate Mines" "Item Quantity" "Added Chaos Damage" Vaal "Vaal Breach"
+
+Show
+  Class Gem
+  Quality >= 1
+
+Show
+  Class Gem

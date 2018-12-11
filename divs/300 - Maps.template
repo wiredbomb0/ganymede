@@ -1,0 +1,25 @@
+##
+# Maps
+##
+
+Show
+  BaseType "Divine Vessel" "Offering to the Goddess"
+
+Show
+  Class "Map Fragments"
+
+Show
+  Rarity Unique
+  Class Maps
+
+Show
+  Rarity Rare
+  Class Maps
+
+Show
+  Rarity Magic
+  Class Maps
+
+Show
+  Rarity Normal
+  Class Maps

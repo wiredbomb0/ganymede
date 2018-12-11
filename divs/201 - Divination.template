@@ -1,0 +1,10 @@
+##
+# Divination
+##
+
+Show
+  Class Currency
+  BaseType "Stacked Deck"
+
+Show
+  Class "Divination Card"
