@@ -10,9 +10,9 @@ BUILD_VERSION = "0.1.0-pre"
 
 if __name__ == "__main__":
   file_list = []
-  for file in os.listdir("./divs"):
+  for file in os.listdir("./sections"):
     if file.endswith(".template"):
-      file_list.append(os.path.join("./divs", file))
+      file_list.append(os.path.join("./sections", file))
 
   file_list = sorted(file_list)
 
