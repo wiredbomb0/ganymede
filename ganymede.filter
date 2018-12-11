@@ -1,7 +1,7 @@
 ################################
 # Ganymede                     #
 # Version 0.1.0-pre            #
-# Built at 2018-12-11 21:22:01 #
+# Built at 2018-12-11 22:00:55 #
 ################################
 
 ##
@@ -44,7 +44,13 @@ Show
 # IS QUEST ITEM BELOW
 Show
   Class "Incursion Item"
-
+  SetBorderColor 74 230 58
+  SetTextColor 74 230 58
+  SetBackgroundColor 18 57 14
+  SetFontSize 42
+  CustomAlertSound "./audio/token.wav"
+  MinimapIcon 0 Green Diamond
+  PlayEffect Green
 
 ##
 # Bestiary
@@ -154,18 +160,38 @@ Show
 Show
   Class Currency
   BaseType "Mirror of Kalandra" "Exalted Orb" "Divine Orb" "Mirror Shard" "Eternal Orb" "Albino Rhoa Feather" "Orb of Annulment"
+  SetBorderColor 170 158 130
+  SetTextColor 170 158 130
+  SetBackgroundColor 42 39 32
+  SetFontSize 42
+  PlayAlertSound 8 300
+  MinimapIcon 0 Red Star
+  PlayEffect Red
 
 Show
   Class Currency
   BaseType "Master Cartographer's Sextant" "Journeyman Cartographer's Sextant" "Harbinger's Orb" "Ancient Orb" "Regal Orb" "Orb of Regret" "Chaos Orb" "Gemcutter's Prism" "Apprentice Cartographer's Sextant" "Stacked Deck" "Blessed Orb" "Orb of Fusing" "Orb of Alchemy" "Cartographer's Chisel" "Engineer's Orb" "Orb of Horizons" "Orb of Binding" "Bestiary Orb" "Orb of Scouring" "Vaal Orb" "Annulment Shard" "Harbinger's Shard" "Ancient Shard" "Exalted Shard" "Horizon Shard" "Engineer's Shard" "Binding Shard" "Regal Shard" "Chaos Shard"
+  SetBorderColor 170 158 130
+  SetTextColor 170 158 130
+  SetBackgroundColor 42 39 32
+  SetFontSize 42
+  PlayAlertSound 9 300
+  MinimapIcon 1 Red Star
+  PlayEffect Red Temp
 
 Show
   Class Currency
   BaseType "Orb of Chance" "Orb of Alteration" "Chromatic Orb" "Jeweller's Orb" "Glassblower's Bauble" "Orb of Transmutation" "Blacksmith's Whetstone" "Alchemy Shard" "Armourer's Scrap" "Orb of Augmentation" "Transmutation Shard" "Alteration Shard"
+  SetBorderColor 170 158 130
+  SetTextColor 170 158 130
+  SetBackgroundColor 42 39 32
 
 Hide
   Class Currency
   BaseType "Scroll of Wisdom" "Portal Scroll"
+  SetBorderColor 170 158 130
+  SetTextColor 170 158 130
+  SetBackgroundColor 42 39 32
 
 ##
 # Rare Items
@@ -173,6 +199,10 @@ Hide
 
 Show
   BaseType "Fishing Rod"
+  SetFontSize 42
+  PlayAlertSound 8 300
+  MinimapIcon 0 Red Star
+  PlayEffect Red
 
 ##
 # Quest
@@ -180,9 +210,23 @@ Show
 
 Show
 	Class Quest
+  SetBorderColor 74 230 58
+  SetTextColor 74 230 58
+  SetBackgroundColor 18 57 14
+  SetFontSize 42
+  CustomAlertSound "./audio/token.wav"
+  MinimapIcon 0 Green Diamond
+  PlayEffect Green
 
 Show
   Class "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item"
+  SetBorderColor 74 230 58
+  SetTextColor 74 230 58
+  SetBackgroundColor 18 57 14
+  SetFontSize 42
+  CustomAlertSound "./audio/token.wav"
+  MinimapIcon 0 Green Diamond
+  PlayEffect Green
 
 ##
 # Equipment
@@ -220,28 +264,52 @@ Show
 Show
   Rarity Unique
   BaseType "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
+  SetBorderColor 175 96 37
+  SetTextColor 175 96 37
+  SetBackgroundColor 43 24 9
 
 Show
   Rarity Rare
   BaseType "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
+  SetBorderColor 255 255 119
+  SetTextColor 255 255 119
+  SetBackgroundColor 63 63 29
 
 Show
   Rarity Magic
   BaseType "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
+  SetBorderColor 136 136 255
+  SetTextColor 136 136 255
+  SetBackgroundColor 34 34 63
 
 Show
   Rarity Normal
   BaseType "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
+  SetBorderColor 200 200 200
+  SetTextColor 200 200 200
+  SetBackgroundColor 50 50 50
 
 Show
   Class Amulet
   Rarity Rare
   ItemLevel >= 60
+  SetBorderColor 255 255 119
+  SetTextColor 255 255 119
+  SetBackgroundColor 63 63 29
+  SetFontSize 42
+  CustomAlertSound "./audio/amulet.wav"
+  MinimapIcon 2 Yellow Star
 
 Show
   Class Ring
   Rarity Rare
   ItemLevel >= 60
+  SetBorderColor 255 255 119
+  SetTextColor 255 255 119
+  SetBackgroundColor 63 63 29
+  SetFontSize 42
+  CustomAlertSound "./audio/ring.wav"
+  MinimapIcon 2 Yellow Star
 
 ##
 # Equipment
@@ -250,18 +318,30 @@ Show
 Show
   Rarity Unique
   Class Claws Daggers Wands "One Hand" "Two Hand" Bows Staves Quivers Belts Gloves Boots "Body Armours" Helmets Shields Sceptres Amulet Ring Jewel
+  SetBorderColor 175 96 37
+  SetTextColor 175 96 37
+  SetBackgroundColor 43 24 9
 
 Show
   Rarity Rare
   Class Claws Daggers Wands "One Hand" "Two Hand" Bows Staves Quivers Belts Gloves Boots "Body Armours" Helmets Shields Sceptres Amulet Ring Jewel
+  SetBorderColor 255 255 119
+  SetTextColor 255 255 119
+  SetBackgroundColor 63 63 29
 
 Hide
   Rarity Magic
   Class Claws Daggers Wands "One Hand" "Two Hand" Bows Staves Quivers Belts Gloves Boots "Body Armours" Helmets Shields Sceptres Amulet Ring Jewel
+  SetBorderColor 136 136 255
+  SetTextColor 136 136 255
+  SetBackgroundColor 34 34 63
 
 Hide
   Rarity Normal
   Class Claws Daggers Wands "One Hand" "Two Hand" Bows Staves Quivers Belts Gloves Boots "Body Armours" Helmets Shields Sceptres Amulet Ring Jewel
+  SetBorderColor 200 200 200
+  SetTextColor 200 200 200
+  SetBackgroundColor 50 50 50
 
 ##
 # Gems
@@ -270,15 +350,27 @@ Hide
 Show
   Class Gem
   BaseType Portal Empower Enlighten Enhance "Detonate Mines" "Item Quantity" "Added Chaos Damage" Vaal "Vaal Breach"
-  DisableDropSound
+  SetBorderColor 27 162 155
+  SetTextColor 27 162 155
+  SetBackgroundColor 6 40 38
+  SetFontSize 42
   CustomAlertSound "./audio/gem.wav"
+  MinimapIcon 2 Green Circle
 
 Show
   Class Gem
   Quality >= 1
+  SetBorderColor 27 162 155
+  SetTextColor 27 162 155
+  SetBackgroundColor 6 40 38
+  CustomAlertSound "./audio/gem.wav"
+  MinimapIcon 2 Green Circle
 
 Show
   Class Gem
+  SetBorderColor 27 162 155
+  SetTextColor 27 162 155
+  SetBackgroundColor 6 40 38
 
 ##
 # Divination
@@ -335,15 +427,35 @@ Show
 Show
   Rarity Unique
   Class Maps
+  SetBorderColor 175 96 37
+  SetTextColor 175 96 37
+  SetBackgroundColor 43 24 9
+  PlayAlertSound 3 300
+  MinimapIcon 0 White Hexagon
 
 Show
   Rarity Rare
   Class Maps
+  SetBorderColor 255 255 119
+  SetTextColor 255 255 119
+  SetBackgroundColor 63 63 29
+  PlayAlertSound 3 300
+  MinimapIcon 1 White Hexagon
 
 Show
   Rarity Magic
   Class Maps
+  SetBorderColor 136 136 255
+  SetTextColor 136 136 255
+  SetBackgroundColor 34 34 63
+  PlayAlertSound 3 300
+  MinimapIcon 1 White Hexagon
 
 Show
   Rarity Normal
   Class Maps
+  SetBorderColor 200 200 200
+  SetTextColor 200 200 200
+  SetBackgroundColor 50 50 50
+  PlayAlertSound 3 300
+  MinimapIcon 1 White Hexagon

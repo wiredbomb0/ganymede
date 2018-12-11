@@ -5,15 +5,19 @@
 Show
   Rarity Unique
   Class Claws Daggers Wands "One Hand" "Two Hand" Bows Staves Quivers Belts Gloves Boots "Body Armours" Helmets Shields Sceptres Amulet Ring Jewel
+  ${COLOR_EQUIPMENT_UNIQUE}
 
 Show
   Rarity Rare
   Class Claws Daggers Wands "One Hand" "Two Hand" Bows Staves Quivers Belts Gloves Boots "Body Armours" Helmets Shields Sceptres Amulet Ring Jewel
+  ${COLOR_EQUIPMENT_RARE}
 
 Hide
   Rarity Magic
   Class Claws Daggers Wands "One Hand" "Two Hand" Bows Staves Quivers Belts Gloves Boots "Body Armours" Helmets Shields Sceptres Amulet Ring Jewel
+  ${COLOR_EQUIPMENT_MAGIC}
 
 Hide
   Rarity Normal
   Class Claws Daggers Wands "One Hand" "Two Hand" Bows Staves Quivers Belts Gloves Boots "Body Armours" Helmets Shields Sceptres Amulet Ring Jewel
+  ${COLOR_EQUIPMENT_NORMAL}

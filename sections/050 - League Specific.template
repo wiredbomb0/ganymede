@@ -38,7 +38,11 @@ Show
 # IS QUEST ITEM BELOW
 Show
   Class "Incursion Item"
-
+  ${COLOR_QUEST_ITEM}
+  SetFontSize 42
+  CustomAlertSound "./audio/token.wav"
+  MinimapIcon 0 Green Diamond
+  PlayEffect Green
 
 ##
 # Bestiary

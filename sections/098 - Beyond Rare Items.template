@@ -4,3 +4,7 @@
 
 Show
   BaseType "Fishing Rod"
+  SetFontSize 42
+  PlayAlertSound 8 300
+  MinimapIcon 0 Red Star
+  PlayEffect Red

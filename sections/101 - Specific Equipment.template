@@ -5,25 +5,37 @@
 Show
   Rarity Unique
   BaseType "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
+  ${COLOR_EQUIPMENT_UNIQUE}
 
 Show
   Rarity Rare
   BaseType "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
+  ${COLOR_EQUIPMENT_RARE}
 
 Show
   Rarity Magic
   BaseType "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
+  ${COLOR_EQUIPMENT_MAGIC}
 
 Show
   Rarity Normal
   BaseType "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
+  ${COLOR_EQUIPMENT_NORMAL}
 
 Show
   Class Amulet
   Rarity Rare
   ItemLevel >= 60
+  ${COLOR_EQUIPMENT_RARE}
+  SetFontSize 42
+  CustomAlertSound "./audio/amulet.wav"
+  MinimapIcon 2 Yellow Star
 
 Show
   Class Ring
   Rarity Rare
   ItemLevel >= 60
+  ${COLOR_EQUIPMENT_RARE}
+  SetFontSize 42
+  CustomAlertSound "./audio/ring.wav"
+  MinimapIcon 2 Yellow Star
