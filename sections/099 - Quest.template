@@ -1,0 +1,19 @@
+##
+# Quest
+##
+
+Show
+	Class Quest
+  ${COLOR_QUEST_ITEM}
+  SetFontSize 42
+  CustomAlertSound "./audio/token.wav"
+  MinimapIcon 0 Green Diamond
+  PlayEffect Green
+
+Show
+  Class "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item"
+  ${COLOR_QUEST_ITEM}
+  SetFontSize 42
+  CustomAlertSound "./audio/token.wav"
+  MinimapIcon 0 Green Diamond
+  PlayEffect Green

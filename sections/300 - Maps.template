@@ -1,0 +1,43 @@
+##
+# Maps
+##
+
+Show
+  BaseType "Divine Vessel" "Offering to the Goddess"
+  ${COLOR_MAPS}
+  CustomAlertSound "./audio/collectable.mp3"
+  MinimapIcon 1 White Hexagon
+
+Show
+  Class "Map Fragments"
+  ${COLOR_MAPS}
+  CustomAlertSound "./audio/collectable.mp3"
+  MinimapIcon 1 White Hexagon
+
+Show
+  Rarity Unique
+  Class Maps
+  ${COLOR_MAPS}
+  CustomAlertSound "./audio/collectable.mp3"
+  MinimapIcon 1 White Hexagon
+
+Show
+  Rarity Rare
+  Class Maps
+  ${COLOR_MAPS}
+  CustomAlertSound "./audio/collectable.mp3"
+  MinimapIcon 1 White Hexagon
+
+Show
+  Rarity Magic
+  Class Maps
+  ${COLOR_MAPS}
+  CustomAlertSound "./audio/collectable.mp3"
+  MinimapIcon 1 White Hexagon
+
+Show
+  Rarity Normal
+  Class Maps
+  ${COLOR_MAPS}
+  CustomAlertSound "./audio/collectable.mp3"
+  MinimapIcon 1 White Hexagon
