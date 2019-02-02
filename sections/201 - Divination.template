@@ -1,10 +1,16 @@
 ##
-# Divination # TODO: FIX
+# Divination
 ##
 
 Show
   Class Currency
   BaseType "Stacked Deck"
+  ${COLOR_DIVINATION_ITEM}
+  CustomAlertSound "./audio/rare.wav"
+  MinimapIcon 2 Blue Circle
 
 Show
   Class "Divination Card"
+  ${COLOR_DIVINATION_ITEM}
+  CustomAlertSound "./audio/rare.wav"
+  MinimapIcon 2 Blue Circle

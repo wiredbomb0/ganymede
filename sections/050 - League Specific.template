@@ -9,9 +9,15 @@
 Show
   Class "Map Fragments"
   BaseType "Scarab"
+  ${COLOR_LEAGUE_SPECIFIC}
+  SetFontSize 45
+  PlayAlertSound 10
 
 Show
   HasExplicitMod "Veil"
+  ${COLOR_LEAGUE_SPECIFIC}
+  SetFontSize 45
+  PlayAlertSound 10
   
 ##
 # Delve
@@ -19,13 +25,22 @@ Show
 
 Show
   BaseType "Timeworn Reliquary Key"
+  ${COLOR_LEAGUE_SPECIFIC}
+  SetFontSize 45
+  PlayAlertSound 10
 
 Show
   BaseType Fossil Resonator
   Class "Currency"
+  ${COLOR_LEAGUE_SPECIFIC}
+  SetFontSize 45
+  PlayAlertSound 10
 
 Show
   Class "Delve Socketable Currency"
+  ${COLOR_LEAGUE_SPECIFIC}
+  SetFontSize 45
+  PlayAlertSound 10
 
 ##
 # Incursion
@@ -33,7 +48,9 @@ Show
 
 Show
   BaseType "Flashpowder Keg" "Stone of Passage" "Vial of"
-  PlayAlertSound 5 300
+  ${COLOR_LEAGUE_SPECIFIC}
+  SetFontSize 45
+  PlayAlertSound 10
 
 # IS QUEST ITEM BELOW
 Show
@@ -58,34 +75,42 @@ Show
 Show
   Rarity Unique
   Class "Abyss Jewel"
+  ${COLOR_EQUIPMENT_UNIQUE}
 
 Show
   Rarity Unique
   BaseType "Stygian Vise"
+  ${COLOR_EQUIPMENT_UNIQUE}
 
 Show
   Rarity Rare
   Class "Abyss Jewel"
+  ${COLOR_EQUIPMENT_RARE}
 
 Show
   Rarity Rare
   BaseType "Stygian Vise"
+  ${COLOR_EQUIPMENT_RARE}
 
 Show
   Rarity Magic
   Class "Abyss Jewel"
+  ${COLOR_EQUIPMENT_MAGIC}
 
 Show
   Rarity Magic
   BaseType "Stygian Vise"
+  ${COLOR_EQUIPMENT_MAGIC}
 
 Show
   Rarity Normal
   Class "Abyss Jewel"
+  ${COLOR_EQUIPMENT_NORMAL}
 
 Show
   Rarity Normal
   BaseType "Stygian Vise"
+  ${COLOR_EQUIPMENT_NORMAL}
 
 ##
 # Harbinger
@@ -97,6 +122,9 @@ Show
 
 Show
   BaseType "Ancient Reliquary Key"
+  ${COLOR_LEAGUE_SPECIFIC}
+  SetFontSize 45
+  PlayAlertSound 10
 
 ##
 # Breach
@@ -105,10 +133,15 @@ Show
 Show
   Class Currency
   BaseType Splinter Blessing
+  ${COLOR_LEAGUE_SPECIFIC}
+  SetFontSize 45
+  PlayAlertSound 10
 
 Show
   BaseType Breachstone
+  ${COLOR_LEAGUE_SPECIFIC}
   SetFontSize 45
+  PlayAlertSound 10
 
 ##
 # Essence
@@ -117,6 +150,9 @@ Show
 Show
   Class Currency
   BaseType Essence "Remnant of Corruption"
+  ${COLOR_LEAGUE_SPECIFIC}
+  SetFontSize 45
+  PlayAlertSound 10
 
 ##
 # Prophecy
@@ -125,10 +161,12 @@ Show
 Show
   Class Currency
   BaseType "Silver Coin"
+  ${COLOR_CURRENCY}
 
 Show
   Class Currency
   BaseType Prophecy
+  ${COLOR_CURRENCY}
 
 ##
 # Perandus
@@ -137,6 +175,7 @@ Show
 Show
   Class Currency
   BaseType "Perandus Coin"
+  ${COLOR_CURRENCY}
 
 ##
 # Talisman

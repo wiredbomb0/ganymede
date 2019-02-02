@@ -1,7 +1,7 @@
 ################################
 # Ganymede                     #
 # Version 0.1.0-pre            #
-# Built at 2018-12-11 22:00:55 #
+# Built at 2019-02-03 08:50:23 #
 ################################
 
 ##
@@ -15,9 +15,19 @@
 Show
   Class "Map Fragments"
   BaseType "Scarab"
+  SetBorderColor 255 165 0
+  SetTextColor 255 165 0
+  SetBackgroundColor 63 41 0
+  SetFontSize 45
+  PlayAlertSound 10
 
 Show
   HasExplicitMod "Veil"
+  SetBorderColor 255 165 0
+  SetTextColor 255 165 0
+  SetBackgroundColor 63 41 0
+  SetFontSize 45
+  PlayAlertSound 10
   
 ##
 # Delve
@@ -25,13 +35,28 @@ Show
 
 Show
   BaseType "Timeworn Reliquary Key"
+  SetBorderColor 255 165 0
+  SetTextColor 255 165 0
+  SetBackgroundColor 63 41 0
+  SetFontSize 45
+  PlayAlertSound 10
 
 Show
   BaseType Fossil Resonator
   Class "Currency"
+  SetBorderColor 255 165 0
+  SetTextColor 255 165 0
+  SetBackgroundColor 63 41 0
+  SetFontSize 45
+  PlayAlertSound 10
 
 Show
   Class "Delve Socketable Currency"
+  SetBorderColor 255 165 0
+  SetTextColor 255 165 0
+  SetBackgroundColor 63 41 0
+  SetFontSize 45
+  PlayAlertSound 10
 
 ##
 # Incursion
@@ -39,7 +64,11 @@ Show
 
 Show
   BaseType "Flashpowder Keg" "Stone of Passage" "Vial of"
-  PlayAlertSound 5 300
+  SetBorderColor 255 165 0
+  SetTextColor 255 165 0
+  SetBackgroundColor 63 41 0
+  SetFontSize 45
+  PlayAlertSound 10
 
 # IS QUEST ITEM BELOW
 Show
@@ -66,34 +95,58 @@ Show
 Show
   Rarity Unique
   Class "Abyss Jewel"
+  SetBorderColor 175 96 37
+  SetTextColor 175 96 37
+  SetBackgroundColor 43 24 9
 
 Show
   Rarity Unique
   BaseType "Stygian Vise"
+  SetBorderColor 175 96 37
+  SetTextColor 175 96 37
+  SetBackgroundColor 43 24 9
 
 Show
   Rarity Rare
   Class "Abyss Jewel"
+  SetBorderColor 255 255 119
+  SetTextColor 255 255 119
+  SetBackgroundColor 63 63 29
 
 Show
   Rarity Rare
   BaseType "Stygian Vise"
+  SetBorderColor 255 255 119
+  SetTextColor 255 255 119
+  SetBackgroundColor 63 63 29
 
 Show
   Rarity Magic
   Class "Abyss Jewel"
+  SetBorderColor 136 136 255
+  SetTextColor 136 136 255
+  SetBackgroundColor 34 34 63
 
 Show
   Rarity Magic
   BaseType "Stygian Vise"
+  SetBorderColor 136 136 255
+  SetTextColor 136 136 255
+  SetBackgroundColor 34 34 63
 
 Show
   Rarity Normal
   Class "Abyss Jewel"
+  SetBorderColor 200 200 200
+  SetTextColor 200 200 200
+  SetBackgroundColor 50 50 50
 
 Show
   Rarity Normal
   BaseType "Stygian Vise"
+  SetBorderColor 200 200 200
+  SetTextColor 200 200 200
+  SetBackgroundColor 50 50 50
 
 ##
 # Harbinger
@@ -105,6 +158,11 @@ Show
 
 Show
   BaseType "Ancient Reliquary Key"
+  SetBorderColor 255 165 0
+  SetTextColor 255 165 0
+  SetBackgroundColor 63 41 0
+  SetFontSize 45
+  PlayAlertSound 10
 
 ##
 # Breach
@@ -113,10 +171,19 @@ Show
 Show
   Class Currency
   BaseType Splinter Blessing
+  SetBorderColor 255 165 0
+  SetTextColor 255 165 0
+  SetBackgroundColor 63 41 0
+  SetFontSize 45
+  PlayAlertSound 10
 
 Show
   BaseType Breachstone
+  SetBorderColor 255 165 0
+  SetTextColor 255 165 0
+  SetBackgroundColor 63 41 0
   SetFontSize 45
+  PlayAlertSound 10
 
 ##
 # Essence
@@ -125,6 +192,11 @@ Show
 Show
   Class Currency
   BaseType Essence "Remnant of Corruption"
+  SetBorderColor 255 165 0
+  SetTextColor 255 165 0
+  SetBackgroundColor 63 41 0
+  SetFontSize 45
+  PlayAlertSound 10
 
 ##
 # Prophecy
@@ -133,10 +205,16 @@ Show
 Show
   Class Currency
   BaseType "Silver Coin"
+  SetBorderColor 170 158 130
+  SetTextColor 170 158 130
+  SetBackgroundColor 42 39 32
 
 Show
   Class Currency
   BaseType Prophecy
+  SetBorderColor 170 158 130
+  SetTextColor 170 158 130
+  SetBackgroundColor 42 39 32
 
 ##
 # Perandus
@@ -145,6 +223,9 @@ Show
 Show
   Class Currency
   BaseType "Perandus Coin"
+  SetBorderColor 170 158 130
+  SetTextColor 170 158 130
+  SetBackgroundColor 42 39 32
 
 ##
 # Talisman
@@ -234,28 +315,63 @@ Show
 
 Show
   Sockets 6
+  SetBorderColor 119 119 255
+  SetTextColor 119 119 255
+  SetBackgroundColor 29 29 63
+  PlayAlertSound 6
 
 Show
   LinkedSockets 5
+  SetBorderColor 119 119 255
+  SetTextColor 119 119 255
+  SetBackgroundColor 29 29 63
+  PlayAlertSound 6
 
 Show
   BaseType "The Shaper's Key"
+  SetBorderColor 128 64 128
+  SetTextColor 128 64 128
+  SetBackgroundColor 32 16 32
+  SetFontSize 45
+  MinimapIcon 0 Brown Circle
 
 Show
   ShaperItem True
+  SetBorderColor 128 64 128
+  SetTextColor 128 64 128
+  SetBackgroundColor 32 16 32
+  SetFontSize 45
+  MinimapIcon 0 Brown Circle
 
 Show
   ElderItem True
+  SetBorderColor 128 64 128
+  SetTextColor 128 64 128
+  SetBackgroundColor 32 16 32
+  SetFontSize 45
+  MinimapIcon 0 Brown Circle
 
 Show
   SocketGroup RGB
   Width <= 2
   Height <= 2
+  SetBorderColor 128 128 128
+  SetTextColor 128 128 128
+  SetBackgroundColor 32 32 32
 
 Show
   SocketGroup RGB
   Width <= 1
   Height <= 3
+  SetBorderColor 128 128 128
+  SetTextColor 128 128 128
+  SetBackgroundColor 32 32 32
+
+Hide
+  SocketGroup RGB
+  SetBorderColor 128 128 128
+  SetTextColor 128 128 128
+  SetBackgroundColor 32 32 32
 
 ##
 # Equipment
@@ -379,9 +495,19 @@ Show
 Show
   Class Currency
   BaseType "Stacked Deck"
+  SetBorderColor 14 186 255
+  SetTextColor 14 186 255
+  SetBackgroundColor 3 46 63
+  CustomAlertSound "./audio/rare.wav"
+  MinimapIcon 2 Blue Circle
 
 Show
   Class "Divination Card"
+  SetBorderColor 14 186 255
+  SetTextColor 14 186 255
+  SetBackgroundColor 3 46 63
+  CustomAlertSound "./audio/rare.wav"
+  MinimapIcon 2 Blue Circle
 
 ##
 # Flasks
@@ -391,28 +517,46 @@ Show
   Rarity Unique
   Quality >= 5
   Class Flask
+  SetBorderColor 175 96 37
+  SetTextColor 175 96 37
+  SetBackgroundColor 43 24 9
 
 Show
   Rarity Magic
   Quality >= 5
   Class Flask
+  SetBorderColor 136 136 255
+  SetTextColor 136 136 255
+  SetBackgroundColor 34 34 63
 
 Show
   Rarity Normal
   Quality >= 5
   Class Flask
+  SetBorderColor 200 200 200
+  SetTextColor 200 200 200
+  SetBackgroundColor 50 50 50
 
 Show
   Rarity Unique
   Class Flask
+  SetBorderColor 175 96 37
+  SetTextColor 175 96 37
+  SetBackgroundColor 43 24 9
 
 Hide
   Rarity Magic
   Class Flask
+  SetBorderColor 136 136 255
+  SetTextColor 136 136 255
+  SetBackgroundColor 34 34 63
 
 Hide
   Rarity Normal
   Class Flask
+  SetBorderColor 200 200 200
+  SetTextColor 200 200 200
+  SetBackgroundColor 50 50 50
 
 ##
 # Maps
@@ -420,42 +564,52 @@ Hide
 
 Show
   BaseType "Divine Vessel" "Offering to the Goddess"
+  SetBorderColor 210 0 220
+  SetTextColor 210 0 220
+  SetBackgroundColor 52 0 55
+  CustomAlertSound "./audio/collectable.mp3"
+  MinimapIcon 1 White Hexagon
 
 Show
   Class "Map Fragments"
+  SetBorderColor 210 0 220
+  SetTextColor 210 0 220
+  SetBackgroundColor 52 0 55
+  CustomAlertSound "./audio/collectable.mp3"
+  MinimapIcon 1 White Hexagon
 
 Show
   Rarity Unique
   Class Maps
-  SetBorderColor 175 96 37
-  SetTextColor 175 96 37
-  SetBackgroundColor 43 24 9
-  PlayAlertSound 3 300
-  MinimapIcon 0 White Hexagon
+  SetBorderColor 210 0 220
+  SetTextColor 210 0 220
+  SetBackgroundColor 52 0 55
+  CustomAlertSound "./audio/collectable.mp3"
+  MinimapIcon 1 White Hexagon
 
 Show
   Rarity Rare
   Class Maps
-  SetBorderColor 255 255 119
-  SetTextColor 255 255 119
-  SetBackgroundColor 63 63 29
-  PlayAlertSound 3 300
+  SetBorderColor 210 0 220
+  SetTextColor 210 0 220
+  SetBackgroundColor 52 0 55
+  CustomAlertSound "./audio/collectable.mp3"
   MinimapIcon 1 White Hexagon
 
 Show
   Rarity Magic
   Class Maps
-  SetBorderColor 136 136 255
-  SetTextColor 136 136 255
-  SetBackgroundColor 34 34 63
-  PlayAlertSound 3 300
+  SetBorderColor 210 0 220
+  SetTextColor 210 0 220
+  SetBackgroundColor 52 0 55
+  CustomAlertSound "./audio/collectable.mp3"
   MinimapIcon 1 White Hexagon
 
 Show
   Rarity Normal
   Class Maps
-  SetBorderColor 200 200 200
-  SetTextColor 200 200 200
-  SetBackgroundColor 50 50 50
-  PlayAlertSound 3 300
+  SetBorderColor 210 0 220
+  SetTextColor 210 0 220
+  SetBackgroundColor 52 0 55
+  CustomAlertSound "./audio/collectable.mp3"
   MinimapIcon 1 White Hexagon

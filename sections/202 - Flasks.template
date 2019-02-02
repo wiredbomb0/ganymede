@@ -1,30 +1,36 @@
 ##
-# Flasks # TODO: FIX
+# Flasks
 ##
 
 Show
   Rarity Unique
   Quality >= 5
   Class Flask
+  ${COLOR_EQUIPMENT_UNIQUE}
 
 Show
   Rarity Magic
   Quality >= 5
   Class Flask
+  ${COLOR_EQUIPMENT_MAGIC}
 
 Show
   Rarity Normal
   Quality >= 5
   Class Flask
+  ${COLOR_EQUIPMENT_NORMAL}
 
 Show
   Rarity Unique
   Class Flask
+  ${COLOR_EQUIPMENT_UNIQUE}
 
 Hide
   Rarity Magic
   Class Flask
+  ${COLOR_EQUIPMENT_MAGIC}
 
 Hide
   Rarity Normal
   Class Flask
+  ${COLOR_EQUIPMENT_NORMAL}

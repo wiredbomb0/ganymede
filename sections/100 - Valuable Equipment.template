@@ -1,28 +1,47 @@
 ##
-# Equipment # TODO: FIX
+# Equipment
 ##
 
 Show
   Sockets 6
+  ${COLOR_EQUIPMENT_VALUABLE}
+  PlayAlertSound 6
 
 Show
   LinkedSockets 5
+  ${COLOR_EQUIPMENT_VALUABLE}
+  PlayAlertSound 6
 
 Show
   BaseType "The Shaper's Key"
+  ${COLOR_EQUIPMENT_SHAPED}
+  SetFontSize 45
+  MinimapIcon 0 Brown Circle
 
 Show
   ShaperItem True
+  ${COLOR_EQUIPMENT_SHAPED}
+  SetFontSize 45
+  MinimapIcon 0 Brown Circle
 
 Show
   ElderItem True
+  ${COLOR_EQUIPMENT_SHAPED}
+  SetFontSize 45
+  MinimapIcon 0 Brown Circle
 
 Show
   SocketGroup RGB
   Width <= 2
   Height <= 2
+  ${COLOR_EQUIPMENT_CHROMATIC}
 
 Show
   SocketGroup RGB
   Width <= 1
   Height <= 3
+  ${COLOR_EQUIPMENT_CHROMATIC}
+
+Hide
+  SocketGroup RGB
+  ${COLOR_EQUIPMENT_CHROMATIC}
