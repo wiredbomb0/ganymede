@@ -1,7 +1,7 @@
 ################################
 # Ganymede                     #
 # Version 0.1.0-pre            #
-# Built at 2019-02-03 08:50:23 #
+# Built at 2019-03-03 19:36:18 #
 ################################
 
 ##
@@ -318,21 +318,26 @@ Show
   SetBorderColor 119 119 255
   SetTextColor 119 119 255
   SetBackgroundColor 29 29 63
+  SetFontSize 42
   PlayAlertSound 6
+  MinimapIcon 0 Brown Circle
 
 Show
   LinkedSockets 5
   SetBorderColor 119 119 255
   SetTextColor 119 119 255
   SetBackgroundColor 29 29 63
+  SetFontSize 42
   PlayAlertSound 6
+  MinimapIcon 0 Brown Circle
 
 Show
   BaseType "The Shaper's Key"
   SetBorderColor 128 64 128
   SetTextColor 128 64 128
   SetBackgroundColor 32 16 32
-  SetFontSize 45
+  SetFontSize 42
+  PlayAlertSound 6
   MinimapIcon 0 Brown Circle
 
 Show
@@ -340,7 +345,8 @@ Show
   SetBorderColor 128 64 128
   SetTextColor 128 64 128
   SetBackgroundColor 32 16 32
-  SetFontSize 45
+  SetFontSize 42
+  PlayAlertSound 6
   MinimapIcon 0 Brown Circle
 
 Show
@@ -348,7 +354,8 @@ Show
   SetBorderColor 128 64 128
   SetTextColor 128 64 128
   SetBackgroundColor 32 16 32
-  SetFontSize 45
+  SetFontSize 42
+  PlayAlertSound 6
   MinimapIcon 0 Brown Circle
 
 Show

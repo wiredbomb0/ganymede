@@ -5,29 +5,36 @@
 Show
   Sockets 6
   ${COLOR_EQUIPMENT_VALUABLE}
+  SetFontSize 42
   PlayAlertSound 6
+  MinimapIcon 0 Brown Circle
 
 Show
   LinkedSockets 5
   ${COLOR_EQUIPMENT_VALUABLE}
+  SetFontSize 42
   PlayAlertSound 6
+  MinimapIcon 0 Brown Circle
 
 Show
   BaseType "The Shaper's Key"
   ${COLOR_EQUIPMENT_SHAPED}
-  SetFontSize 45
+  SetFontSize 42
+  PlayAlertSound 6
   MinimapIcon 0 Brown Circle
 
 Show
   ShaperItem True
   ${COLOR_EQUIPMENT_SHAPED}
-  SetFontSize 45
+  SetFontSize 42
+  PlayAlertSound 6
   MinimapIcon 0 Brown Circle
 
 Show
   ElderItem True
   ${COLOR_EQUIPMENT_SHAPED}
-  SetFontSize 45
+  SetFontSize 42
+  PlayAlertSound 6
   MinimapIcon 0 Brown Circle
 
 Show
