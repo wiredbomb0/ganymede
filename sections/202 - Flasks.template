@@ -25,6 +25,16 @@ Show
   Class Flask
   ${COLOR_EQUIPMENT_UNIQUE}
 
+Show
+  Rarity Magic
+  Class "Utility Flasks"
+  ${COLOR_EQUIPMENT_MAGIC}
+
+Show
+  Rarity Normal
+  Class "Utility Flasks"
+  ${COLOR_EQUIPMENT_NORMAL}
+
 Hide
   Rarity Magic
   Class Flask
