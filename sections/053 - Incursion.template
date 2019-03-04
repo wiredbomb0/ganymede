@@ -1,0 +1,23 @@
+##
+# Incursion
+##
+
+Show
+  BaseType "Flashpowder Keg" "Stone of Passage" "Vial of"
+  ${COLOR_LEAGUE_SPECIFIC}
+  SetFontSize 45
+  PlayAlertSound 10
+
+Show
+  HasExplicitMod "Tacati" "Citaqualotl" "Matatl" "Topotante" "Xopec" "Guatelitzi" "Puhuarte" "Brinerot" "Mutewind" "Redblade" "Betrayer's" "Deceiver's" "Turncoat's"
+  ${COLOR_LEAGUE_SPECIFIC}
+  SetFontSize 45
+  PlayAlertSound 10
+
+Show
+  Class "Incursion Item"
+  ${COLOR_QUEST_ITEM}
+  SetFontSize 42
+  CustomAlertSound "./audio/token.wav"
+  MinimapIcon 0 Green Diamond
+  PlayEffect Green

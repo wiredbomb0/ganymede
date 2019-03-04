@@ -1,23 +1,6 @@
 ##
 # League Specific
 ##
-
-##
-# Betrayal
-##
-
-Show
-  Class "Map Fragments"
-  BaseType "Scarab"
-  ${COLOR_LEAGUE_SPECIFIC}
-  SetFontSize 45
-  PlayAlertSound 10
-
-Show
-  HasExplicitMod "Veil"
-  ${COLOR_LEAGUE_SPECIFIC}
-  SetFontSize 45
-  PlayAlertSound 10
   
 ##
 # Delve
@@ -41,32 +24,6 @@ Show
   ${COLOR_LEAGUE_SPECIFIC}
   SetFontSize 45
   PlayAlertSound 10
-
-##
-# Incursion
-##
-
-Show
-  BaseType "Flashpowder Keg" "Stone of Passage" "Vial of"
-  ${COLOR_LEAGUE_SPECIFIC}
-  SetFontSize 45
-  PlayAlertSound 10
-
-# IS QUEST ITEM BELOW
-Show
-  Class "Incursion Item"
-  ${COLOR_QUEST_ITEM}
-  SetFontSize 42
-  CustomAlertSound "./audio/token.wav"
-  MinimapIcon 0 Green Diamond
-  PlayEffect Green
-
-##
-# Bestiary
-##
-
-Show
-  BaseType "Bestiary Orb" "Rope Net" "Iron Net" "Steel Net" "Thaumaturgical Net" "Necromancy Net"
 
 ##
 # Abyss
@@ -176,10 +133,3 @@ Show
   Class Currency
   BaseType "Perandus Coin"
   ${COLOR_CURRENCY}
-
-##
-# Talisman
-##
-
-Show
-  BaseType Talisman

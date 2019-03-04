@@ -1,0 +1,10 @@
+##
+# Betrayal
+##
+
+Show
+  HasExplicitMod "Veil"
+  ${COLOR_LEAGUE_SPECIFIC}
+  SetFontSize 45
+  PlayAlertSound 10
+  

@@ -1,0 +1,10 @@
+##
+# Bestiary
+##
+
+Show
+  HasExplicitMod "of Farrul" "of Craiceann" "of Fenumus" "of Saqawal"
+  ${COLOR_LEAGUE_SPECIFIC}
+  SetFontSize 45
+  PlayAlertSound 10
+  
