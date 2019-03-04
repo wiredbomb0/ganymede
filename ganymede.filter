@@ -1,33 +1,13 @@
-################################
-# Ganymede                     #
-# Version 0.1.0-pre            #
-# Built at 2019-03-03 19:36:18 #
-################################
+##########################################
+# Ganymede                               #
+# Version 0.1.0-pre                      #
+# Built at 2019-03-04 22:05:50           #
+# https://github.com/wiredbomb0/valkyrie #
+##########################################
 
 ##
 # League Specific
 ##
-
-##
-# Betrayal
-##
-
-Show
-  Class "Map Fragments"
-  BaseType "Scarab"
-  SetBorderColor 255 165 0
-  SetTextColor 255 165 0
-  SetBackgroundColor 63 41 0
-  SetFontSize 45
-  PlayAlertSound 10
-
-Show
-  HasExplicitMod "Veil"
-  SetBorderColor 255 165 0
-  SetTextColor 255 165 0
-  SetBackgroundColor 63 41 0
-  SetFontSize 45
-  PlayAlertSound 10
   
 ##
 # Delve
@@ -57,36 +37,6 @@ Show
   SetBackgroundColor 63 41 0
   SetFontSize 45
   PlayAlertSound 10
-
-##
-# Incursion
-##
-
-Show
-  BaseType "Flashpowder Keg" "Stone of Passage" "Vial of"
-  SetBorderColor 255 165 0
-  SetTextColor 255 165 0
-  SetBackgroundColor 63 41 0
-  SetFontSize 45
-  PlayAlertSound 10
-
-# IS QUEST ITEM BELOW
-Show
-  Class "Incursion Item"
-  SetBorderColor 74 230 58
-  SetTextColor 74 230 58
-  SetBackgroundColor 18 57 14
-  SetFontSize 42
-  CustomAlertSound "./audio/token.wav"
-  MinimapIcon 0 Green Diamond
-  PlayEffect Green
-
-##
-# Bestiary
-##
-
-Show
-  BaseType "Bestiary Orb" "Rope Net" "Iron Net" "Steel Net" "Thaumaturgical Net" "Necromancy Net"
 
 ##
 # Abyss
@@ -228,11 +178,69 @@ Show
   SetBackgroundColor 42 39 32
 
 ##
+# Betrayal
+##
+
+Show
+  HasExplicitMod "Veil"
+  SetBorderColor 255 165 0
+  SetTextColor 255 165 0
+  SetBackgroundColor 63 41 0
+  SetFontSize 45
+  PlayAlertSound 10
+
+##
+# Bestiary
+##
+
+Show
+  HasExplicitMod "of Farrul" "of Craiceann" "of Fenumus" "of Saqawal"
+  SetBorderColor 255 165 0
+  SetTextColor 255 165 0
+  SetBackgroundColor 63 41 0
+  SetFontSize 45
+  PlayAlertSound 10
+
+##
+# Incursion
+##
+
+Show
+  BaseType "Flashpowder Keg" "Stone of Passage" "Vial of"
+  SetBorderColor 255 165 0
+  SetTextColor 255 165 0
+  SetBackgroundColor 63 41 0
+  SetFontSize 45
+  PlayAlertSound 10
+
+Show
+  HasExplicitMod "Tacati" "Citaqualotl" "Matatl" "Topotante" "Xopec" "Guatelitzi" "Puhuarte" "Brinerot" "Mutewind" "Redblade" "Betrayer's" "Deceiver's" "Turncoat's"
+  SetBorderColor 255 165 0
+  SetTextColor 255 165 0
+  SetBackgroundColor 63 41 0
+  SetFontSize 45
+  PlayAlertSound 10
+
+Show
+  Class "Incursion Item"
+  SetBorderColor 74 230 58
+  SetTextColor 74 230 58
+  SetBackgroundColor 18 57 14
+  SetFontSize 42
+  CustomAlertSound "./audio/token.wav"
+  MinimapIcon 0 Green Diamond
+  PlayEffect Green
+
+##
 # Talisman
 ##
 
 Show
   BaseType Talisman
+  SetBorderColor 255 165 0
+  SetTextColor 255 165 0
+  SetBackgroundColor 63 41 0
+  SetFontSize 45
 
 ##
 # Currency
@@ -280,6 +288,9 @@ Hide
 
 Show
   BaseType "Fishing Rod"
+  SetBorderColor 74 230 58
+  SetTextColor 74 230 58
+  SetBackgroundColor 18 57 14
   SetFontSize 42
   PlayAlertSound 8 300
   MinimapIcon 0 Red Star
@@ -550,6 +561,20 @@ Show
   SetBorderColor 175 96 37
   SetTextColor 175 96 37
   SetBackgroundColor 43 24 9
+
+Show
+  Rarity Magic
+  Class "Utility Flasks"
+  SetBorderColor 136 136 255
+  SetTextColor 136 136 255
+  SetBackgroundColor 34 34 63
+
+Show
+  Rarity Normal
+  Class "Utility Flasks"
+  SetBorderColor 200 200 200
+  SetTextColor 200 200 200
+  SetBackgroundColor 50 50 50
 
 Hide
   Rarity Magic
