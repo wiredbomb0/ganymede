@@ -1,7 +1,7 @@
 ##########################################
 # Ganymede                               #
 # Version 0.1.0-pre                      #
-# Built at 2019-03-04 22:05:50           #
+# Built at 2019-03-06 20:19:19           #
 # https://github.com/wiredbomb0/valkyrie #
 ##########################################
 
@@ -344,6 +344,24 @@ Show
 
 Show
   BaseType "The Shaper's Key"
+  SetBorderColor 128 64 128
+  SetTextColor 128 64 128
+  SetBackgroundColor 32 16 32
+  SetFontSize 42
+  PlayAlertSound 6
+  MinimapIcon 0 Brown Circle
+
+Show
+  FracturedItem True
+  SetBorderColor 128 64 128
+  SetTextColor 128 64 128
+  SetBackgroundColor 32 16 32
+  SetFontSize 42
+  PlayAlertSound 6
+  MinimapIcon 0 Brown Circle
+
+Show
+  SynthesisedItem True
   SetBorderColor 128 64 128
   SetTextColor 128 64 128
   SetBackgroundColor 32 16 32
