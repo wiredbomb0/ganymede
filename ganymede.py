@@ -2,7 +2,7 @@ import os
 import math
 import shutil
 
-from helper import create_color_statements
+from lib import create_color_statements
 from datetime import datetime
 from string import Template
 
