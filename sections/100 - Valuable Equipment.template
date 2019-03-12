@@ -63,6 +63,6 @@ Show
   Height <= 3
   ${COLOR_EQUIPMENT_CHROMATIC}
 
-Hide
+Show
   SocketGroup RGB
   ${COLOR_EQUIPMENT_CHROMATIC}

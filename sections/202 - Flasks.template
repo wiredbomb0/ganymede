@@ -35,6 +35,18 @@ Show
   Class "Utility Flasks"
   ${COLOR_EQUIPMENT_NORMAL}
 
+Show
+  Rarity Magic
+  Class Flask
+  ItemLevel < 50
+  ${COLOR_EQUIPMENT_MAGIC}
+
+Show
+  Rarity Normal
+  Class Flask
+  ItemLevel < 50
+  ${COLOR_EQUIPMENT_NORMAL}
+
 Hide
   Rarity Magic
   Class Flask

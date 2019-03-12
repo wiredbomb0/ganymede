@@ -1,8 +1,8 @@
 ##########################################
 # Ganymede                               #
 # Version 0.1.0-pre                      #
-# Built at 2019-03-06 20:19:19           #
-# https://github.com/wiredbomb0/valkyrie #
+# Built at 2019-03-10 10:25:38           #
+# https://github.com/wiredbomb0/ganymede #
 ##########################################
 
 ##
@@ -249,24 +249,21 @@ Show
 Show
   Class Currency
   BaseType "Mirror of Kalandra" "Exalted Orb" "Divine Orb" "Mirror Shard" "Eternal Orb" "Albino Rhoa Feather" "Orb of Annulment"
+  CustomAlertSound "./audio/currency_high.wav"
   SetBorderColor 170 158 130
   SetTextColor 170 158 130
   SetBackgroundColor 42 39 32
-  SetFontSize 42
-  PlayAlertSound 8 300
-  MinimapIcon 0 Red Star
-  PlayEffect Red
+  MinimapIcon 1 Yellow Circle
 
 Show
   Class Currency
   BaseType "Master Cartographer's Sextant" "Journeyman Cartographer's Sextant" "Harbinger's Orb" "Ancient Orb" "Regal Orb" "Orb of Regret" "Chaos Orb" "Gemcutter's Prism" "Apprentice Cartographer's Sextant" "Stacked Deck" "Blessed Orb" "Orb of Fusing" "Orb of Alchemy" "Cartographer's Chisel" "Engineer's Orb" "Orb of Horizons" "Orb of Binding" "Bestiary Orb" "Orb of Scouring" "Vaal Orb" "Annulment Shard" "Harbinger's Shard" "Ancient Shard" "Exalted Shard" "Horizon Shard" "Engineer's Shard" "Binding Shard" "Regal Shard" "Chaos Shard"
+  CustomAlertSound "./audio/currency_medium.wav"
   SetBorderColor 170 158 130
   SetTextColor 170 158 130
   SetBackgroundColor 42 39 32
   SetFontSize 42
-  PlayAlertSound 9 300
-  MinimapIcon 1 Red Star
-  PlayEffect Red Temp
+  MinimapIcon 1 Yellow Circle
 
 Show
   Class Currency
@@ -275,7 +272,7 @@ Show
   SetTextColor 170 158 130
   SetBackgroundColor 42 39 32
 
-Hide
+Show
   Class Currency
   BaseType "Scroll of Wisdom" "Portal Scroll"
   SetBorderColor 170 158 130
@@ -403,7 +400,7 @@ Show
   SetTextColor 128 128 128
   SetBackgroundColor 32 32 32
 
-Hide
+Show
   SocketGroup RGB
   SetBorderColor 128 128 128
   SetTextColor 128 128 128
@@ -480,6 +477,22 @@ Show
   SetBorderColor 255 255 119
   SetTextColor 255 255 119
   SetBackgroundColor 63 63 29
+
+Show
+  Rarity Magic
+  ItemLevel < 20
+  Class Claws Daggers Wands "One Hand" "Two Hand" Bows Staves Quivers Belts Gloves Boots "Body Armours" Helmets Shields Sceptres Amulet Ring Jewel
+  SetBorderColor 136 136 255
+  SetTextColor 136 136 255
+  SetBackgroundColor 34 34 63
+
+Show
+  Rarity Normal
+  ItemLevel < 20
+  Class Claws Daggers Wands "One Hand" "Two Hand" Bows Staves Quivers Belts Gloves Boots "Body Armours" Helmets Shields Sceptres Amulet Ring Jewel
+  SetBorderColor 200 200 200
+  SetTextColor 200 200 200
+  SetBackgroundColor 50 50 50
 
 Hide
   Rarity Magic
@@ -590,6 +603,22 @@ Show
 Show
   Rarity Normal
   Class "Utility Flasks"
+  SetBorderColor 200 200 200
+  SetTextColor 200 200 200
+  SetBackgroundColor 50 50 50
+
+Show
+  Rarity Magic
+  Class Flask
+  ItemLevel < 50
+  SetBorderColor 136 136 255
+  SetTextColor 136 136 255
+  SetBackgroundColor 34 34 63
+
+Show
+  Rarity Normal
+  Class Flask
+  ItemLevel < 50
   SetBorderColor 200 200 200
   SetTextColor 200 200 200
   SetBackgroundColor 50 50 50
