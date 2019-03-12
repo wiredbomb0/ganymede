@@ -24,6 +24,20 @@ Show
   MinimapIcon 0 Brown Circle
 
 Show
+  FracturedItem True
+  ${COLOR_EQUIPMENT_SHAPED}
+  SetFontSize 42
+  PlayAlertSound 6
+  MinimapIcon 0 Brown Circle
+
+Show
+  SynthesisedItem True
+  ${COLOR_EQUIPMENT_SHAPED}
+  SetFontSize 42
+  PlayAlertSound 6
+  MinimapIcon 0 Brown Circle
+
+Show
   ShaperItem True
   ${COLOR_EQUIPMENT_SHAPED}
   SetFontSize 42
@@ -49,6 +63,6 @@ Show
   Height <= 3
   ${COLOR_EQUIPMENT_CHROMATIC}
 
-Hide
+Show
   SocketGroup RGB
   ${COLOR_EQUIPMENT_CHROMATIC}
