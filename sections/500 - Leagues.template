@@ -26,7 +26,7 @@ Show
 ## Betrayal
 Show
   Identified True
-	HasExplicitMod "Veil"
+  HasExplicitMod "Veil"
   CustomAlertSound "./audio/rare.wav"
   SetFontSize 45
   {{LeagueSpecific}}
@@ -35,7 +35,7 @@ Show
 ## Delve
 Show
   Identified True
-	HasExplicitMod "of the Underground" "Subterranean"
+  HasExplicitMod "of the Underground" "Subterranean"
   CustomAlertSound "./audio/rare.wav"
   SetFontSize 45
   {{LeagueSpecific}}
@@ -124,7 +124,7 @@ Show
 ## Legacy
 Show
   Class "Misc Map Items"
-	BaseType "Ancient Reliquary Key" "Timeworn Reliquary Key"
+  BaseType "Ancient Reliquary Key" "Timeworn Reliquary Key"
   CustomAlertSound "./audio/currency_high.wav"
   SetFontSize 45
   {{LeagueSpecific}}

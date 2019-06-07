@@ -1,7 +1,7 @@
 ## CURRENCY
 Show
   Class Currency
-	BaseType "Cartographer's Seal" "Imprint" "Unshaping Orb"
+  BaseType "Cartographer's Seal" "Imprint" "Unshaping Orb"
   CustomAlertSound "./audio/currency_medium.wav"
   MinimapIcon 1 White Circle
   PlayEffect White

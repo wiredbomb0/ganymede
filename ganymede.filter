@@ -1,10 +1,10 @@
 # Ganymede
 # Version: 3.7.0--S1.0
-# 2019-06-07 20:31:53.011000
+# 2019-06-07 20:40:50.711000
 
 ## QUEST
 Show
-	Class Quest
+  Class Quest
   SetFontSize 45
   CustomAlertSound "./audio/token.wav"
   SetTextColor 74 230 58
@@ -66,7 +66,7 @@ Show
 ## Betrayal
 Show
   Identified True
-	HasExplicitMod "Veil"
+  HasExplicitMod "Veil"
   CustomAlertSound "./audio/rare.wav"
   SetFontSize 45
   SetTextColor 75 200 150
@@ -77,7 +77,7 @@ Show
 ## Delve
 Show
   Identified True
-	HasExplicitMod "of the Underground" "Subterranean"
+  HasExplicitMod "of the Underground" "Subterranean"
   CustomAlertSound "./audio/rare.wav"
   SetFontSize 45
   SetTextColor 75 200 150
@@ -188,7 +188,7 @@ Show
 ## Legacy
 Show
   Class "Misc Map Items"
-	BaseType "Ancient Reliquary Key" "Timeworn Reliquary Key"
+  BaseType "Ancient Reliquary Key" "Timeworn Reliquary Key"
   CustomAlertSound "./audio/currency_high.wav"
   SetFontSize 45
   SetTextColor 75 200 150
@@ -381,7 +381,7 @@ Show
 ## CURRENCY
 Show
   Class Currency
-	BaseType "Cartographer's Seal" "Imprint" "Unshaping Orb"
+  BaseType "Cartographer's Seal" "Imprint" "Unshaping Orb"
   CustomAlertSound "./audio/currency_medium.wav"
   MinimapIcon 1 White Circle
   PlayEffect White

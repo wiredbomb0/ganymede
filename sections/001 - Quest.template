@@ -1,6 +1,6 @@
 ## QUEST
 Show
-	Class Quest
+  Class Quest
   SetFontSize 45
   CustomAlertSound "./audio/token.wav"
   {{Quest}}
