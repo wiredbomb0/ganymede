@@ -1,6 +1,6 @@
 # Ganymede
 # Version: 3.7.0--S1.0
-# 2019-06-07 20:30:37.045000
+# 2019-06-07 20:31:53.011000
 
 ## QUEST
 Show
@@ -31,18 +31,22 @@ Show
   SetBackgroundColor 63 44 9
 
 ## Legion
-# Show
-#   Class Incubator
-#   CustomAlertSound "./audio/rare.wav"
-#   SetFontSize 45
-#   {LeagueSpecific}
+Show
+  Class Incubator
+  CustomAlertSound "./audio/rare.wav"
+  SetFontSize 45
+  SetTextColor 75 200 150
+  SetBorderColor 75 200 150
+  SetBackgroundColor 18 50 37
 
-# Show
-#   Class "Map Fragments"
-#   BaseType "Emblem" "Splinter"
-#   CustomAlertSound "./audio/rare.wav"
-#   SetFontSize 45
-#   {LeagueSpecific}
+Show
+  Class "Map Fragments"
+  BaseType "Emblem" "Splinter"
+  CustomAlertSound "./audio/rare.wav"
+  SetFontSize 45
+  SetTextColor 75 200 150
+  SetBorderColor 75 200 150
+  SetBackgroundColor 18 50 37
 
 
 ## Synthesis

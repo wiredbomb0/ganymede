@@ -1,16 +1,16 @@
 ## Legion
-# Show
-#   Class Incubator
-#   CustomAlertSound "./audio/rare.wav"
-#   SetFontSize 45
-#   {LeagueSpecific}
+Show
+  Class Incubator
+  CustomAlertSound "./audio/rare.wav"
+  SetFontSize 45
+  {{LeagueSpecific}}
 
-# Show
-#   Class "Map Fragments"
-#   BaseType "Emblem" "Splinter"
-#   CustomAlertSound "./audio/rare.wav"
-#   SetFontSize 45
-#   {LeagueSpecific}
+Show
+  Class "Map Fragments"
+  BaseType "Emblem" "Splinter"
+  CustomAlertSound "./audio/rare.wav"
+  SetFontSize 45
+  {{LeagueSpecific}}
 
 
 ## Synthesis
