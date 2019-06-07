@@ -1,0 +1,14 @@
+## LABYRINTH
+Show 
+  BaseType "Divine Vessel" "Offering to the Goddess"
+  CustomAlertSound "./audio/collectable.mp3"
+  MinimapIcon 1 White Hexagon
+  SetFontSize 45
+  {{Labyrinth}}
+
+Show
+  Class "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item"
+  CustomAlertSound "./audio/collectable.mp3"
+  MinimapIcon 1 White Hexagon
+  SetFontSize 45
+  {{Labyrinth}}

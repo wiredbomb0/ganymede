@@ -1,0 +1,37 @@
+## CURRENCY
+Show
+  Class Currency
+	BaseType "Cartographer's Seal" "Imprint" "Unshaping Orb"
+  CustomAlertSound "./audio/currency_medium.wav"
+  MinimapIcon 1 White Circle
+  PlayEffect White
+  SetFontSize 45
+  {{Currency}}
+
+Show
+  Class Currency
+  BaseType "Mirror of Kalandra" "Exalted Orb" "Eternal Orb" "Albino Rhoa Feather"
+  CustomAlertSound "./audio/currency_high.wav"
+  MinimapIcon 1 White Circle
+  PlayEffect White
+  SetFontSize 45
+  {{Currency}}
+
+Show
+  Class Currency
+  BaseType "Chaos Orb" "Vaal Orb" "Regal Orb" "Gemcutter's Prism" "Orb of Scouring" "Orb of Regret" "Orb of Fusing" "Orb of Alchemy" "Orb of Annulment" "Divine Orb" "Master Cartographer's Sextant" "Journeyman Cartographer's Sextant" "Apprentice Cartographer's Sextant"
+  CustomAlertSound "./audio/currency_medium.wav"
+  MinimapIcon 1 White Circle
+  PlayEffect White Temp
+  SetFontSize 45
+  {{Currency}}
+
+Show
+  Class Currency
+  BaseType "Blacksmith's Whetstone" "Armourer's Scrap" "Orb of Transmutation" "Orb of Chance" "Blessed Orb" "Orb of Augmentation" "Glassblower's Bauble" "Jeweller's Orb" "Orb of Alteration" "Chromatic Orb" "Cartographer's Chisel"
+  {{Currency}}
+
+Show
+  Class Currency
+  BaseType "Scroll of Wisdom" "Portal Scroll"
+  {{Currency}}

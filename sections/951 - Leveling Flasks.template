@@ -1,0 +1,276 @@
+## LEVELING FLASKS
+Show
+  Class "Life Flasks"
+  BaseType "Medium Life Flask"
+  ItemLevel < 6
+  Rarity Magic
+  {{EquipmentMagic}}
+
+Show
+  Class "Life Flasks"
+  BaseType "Medium Life Flask"
+  ItemLevel < 6
+  Rarity Normal
+  {{EquipmentNormal}}
+
+Show
+  Class "Life Flasks"
+  BaseType "Large Life Flask"
+  ItemLevel < 12
+  Rarity Magic
+  {{EquipmentMagic}}
+
+Show
+  Class "Life Flasks"
+  BaseType "Large Life Flask"
+  ItemLevel < 12
+  Rarity Normal
+  {{EquipmentNormal}}
+
+Show
+  Class "Life Flasks"
+  BaseType "Greater Life Flask"
+  ItemLevel < 18
+  Rarity Magic
+  {{EquipmentMagic}}
+
+Show
+  Class "Life Flasks"
+  BaseType "Greater Life Flask"
+  ItemLevel < 18
+  Rarity Normal
+  {{EquipmentNormal}}
+
+Show
+  Class "Life Flasks"
+  BaseType "Grand Life Flask"
+  ItemLevel < 24
+  Rarity Magic
+  {{EquipmentMagic}}
+
+Show
+  Class "Life Flasks"
+  BaseType "Grand Life Flask"
+  ItemLevel < 24
+  Rarity Normal
+  {{EquipmentNormal}}
+
+Show
+  Class "Life Flasks"
+  BaseType "Giant Life Flask"
+  ItemLevel < 30
+  Rarity Magic
+  {{EquipmentMagic}}
+
+Show
+  Class "Life Flasks"
+  BaseType "Giant Life Flask"
+  ItemLevel < 30
+  Rarity Normal
+  {{EquipmentNormal}}
+
+Show
+  Class "Life Flasks"
+  BaseType "Colossal Life Flask"
+  ItemLevel < 36
+  Rarity Magic
+  {{EquipmentMagic}}
+
+Show
+  Class "Life Flasks"
+  BaseType "Colossal Life Flask"
+  ItemLevel < 36
+  Rarity Normal
+  {{EquipmentNormal}}
+
+Show
+  Class "Life Flasks"
+  BaseType "Sacred Life Flask"
+  ItemLevel < 42
+  Rarity Magic
+  {{EquipmentMagic}}
+
+Show
+  Class "Life Flasks"
+  BaseType "Sacred Life Flask"
+  ItemLevel < 42
+  Rarity Normal
+  {{EquipmentNormal}}
+
+Show
+  Class "Life Flasks"
+  BaseType "Hallowed Life Flask"
+  ItemLevel < 60
+  Rarity Magic
+  {{EquipmentMagic}}
+
+Show
+  Class "Life Flasks"
+  BaseType "Hallowed Life Flask"
+  ItemLevel < 60
+  Rarity Normal
+  {{EquipmentNormal}}
+
+Show
+  Class "Life Flasks"
+  BaseType "Divine Life Flask"
+  ItemLevel < 65
+  Rarity Magic
+  {{EquipmentMagic}}
+
+Show
+  Class "Life Flasks"
+  BaseType "Divine Life Flask"
+  ItemLevel < 65
+  Rarity Normal
+  {{EquipmentNormal}}
+
+Show
+  Class "Life Flasks"
+  BaseType "Eternal Life Flask"
+  Rarity Magic
+  {{EquipmentMagic}}
+
+Show
+  Class "Life Flasks"
+  BaseType "Eternal Life Flask"
+  Rarity Normal
+  {{EquipmentNormal}}
+
+Show
+  Class "Mana Flasks"
+  BaseType "Medium Mana Flask"
+  ItemLevel < 6
+  Rarity Magic
+  {{EquipmentMagic}}
+
+Show
+  Class "Mana Flasks"
+  BaseType "Medium Mana Flask"
+  ItemLevel < 6
+  Rarity Normal
+  {{EquipmentNormal}}
+
+Show
+  Class "Mana Flasks"
+  BaseType "Large Mana Flask"
+  ItemLevel < 12
+  Rarity Magic
+  {{EquipmentMagic}}
+
+Show
+  Class "Mana Flasks"
+  BaseType "Large Mana Flask"
+  ItemLevel < 12
+  Rarity Normal
+  {{EquipmentNormal}}
+
+Show
+  Class "Mana Flasks"
+  BaseType "Greater Mana Flask"
+  ItemLevel < 18
+  Rarity Magic
+  {{EquipmentMagic}}
+
+Show
+  Class "Mana Flasks"
+  BaseType "Greater Mana Flask"
+  ItemLevel < 18
+  Rarity Normal
+  {{EquipmentNormal}}
+
+Show
+  Class "Mana Flasks"
+  BaseType "Grand Mana Flask"
+  ItemLevel < 24
+  Rarity Magic
+  {{EquipmentMagic}}
+
+Show
+  Class "Mana Flasks"
+  BaseType "Grand Mana Flask"
+  ItemLevel < 24
+  Rarity Normal
+  {{EquipmentNormal}}
+
+Show
+  Class "Mana Flasks"
+  BaseType "Giant Mana Flask"
+  ItemLevel < 30
+  Rarity Magic
+  {{EquipmentMagic}}
+
+Show
+  Class "Mana Flasks"
+  BaseType "Giant Mana Flask"
+  ItemLevel < 30
+  Rarity Normal
+  {{EquipmentNormal}}
+
+Show
+  Class "Mana Flasks"
+  BaseType "Colossal Mana Flask"
+  ItemLevel < 36
+  Rarity Magic
+  {{EquipmentMagic}}
+
+Show
+  Class "Mana Flasks"
+  BaseType "Colossal Mana Flask"
+  ItemLevel < 36
+  Rarity Normal
+  {{EquipmentNormal}}
+
+Show
+  Class "Mana Flasks"
+  BaseType "Sacred Mana Flask"
+  ItemLevel < 42
+  Rarity Magic
+  {{EquipmentMagic}}
+
+Show
+  Class "Mana Flasks"
+  BaseType "Sacred Mana Flask"
+  ItemLevel < 42
+  Rarity Normal
+  {{EquipmentNormal}}
+
+Show
+  Class "Mana Flasks"
+  BaseType "Hallowed Mana Flask"
+  ItemLevel < 60
+  Rarity Magic
+  {{EquipmentMagic}}
+
+Show
+  Class "Mana Flasks"
+  BaseType "Hallowed Mana Flask"
+  ItemLevel < 60
+  Rarity Normal
+  {{EquipmentNormal}}
+
+Show
+  Class "Mana Flasks"
+  BaseType "Divine Mana Flask"
+  ItemLevel < 65
+  Rarity Magic
+  {{EquipmentMagic}}
+
+Show
+  Class "Mana Flasks"
+  BaseType "Divine Mana Flask"
+  ItemLevel < 65
+  Rarity Normal
+  {{EquipmentNormal}}
+
+Show
+  Class "Mana Flasks"
+  BaseType "Eternal Mana Flask"
+  Rarity Magic
+  {{EquipmentMagic}}
+
+Show
+  Class "Mana Flasks"
+  BaseType "Eternal Mana Flask"
+  Rarity Normal
+  {{EquipmentNormal}}

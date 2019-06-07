@@ -1,0 +1,35 @@
+## MAPS
+Show
+  Class "Map Fragment"
+  CustomAlertSound "./audio/map.wav" 300
+  DisableDropSound
+  SetFontSize 45
+  {{Maps}}
+
+Show
+  Class Maps
+  CustomAlertSound "./audio/map.wav" 300
+  Rarity Unique
+  SetFontSize 38
+  {{Maps}}
+
+Show
+  Class Maps
+  CustomAlertSound "./audio/map.wav" 300
+  Rarity Rare
+  SetFontSize 38
+  {{Maps}}
+
+Show
+  Class Maps
+  CustomAlertSound "./audio/map.wav" 300
+  Rarity Magic
+  SetFontSize 38
+  {{Maps}}
+
+Show
+  Class Maps
+  CustomAlertSound "./audio/map.wav" 300
+  Rarity Normal
+  SetFontSize 38
+  {{Maps}}

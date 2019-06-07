@@ -1,8 +1,0 @@
-##
-# Talisman
-##
-
-Show
-  BaseType Talisman
-  ${COLOR_LEAGUE_SPECIFIC}
-  SetFontSize 45

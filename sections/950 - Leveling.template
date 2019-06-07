@@ -1,0 +1,22 @@
+## LEVELING
+Show
+  Rarity Normal
+  ItemLevel <= 15
+  {{EquipmentNormal}}
+
+Show
+  Rarity Magic
+  ItemLevel <= 30
+  {{EquipmentMagic}}
+
+Show
+  LinkedSockets >= 3
+  Rarity Normal
+  ItemLevel <= 30
+  {{EquipmentNormal}}
+
+Show
+  LinkedSockets >= 3
+  Rarity Magic
+  ItemLevel <= 30
+  {{EquipmentMagic}}

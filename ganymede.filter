@@ -1,694 +1,1002 @@
-##########################################
-# Ganymede                               #
-# Version 0.1.0-pre                      #
-# Built at 2019-03-10 10:25:38           #
-# https://github.com/wiredbomb0/ganymede #
-##########################################
+# Ganymede
+# Version: 3.7.0--S1.0
+# 2019-06-07 20:30:37.045000
 
-##
-# League Specific
-##
+## QUEST
+Show
+	Class Quest
+  SetFontSize 45
+  CustomAlertSound "./audio/token.wav"
+  SetTextColor 74 230 58
+  SetBorderColor 74 230 58
+  SetBackgroundColor 18 57 14
+
+## LABYRINTH
+Show 
+  BaseType "Divine Vessel" "Offering to the Goddess"
+  CustomAlertSound "./audio/collectable.mp3"
+  MinimapIcon 1 White Hexagon
+  SetFontSize 45
+  SetTextColor 254 179 37
+  SetBorderColor 254 179 37
+  SetBackgroundColor 63 44 9
+
+Show
+  Class "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item"
+  CustomAlertSound "./audio/collectable.mp3"
+  MinimapIcon 1 White Hexagon
+  SetFontSize 45
+  SetTextColor 254 179 37
+  SetBorderColor 254 179 37
+  SetBackgroundColor 63 44 9
+
+## Legion
+# Show
+#   Class Incubator
+#   CustomAlertSound "./audio/rare.wav"
+#   SetFontSize 45
+#   {LeagueSpecific}
+
+# Show
+#   Class "Map Fragments"
+#   BaseType "Emblem" "Splinter"
+#   CustomAlertSound "./audio/rare.wav"
+#   SetFontSize 45
+#   {LeagueSpecific}
+
+
+## Synthesis
+Show
+  FracturedItem True
+  SetTextColor 75 200 150
+  SetBorderColor 75 200 150
+  SetBackgroundColor 18 50 37
+
+Show
+  SynthesisedItem True
+  SetTextColor 75 200 150
+  SetBorderColor 75 200 150
+  SetBackgroundColor 18 50 37
   
-##
-# Delve
-##
 
+## Betrayal
 Show
-  BaseType "Timeworn Reliquary Key"
-  SetBorderColor 255 165 0
-  SetTextColor 255 165 0
-  SetBackgroundColor 63 41 0
+  Identified True
+	HasExplicitMod "Veil"
+  CustomAlertSound "./audio/rare.wav"
   SetFontSize 45
-  PlayAlertSound 10
+  SetTextColor 75 200 150
+  SetBorderColor 75 200 150
+  SetBackgroundColor 18 50 37
 
+
+## Delve
 Show
-  BaseType Fossil Resonator
-  Class "Currency"
-  SetBorderColor 255 165 0
-  SetTextColor 255 165 0
-  SetBackgroundColor 63 41 0
+  Identified True
+	HasExplicitMod "of the Underground" "Subterranean"
+  CustomAlertSound "./audio/rare.wav"
   SetFontSize 45
-  PlayAlertSound 10
+  SetTextColor 75 200 150
+  SetBorderColor 75 200 150
+  SetBackgroundColor 18 50 37
 
 Show
   Class "Delve Socketable Currency"
-  SetBorderColor 255 165 0
-  SetTextColor 255 165 0
-  SetBackgroundColor 63 41 0
+  BaseType "Potent Alchemical Resonator" "Powerful Alchemical Resonator" "Primitive Alchemical Resonator" "Potent Chaotic Resonator" "Powerful Chaotic Resonator" "Primitive Chaotic Resonator" "Prime Alchemical Resonator" "Prime Chaotic Resonator"
+  CustomAlertSound "./audio/rare.wav"
   SetFontSize 45
-  PlayAlertSound 10
-
-##
-# Abyss
-##
-
-Show
-  Rarity Unique
-  Class "Abyss Jewel"
-  SetBorderColor 175 96 37
-  SetTextColor 175 96 37
-  SetBackgroundColor 43 24 9
-
-Show
-  Rarity Unique
-  BaseType "Stygian Vise"
-  SetBorderColor 175 96 37
-  SetTextColor 175 96 37
-  SetBackgroundColor 43 24 9
-
-Show
-  Rarity Rare
-  Class "Abyss Jewel"
-  SetBorderColor 255 255 119
-  SetTextColor 255 255 119
-  SetBackgroundColor 63 63 29
-
-Show
-  Rarity Rare
-  BaseType "Stygian Vise"
-  SetBorderColor 255 255 119
-  SetTextColor 255 255 119
-  SetBackgroundColor 63 63 29
-
-Show
-  Rarity Magic
-  Class "Abyss Jewel"
-  SetBorderColor 136 136 255
-  SetTextColor 136 136 255
-  SetBackgroundColor 34 34 63
-
-Show
-  Rarity Magic
-  BaseType "Stygian Vise"
-  SetBorderColor 136 136 255
-  SetTextColor 136 136 255
-  SetBackgroundColor 34 34 63
-
-Show
-  Rarity Normal
-  Class "Abyss Jewel"
-  SetBorderColor 200 200 200
-  SetTextColor 200 200 200
-  SetBackgroundColor 50 50 50
-
-Show
-  Rarity Normal
-  BaseType "Stygian Vise"
-  SetBorderColor 200 200 200
-  SetTextColor 200 200 200
-  SetBackgroundColor 50 50 50
-
-##
-# Harbinger
-##
-
-##
-# Legacy
-##
-
-Show
-  BaseType "Ancient Reliquary Key"
-  SetBorderColor 255 165 0
-  SetTextColor 255 165 0
-  SetBackgroundColor 63 41 0
-  SetFontSize 45
-  PlayAlertSound 10
-
-##
-# Breach
-##
+  SetTextColor 75 200 150
+  SetBorderColor 75 200 150
+  SetBackgroundColor 18 50 37
 
 Show
   Class Currency
-  BaseType Splinter Blessing
-  SetBorderColor 255 165 0
-  SetTextColor 255 165 0
-  SetBackgroundColor 63 41 0
+  BaseType "Bloodstained Fossil" "Faceted Fossil" "Fractured Fossil" "Glyphic Fossil" "Hollow Fossil" "Sanctified Fossil" "Dense Fossil" "Gilded Fossil" "Aberrant Fossil" "Corroded Fossil" "Jagged Fossil" "Lucent Fossil" "Scorched Fossil" "Fossil"
   SetFontSize 45
-  PlayAlertSound 10
+
+
+## Incursion
+Show
+  Class "Incursion Item"
+  BaseType "Flashpowder Keg" "Stone of Passage"
+  CustomAlertSound "./audio/rare.wav"
+  SetFontSize 45
+  SetTextColor 75 200 150
+  SetBorderColor 75 200 150
+  SetBackgroundColor 18 50 37
 
 Show
-  BaseType Breachstone
-  SetBorderColor 255 165 0
-  SetTextColor 255 165 0
-  SetBackgroundColor 63 41 0
+  Class "Stackable Currency"
+  BaseType "Vial Of"
+  CustomAlertSound "./audio/rare.wav"
   SetFontSize 45
-  PlayAlertSound 10
+  SetTextColor 75 200 150
+  SetBorderColor 75 200 150
+  SetBackgroundColor 18 50 37
 
-##
-# Essence
-##
+Show
+  HasExplicitMod "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec" "Betrayer's" "Brinerot" "Deceiver's" "Mutewind" "Redblade" "Turncoat's"
+  SetFontSize 45
+  SetTextColor 75 200 150
+  SetBorderColor 75 200 150
+  SetBackgroundColor 18 50 37
+
+
+## Bestiary
+Show
+  HasExplicitMod "of Farrul" "of Craiceann" "of Fenumus" "of Saqawal"
+  CustomAlertSound "./audio/rare.wav"
+  SetFontSize 45  
+  SetTextColor 75 200 150
+  SetBorderColor 75 200 150
+  SetBackgroundColor 18 50 37
+
+
+## Abyss
+Show
+  BaseType "Stygian Vise"
+  SetFontSize 45
+  SetTextColor 75 200 150
+  SetBorderColor 75 200 150
+  SetBackgroundColor 18 50 37
+
+Show
+  Class "Abyss Jewel"
+  SetFontSize 45
+  SetTextColor 75 200 150
+  SetBorderColor 75 200 150
+  SetBackgroundColor 18 50 37
+
+
+## Harbinger
+Show
+  Class "Map"
+  BaseType "Harbinger Map"
+  CustomAlertSound "./audio/rare.wav"
+  SetFontSize 45
+  SetTextColor 75 200 150
+  SetBorderColor 75 200 150
+  SetBackgroundColor 18 50 37
 
 Show
   Class Currency
-  BaseType Essence "Remnant of Corruption"
-  SetBorderColor 255 165 0
-  SetTextColor 255 165 0
-  SetBackgroundColor 63 41 0
+  BaseType "Mirror Shard" "Exalted Shard" "Harbinger's Orb" 
+  CustomAlertSound "./audio/currency_high.wav"
+  MinimapIcon 1 White Circle
+  PlayEffect White
   SetFontSize 45
-  PlayAlertSound 10
+  SetTextColor 170 158 130
+  SetBorderColor 170 158 130
+  SetBackgroundColor 42 39 32
 
-##
-# Prophecy
-##
+Show
+  Class Currency
+  BaseType "Harbinger's Shard" "Annulment Shard" "Ancient Orb" "Ancient Shard" "Binding Shard" "Chaos Shard" "Engineer's Orb" "Engineer's Shard" "Horizon Shard" "Orb of Binding" "Orb of Horizons" "Regal Shard"
+  CustomAlertSound "./audio/currency_medium.wav"
+  MinimapIcon 1 White Circle
+  PlayEffect White Temp
+  SetFontSize 45
+  SetTextColor 170 158 130
+  SetBorderColor 170 158 130
+  SetBackgroundColor 42 39 32
+
+
+## Legacy
+Show
+  Class "Misc Map Items"
+	BaseType "Ancient Reliquary Key" "Timeworn Reliquary Key"
+  CustomAlertSound "./audio/currency_high.wav"
+  SetFontSize 45
+  SetTextColor 75 200 150
+  SetBorderColor 75 200 150
+  SetBackgroundColor 18 50 37
+
+
+## Breach
+Show
+  Class Gem
+  BaseType "Vaal Breach"
+  CustomAlertSound "./audio/gem.wav"
+  SetFontSize 45
+  SetTextColor 75 200 150
+  SetBorderColor 75 200 150
+  SetBackgroundColor 18 50 37
+
+Show
+  Class Currency
+  BaseType "Blessing of Chayula" "Blessing of Uul-Netol"  "Blessing of Tul" "Blessing of Xoph" "Blessing of Esh" 
+  CustomAlertSound "./audio/rare.wav"
+  DisableDropSound
+  SetFontSize 45
+  SetTextColor 75 200 150
+  SetBorderColor 75 200 150
+  SetBackgroundColor 18 50 37
+  
+Show
+  Class Currency
+  BaseType "Splinter of Chayula" "Splinter of Uul-Netol" "Splinter of Tul" "Splinter of Xoph" "Splinter of Esh"
+  CustomAlertSound "./audio/rare.wav"
+  DisableDropSound
+  SetFontSize 45
+  SetTextColor 75 200 150
+  SetBorderColor 75 200 150
+  SetBackgroundColor 18 50 37
+
+Show
+  Class Currency
+  BaseType "Chayula's Breachstone" "Uul-Netol's Breachstone" "Tul's Breachstone" "Xoph's Breachstone" "Esh's Breachstone" 
+  CustomAlertSound "./audio/rare.wav"
+  DisableDropSound
+  SetFontSize 45
+  SetTextColor 75 200 150
+  SetBorderColor 75 200 150
+  SetBackgroundColor 18 50 37
+
+
+## Essence
+Show
+  Class "Stackable Currency"
+  BaseType "Essence of Hysteria" "Essence of Insanity" "Essence of Horror" "Essence of Delirium" "Remnant of Corruption"
+  CustomAlertSound "./audio/currency_medium.wav"
+  DisableDropSound
+  SetFontSize 45
+  SetTextColor 75 200 150
+  SetBorderColor 75 200 150
+  SetBackgroundColor 18 50 37
+
+Show
+  Class "Stackable Currency"
+  BaseType "Essence of"
+  CustomAlertSound "./audio/rare.wav"
+  DisableDropSound
+  SetFontSize 45
+  SetTextColor 75 200 150
+  SetBorderColor 75 200 150
+  SetBackgroundColor 18 50 37
+
+
+## Prophecy
+Show
+  BaseType "Prophecy"
+  CustomAlertSound "./audio/rare.wav"
+  DisableDropSound
+  SetFontSize 45
+  SetTextColor 75 200 150
+  SetBorderColor 75 200 150
+  SetBackgroundColor 18 50 37
 
 Show
   Class Currency
   BaseType "Silver Coin"
-  SetBorderColor 170 158 130
-  SetTextColor 170 158 130
-  SetBackgroundColor 42 39 32
+  CustomAlertSound "./audio/currency_low.wav"
+  DisableDropSound
+  SetTextColor 75 200 150
+  SetBorderColor 75 200 150
+  SetBackgroundColor 18 50 37
 
 Show
-  Class Currency
-  BaseType Prophecy
-  SetBorderColor 170 158 130
-  SetTextColor 170 158 130
-  SetBackgroundColor 42 39 32
+  Class "Map Fragment"
+  BaseType "Eber's Key" "Inya's Key" "Volkuur's Key" "Yriel's Key"
+  CustomAlertSound "./audio/rare.wav"
+  DisableDropSound
+  SetFontSize 45
+  SetTextColor 75 200 150
+  SetBorderColor 75 200 150
+  SetBackgroundColor 18 50 37
 
-##
-# Perandus
-##
 
+## Perandus
 Show
   Class Currency
   BaseType "Perandus Coin"
-  SetBorderColor 170 158 130
-  SetTextColor 170 158 130
-  SetBackgroundColor 42 39 32
+  CustomAlertSound "./audio/currency_low.wav"
+  SetTextColor 75 200 150
+  SetBorderColor 75 200 150
+  SetBackgroundColor 18 50 37
 
-##
-# Betrayal
-##
 
+## Talisman
 Show
-  HasExplicitMod "Veil"
-  SetBorderColor 255 165 0
-  SetTextColor 255 165 0
-  SetBackgroundColor 63 41 0
+  BaseType "Talisman"
+  CustomAlertSound "./audio/rare.wav"
+  SetTextColor 75 200 150
+  SetBorderColor 75 200 150
+  SetBackgroundColor 18 50 37
+
+## MAPS
+Show
+  Class "Map Fragment"
+  CustomAlertSound "./audio/map.wav" 300
+  DisableDropSound
   SetFontSize 45
-  PlayAlertSound 10
-
-##
-# Bestiary
-##
+  SetTextColor 112 11 185
+  SetBorderColor 112 11 185
+  SetBackgroundColor 28 2 46
 
 Show
-  HasExplicitMod "of Farrul" "of Craiceann" "of Fenumus" "of Saqawal"
-  SetBorderColor 255 165 0
-  SetTextColor 255 165 0
-  SetBackgroundColor 63 41 0
+  Class Maps
+  CustomAlertSound "./audio/map.wav" 300
+  Rarity Unique
+  SetFontSize 38
+  SetTextColor 112 11 185
+  SetBorderColor 112 11 185
+  SetBackgroundColor 28 2 46
+
+Show
+  Class Maps
+  CustomAlertSound "./audio/map.wav" 300
+  Rarity Rare
+  SetFontSize 38
+  SetTextColor 112 11 185
+  SetBorderColor 112 11 185
+  SetBackgroundColor 28 2 46
+
+Show
+  Class Maps
+  CustomAlertSound "./audio/map.wav" 300
+  Rarity Magic
+  SetFontSize 38
+  SetTextColor 112 11 185
+  SetBorderColor 112 11 185
+  SetBackgroundColor 28 2 46
+
+Show
+  Class Maps
+  CustomAlertSound "./audio/map.wav" 300
+  Rarity Normal
+  SetFontSize 38
+  SetTextColor 112 11 185
+  SetBorderColor 112 11 185
+  SetBackgroundColor 28 2 46
+
+## GEMS
+Show
+  Class Gem
+  BaseType Portal Empower Enlighten Enhance "Detonate Mines" "Item Quantity" "Added Chaos Damage" Vaal
+  CustomAlertSound "./audio/gem.wav"
   SetFontSize 45
-  PlayAlertSound 10
-
-##
-# Incursion
-##
+  SetTextColor 27 162 155
+  SetBorderColor 27 162 155
+  SetBackgroundColor 6 40 38
 
 Show
-  BaseType "Flashpowder Keg" "Stone of Passage" "Vial of"
-  SetBorderColor 255 165 0
-  SetTextColor 255 165 0
-  SetBackgroundColor 63 41 0
+  Class Gem
+  CustomAlertSound "./audio/gem.wav"
   SetFontSize 45
-  PlayAlertSound 10
+  Quality >= 1
+  SetTextColor 27 162 155
+  SetBorderColor 27 162 155
+  SetBackgroundColor 6 40 38
 
 Show
-  HasExplicitMod "Tacati" "Citaqualotl" "Matatl" "Topotante" "Xopec" "Guatelitzi" "Puhuarte" "Brinerot" "Mutewind" "Redblade" "Betrayer's" "Deceiver's" "Turncoat's"
-  SetBorderColor 255 165 0
-  SetTextColor 255 165 0
-  SetBackgroundColor 63 41 0
-  SetFontSize 45
-  PlayAlertSound 10
+  Class Gem
+  SetTextColor 27 162 155
+  SetBorderColor 27 162 155
+  SetBackgroundColor 6 40 38
 
-Show
-  Class "Incursion Item"
-  SetBorderColor 74 230 58
-  SetTextColor 74 230 58
-  SetBackgroundColor 18 57 14
-  SetFontSize 42
-  CustomAlertSound "./audio/token.wav"
-  MinimapIcon 0 Green Diamond
-  PlayEffect Green
-
-##
-# Talisman
-##
-
-Show
-  BaseType Talisman
-  SetBorderColor 255 165 0
-  SetTextColor 255 165 0
-  SetBackgroundColor 63 41 0
-  SetFontSize 45
-
-##
-# Currency
-##
-
+## CURRENCY
 Show
   Class Currency
-  BaseType "Mirror of Kalandra" "Exalted Orb" "Divine Orb" "Mirror Shard" "Eternal Orb" "Albino Rhoa Feather" "Orb of Annulment"
-  CustomAlertSound "./audio/currency_high.wav"
-  SetBorderColor 170 158 130
-  SetTextColor 170 158 130
-  SetBackgroundColor 42 39 32
-  MinimapIcon 1 Yellow Circle
-
-Show
-  Class Currency
-  BaseType "Master Cartographer's Sextant" "Journeyman Cartographer's Sextant" "Harbinger's Orb" "Ancient Orb" "Regal Orb" "Orb of Regret" "Chaos Orb" "Gemcutter's Prism" "Apprentice Cartographer's Sextant" "Stacked Deck" "Blessed Orb" "Orb of Fusing" "Orb of Alchemy" "Cartographer's Chisel" "Engineer's Orb" "Orb of Horizons" "Orb of Binding" "Bestiary Orb" "Orb of Scouring" "Vaal Orb" "Annulment Shard" "Harbinger's Shard" "Ancient Shard" "Exalted Shard" "Horizon Shard" "Engineer's Shard" "Binding Shard" "Regal Shard" "Chaos Shard"
+	BaseType "Cartographer's Seal" "Imprint" "Unshaping Orb"
   CustomAlertSound "./audio/currency_medium.wav"
-  SetBorderColor 170 158 130
+  MinimapIcon 1 White Circle
+  PlayEffect White
+  SetFontSize 45
   SetTextColor 170 158 130
+  SetBorderColor 170 158 130
   SetBackgroundColor 42 39 32
-  SetFontSize 42
-  MinimapIcon 1 Yellow Circle
 
 Show
   Class Currency
-  BaseType "Orb of Chance" "Orb of Alteration" "Chromatic Orb" "Jeweller's Orb" "Glassblower's Bauble" "Orb of Transmutation" "Blacksmith's Whetstone" "Alchemy Shard" "Armourer's Scrap" "Orb of Augmentation" "Transmutation Shard" "Alteration Shard"
-  SetBorderColor 170 158 130
+  BaseType "Mirror of Kalandra" "Exalted Orb" "Eternal Orb" "Albino Rhoa Feather"
+  CustomAlertSound "./audio/currency_high.wav"
+  MinimapIcon 1 White Circle
+  PlayEffect White
+  SetFontSize 45
   SetTextColor 170 158 130
+  SetBorderColor 170 158 130
+  SetBackgroundColor 42 39 32
+
+Show
+  Class Currency
+  BaseType "Chaos Orb" "Vaal Orb" "Regal Orb" "Gemcutter's Prism" "Orb of Scouring" "Orb of Regret" "Orb of Fusing" "Orb of Alchemy" "Orb of Annulment" "Divine Orb" "Master Cartographer's Sextant" "Journeyman Cartographer's Sextant" "Apprentice Cartographer's Sextant"
+  CustomAlertSound "./audio/currency_medium.wav"
+  MinimapIcon 1 White Circle
+  PlayEffect White Temp
+  SetFontSize 45
+  SetTextColor 170 158 130
+  SetBorderColor 170 158 130
+  SetBackgroundColor 42 39 32
+
+Show
+  Class Currency
+  BaseType "Blacksmith's Whetstone" "Armourer's Scrap" "Orb of Transmutation" "Orb of Chance" "Blessed Orb" "Orb of Augmentation" "Glassblower's Bauble" "Jeweller's Orb" "Orb of Alteration" "Chromatic Orb" "Cartographer's Chisel"
+  SetTextColor 170 158 130
+  SetBorderColor 170 158 130
   SetBackgroundColor 42 39 32
 
 Show
   Class Currency
   BaseType "Scroll of Wisdom" "Portal Scroll"
-  SetBorderColor 170 158 130
   SetTextColor 170 158 130
+  SetBorderColor 170 158 130
   SetBackgroundColor 42 39 32
 
-##
-# Rare Items
-##
+## DIVINATION
+Show
+  Class Currency
+  BaseType "Stacked Deck"
+  CustomAlertSound "./audio/rare.wav"
+  SetTextColor 14 186 255
+  SetBorderColor 14 186 255
+  SetBackgroundColor 3 46 63
 
+Show
+  Class "Divination Card"
+  CustomAlertSound "./audio/rare.wav"
+  SetTextColor 14 186 255
+  SetBorderColor 14 186 255
+  SetBackgroundColor 3 46 63
+
+## FLASKS
+Show
+  Class Flasks
+  Rarity Unique
+  Quality >= 5
+  SetTextColor 175 96 37
+  SetBorderColor 175 96 37
+  SetBackgroundColor 43 24 9
+
+Show
+  Class Flasks
+  Rarity Magic
+  Quality >= 5
+  SetTextColor 136 136 255
+  SetBorderColor 136 136 255
+  SetBackgroundColor 34 34 63
+
+Show
+  Class Flasks
+  Rarity Normal
+  Quality >= 5
+  SetTextColor 200 200 200
+  SetBorderColor 200 200 200
+  SetBackgroundColor 50 50 50
+
+Show
+  Class "Utility Flasks"
+  Rarity Unique
+  SetTextColor 175 96 37
+  SetBorderColor 175 96 37
+  SetBackgroundColor 43 24 9
+
+Show
+  Class "Utility Flasks"
+  Rarity Magic
+  SetTextColor 136 136 255
+  SetBorderColor 136 136 255
+  SetBackgroundColor 34 34 63
+
+Show
+  Class "Utility Flasks"
+  Rarity Normal
+  SetTextColor 200 200 200
+  SetBorderColor 200 200 200
+  SetBackgroundColor 50 50 50
+
+## FISHING???
 Show
   BaseType "Fishing Rod"
-  SetBorderColor 74 230 58
-  SetTextColor 74 230 58
-  SetBackgroundColor 18 57 14
-  SetFontSize 42
-  PlayAlertSound 8 300
-  MinimapIcon 0 Red Star
-  PlayEffect Red
+  SetTextColor 75 200 150
+  SetBorderColor 75 200 150
+  SetBackgroundColor 18 50 37
 
-##
-# Quest
-##
+
+## LEVELING
+Show
+  Rarity Normal
+  ItemLevel <= 15
+  SetTextColor 200 200 200
+  SetBorderColor 200 200 200
+  SetBackgroundColor 50 50 50
 
 Show
-	Class Quest
-  SetBorderColor 74 230 58
-  SetTextColor 74 230 58
-  SetBackgroundColor 18 57 14
-  SetFontSize 42
-  CustomAlertSound "./audio/token.wav"
-  MinimapIcon 0 Green Diamond
-  PlayEffect Green
+  Rarity Magic
+  ItemLevel <= 30
+  SetTextColor 136 136 255
+  SetBorderColor 136 136 255
+  SetBackgroundColor 34 34 63
 
 Show
-  Class "Labyrinth Item" "Labyrinth Trinket" "Labyrinth Map Item"
-  SetBorderColor 74 230 58
-  SetTextColor 74 230 58
-  SetBackgroundColor 18 57 14
-  SetFontSize 42
-  CustomAlertSound "./audio/token.wav"
-  MinimapIcon 0 Green Diamond
-  PlayEffect Green
-
-##
-# Equipment
-##
+  LinkedSockets >= 3
+  Rarity Normal
+  ItemLevel <= 30
+  SetTextColor 200 200 200
+  SetBorderColor 200 200 200
+  SetBackgroundColor 50 50 50
 
 Show
-  Sockets 6
-  SetBorderColor 119 119 255
-  SetTextColor 119 119 255
-  SetBackgroundColor 29 29 63
-  SetFontSize 42
-  PlayAlertSound 6
-  MinimapIcon 0 Brown Circle
+  LinkedSockets >= 3
+  Rarity Magic
+  ItemLevel <= 30
+  SetTextColor 136 136 255
+  SetBorderColor 136 136 255
+  SetBackgroundColor 34 34 63
+
+## LEVELING FLASKS
+Show
+  Class "Life Flasks"
+  BaseType "Medium Life Flask"
+  ItemLevel < 6
+  Rarity Magic
+  SetTextColor 136 136 255
+  SetBorderColor 136 136 255
+  SetBackgroundColor 34 34 63
 
 Show
-  LinkedSockets 5
-  SetBorderColor 119 119 255
-  SetTextColor 119 119 255
-  SetBackgroundColor 29 29 63
-  SetFontSize 42
-  PlayAlertSound 6
-  MinimapIcon 0 Brown Circle
+  Class "Life Flasks"
+  BaseType "Medium Life Flask"
+  ItemLevel < 6
+  Rarity Normal
+  SetTextColor 200 200 200
+  SetBorderColor 200 200 200
+  SetBackgroundColor 50 50 50
+
+Show
+  Class "Life Flasks"
+  BaseType "Large Life Flask"
+  ItemLevel < 12
+  Rarity Magic
+  SetTextColor 136 136 255
+  SetBorderColor 136 136 255
+  SetBackgroundColor 34 34 63
+
+Show
+  Class "Life Flasks"
+  BaseType "Large Life Flask"
+  ItemLevel < 12
+  Rarity Normal
+  SetTextColor 200 200 200
+  SetBorderColor 200 200 200
+  SetBackgroundColor 50 50 50
+
+Show
+  Class "Life Flasks"
+  BaseType "Greater Life Flask"
+  ItemLevel < 18
+  Rarity Magic
+  SetTextColor 136 136 255
+  SetBorderColor 136 136 255
+  SetBackgroundColor 34 34 63
+
+Show
+  Class "Life Flasks"
+  BaseType "Greater Life Flask"
+  ItemLevel < 18
+  Rarity Normal
+  SetTextColor 200 200 200
+  SetBorderColor 200 200 200
+  SetBackgroundColor 50 50 50
+
+Show
+  Class "Life Flasks"
+  BaseType "Grand Life Flask"
+  ItemLevel < 24
+  Rarity Magic
+  SetTextColor 136 136 255
+  SetBorderColor 136 136 255
+  SetBackgroundColor 34 34 63
+
+Show
+  Class "Life Flasks"
+  BaseType "Grand Life Flask"
+  ItemLevel < 24
+  Rarity Normal
+  SetTextColor 200 200 200
+  SetBorderColor 200 200 200
+  SetBackgroundColor 50 50 50
+
+Show
+  Class "Life Flasks"
+  BaseType "Giant Life Flask"
+  ItemLevel < 30
+  Rarity Magic
+  SetTextColor 136 136 255
+  SetBorderColor 136 136 255
+  SetBackgroundColor 34 34 63
+
+Show
+  Class "Life Flasks"
+  BaseType "Giant Life Flask"
+  ItemLevel < 30
+  Rarity Normal
+  SetTextColor 200 200 200
+  SetBorderColor 200 200 200
+  SetBackgroundColor 50 50 50
+
+Show
+  Class "Life Flasks"
+  BaseType "Colossal Life Flask"
+  ItemLevel < 36
+  Rarity Magic
+  SetTextColor 136 136 255
+  SetBorderColor 136 136 255
+  SetBackgroundColor 34 34 63
+
+Show
+  Class "Life Flasks"
+  BaseType "Colossal Life Flask"
+  ItemLevel < 36
+  Rarity Normal
+  SetTextColor 200 200 200
+  SetBorderColor 200 200 200
+  SetBackgroundColor 50 50 50
+
+Show
+  Class "Life Flasks"
+  BaseType "Sacred Life Flask"
+  ItemLevel < 42
+  Rarity Magic
+  SetTextColor 136 136 255
+  SetBorderColor 136 136 255
+  SetBackgroundColor 34 34 63
+
+Show
+  Class "Life Flasks"
+  BaseType "Sacred Life Flask"
+  ItemLevel < 42
+  Rarity Normal
+  SetTextColor 200 200 200
+  SetBorderColor 200 200 200
+  SetBackgroundColor 50 50 50
+
+Show
+  Class "Life Flasks"
+  BaseType "Hallowed Life Flask"
+  ItemLevel < 60
+  Rarity Magic
+  SetTextColor 136 136 255
+  SetBorderColor 136 136 255
+  SetBackgroundColor 34 34 63
+
+Show
+  Class "Life Flasks"
+  BaseType "Hallowed Life Flask"
+  ItemLevel < 60
+  Rarity Normal
+  SetTextColor 200 200 200
+  SetBorderColor 200 200 200
+  SetBackgroundColor 50 50 50
+
+Show
+  Class "Life Flasks"
+  BaseType "Divine Life Flask"
+  ItemLevel < 65
+  Rarity Magic
+  SetTextColor 136 136 255
+  SetBorderColor 136 136 255
+  SetBackgroundColor 34 34 63
+
+Show
+  Class "Life Flasks"
+  BaseType "Divine Life Flask"
+  ItemLevel < 65
+  Rarity Normal
+  SetTextColor 200 200 200
+  SetBorderColor 200 200 200
+  SetBackgroundColor 50 50 50
+
+Show
+  Class "Life Flasks"
+  BaseType "Eternal Life Flask"
+  Rarity Magic
+  SetTextColor 136 136 255
+  SetBorderColor 136 136 255
+  SetBackgroundColor 34 34 63
+
+Show
+  Class "Life Flasks"
+  BaseType "Eternal Life Flask"
+  Rarity Normal
+  SetTextColor 200 200 200
+  SetBorderColor 200 200 200
+  SetBackgroundColor 50 50 50
+
+Show
+  Class "Mana Flasks"
+  BaseType "Medium Mana Flask"
+  ItemLevel < 6
+  Rarity Magic
+  SetTextColor 136 136 255
+  SetBorderColor 136 136 255
+  SetBackgroundColor 34 34 63
+
+Show
+  Class "Mana Flasks"
+  BaseType "Medium Mana Flask"
+  ItemLevel < 6
+  Rarity Normal
+  SetTextColor 200 200 200
+  SetBorderColor 200 200 200
+  SetBackgroundColor 50 50 50
+
+Show
+  Class "Mana Flasks"
+  BaseType "Large Mana Flask"
+  ItemLevel < 12
+  Rarity Magic
+  SetTextColor 136 136 255
+  SetBorderColor 136 136 255
+  SetBackgroundColor 34 34 63
+
+Show
+  Class "Mana Flasks"
+  BaseType "Large Mana Flask"
+  ItemLevel < 12
+  Rarity Normal
+  SetTextColor 200 200 200
+  SetBorderColor 200 200 200
+  SetBackgroundColor 50 50 50
+
+Show
+  Class "Mana Flasks"
+  BaseType "Greater Mana Flask"
+  ItemLevel < 18
+  Rarity Magic
+  SetTextColor 136 136 255
+  SetBorderColor 136 136 255
+  SetBackgroundColor 34 34 63
+
+Show
+  Class "Mana Flasks"
+  BaseType "Greater Mana Flask"
+  ItemLevel < 18
+  Rarity Normal
+  SetTextColor 200 200 200
+  SetBorderColor 200 200 200
+  SetBackgroundColor 50 50 50
+
+Show
+  Class "Mana Flasks"
+  BaseType "Grand Mana Flask"
+  ItemLevel < 24
+  Rarity Magic
+  SetTextColor 136 136 255
+  SetBorderColor 136 136 255
+  SetBackgroundColor 34 34 63
+
+Show
+  Class "Mana Flasks"
+  BaseType "Grand Mana Flask"
+  ItemLevel < 24
+  Rarity Normal
+  SetTextColor 200 200 200
+  SetBorderColor 200 200 200
+  SetBackgroundColor 50 50 50
+
+Show
+  Class "Mana Flasks"
+  BaseType "Giant Mana Flask"
+  ItemLevel < 30
+  Rarity Magic
+  SetTextColor 136 136 255
+  SetBorderColor 136 136 255
+  SetBackgroundColor 34 34 63
+
+Show
+  Class "Mana Flasks"
+  BaseType "Giant Mana Flask"
+  ItemLevel < 30
+  Rarity Normal
+  SetTextColor 200 200 200
+  SetBorderColor 200 200 200
+  SetBackgroundColor 50 50 50
+
+Show
+  Class "Mana Flasks"
+  BaseType "Colossal Mana Flask"
+  ItemLevel < 36
+  Rarity Magic
+  SetTextColor 136 136 255
+  SetBorderColor 136 136 255
+  SetBackgroundColor 34 34 63
+
+Show
+  Class "Mana Flasks"
+  BaseType "Colossal Mana Flask"
+  ItemLevel < 36
+  Rarity Normal
+  SetTextColor 200 200 200
+  SetBorderColor 200 200 200
+  SetBackgroundColor 50 50 50
+
+Show
+  Class "Mana Flasks"
+  BaseType "Sacred Mana Flask"
+  ItemLevel < 42
+  Rarity Magic
+  SetTextColor 136 136 255
+  SetBorderColor 136 136 255
+  SetBackgroundColor 34 34 63
+
+Show
+  Class "Mana Flasks"
+  BaseType "Sacred Mana Flask"
+  ItemLevel < 42
+  Rarity Normal
+  SetTextColor 200 200 200
+  SetBorderColor 200 200 200
+  SetBackgroundColor 50 50 50
+
+Show
+  Class "Mana Flasks"
+  BaseType "Hallowed Mana Flask"
+  ItemLevel < 60
+  Rarity Magic
+  SetTextColor 136 136 255
+  SetBorderColor 136 136 255
+  SetBackgroundColor 34 34 63
+
+Show
+  Class "Mana Flasks"
+  BaseType "Hallowed Mana Flask"
+  ItemLevel < 60
+  Rarity Normal
+  SetTextColor 200 200 200
+  SetBorderColor 200 200 200
+  SetBackgroundColor 50 50 50
+
+Show
+  Class "Mana Flasks"
+  BaseType "Divine Mana Flask"
+  ItemLevel < 65
+  Rarity Magic
+  SetTextColor 136 136 255
+  SetBorderColor 136 136 255
+  SetBackgroundColor 34 34 63
+
+Show
+  Class "Mana Flasks"
+  BaseType "Divine Mana Flask"
+  ItemLevel < 65
+  Rarity Normal
+  SetTextColor 200 200 200
+  SetBorderColor 200 200 200
+  SetBackgroundColor 50 50 50
+
+Show
+  Class "Mana Flasks"
+  BaseType "Eternal Mana Flask"
+  Rarity Magic
+  SetTextColor 136 136 255
+  SetBorderColor 136 136 255
+  SetBackgroundColor 34 34 63
+
+Show
+  Class "Mana Flasks"
+  BaseType "Eternal Mana Flask"
+  Rarity Normal
+  SetTextColor 200 200 200
+  SetBorderColor 200 200 200
+  SetBackgroundColor 50 50 50
+
+## JEWEL
+Show
+  Class "Jewel"
+  Rarity Unique
+  SetTextColor 175 96 37
+  SetBorderColor 175 96 37
+  SetBackgroundColor 43 24 9
+
+Show
+  Class "Jewel"
+  Rarity Rare
+  SetTextColor 255 255 119
+  SetBorderColor 255 255 119
+  SetBackgroundColor 63 63 29
+
+Hide
+  Class "Jewel"
+  Rarity Magic
+  SetTextColor 136 136 255
+  SetBorderColor 136 136 255
+  SetBackgroundColor 34 34 63
+
+Hide
+  Class "Jewel"
+  Rarity Normal
+  SetTextColor 200 200 200
+  SetBorderColor 200 200 200
+  SetBackgroundColor 50 50 50
+
+## ENCHANTMENTS
+#Show
+  #AnyEnchantment True
+
+
+## SHAPER
+Show
+  ShaperItem True
+  SetTextColor 128 64 128
+  SetBorderColor 128 64 128
+  SetBackgroundColor 32 16 32
 
 Show
   BaseType "The Shaper's Key"
-  SetBorderColor 128 64 128
   SetTextColor 128 64 128
-  SetBackgroundColor 32 16 32
-  SetFontSize 42
-  PlayAlertSound 6
-  MinimapIcon 0 Brown Circle
-
-Show
-  FracturedItem True
   SetBorderColor 128 64 128
-  SetTextColor 128 64 128
   SetBackgroundColor 32 16 32
-  SetFontSize 42
-  PlayAlertSound 6
-  MinimapIcon 0 Brown Circle
 
-Show
-  SynthesisedItem True
-  SetBorderColor 128 64 128
-  SetTextColor 128 64 128
-  SetBackgroundColor 32 16 32
-  SetFontSize 42
-  PlayAlertSound 6
-  MinimapIcon 0 Brown Circle
 
-Show
-  ShaperItem True
-  SetBorderColor 128 64 128
-  SetTextColor 128 64 128
-  SetBackgroundColor 32 16 32
-  SetFontSize 42
-  PlayAlertSound 6
-  MinimapIcon 0 Brown Circle
-
+## ELDER
 Show
   ElderItem True
-  SetBorderColor 128 64 128
   SetTextColor 128 64 128
+  SetBorderColor 128 64 128
   SetBackgroundColor 32 16 32
-  SetFontSize 42
-  PlayAlertSound 6
-  MinimapIcon 0 Brown Circle
 
+
+## SIX SOCKETS
+Show
+  LinkedSockets 5
+  PlayAlertSound 6
+  SetFontSize 45
+  SetTextColor 119 119 255
+  SetBorderColor 119 119 255
+  SetBackgroundColor 29 29 63
+
+Show
+  LinkedSockets 5
+  PlayAlertSound 6
+  SetFontSize 45
+  SetTextColor 119 119 255
+  SetBorderColor 119 119 255
+  SetBackgroundColor 29 29 63
+  
+
+## CHROMATIC
 Show
   SocketGroup RGB
   Width <= 2
   Height <= 2
-  SetBorderColor 128 128 128
-  SetTextColor 128 128 128
-  SetBackgroundColor 32 32 32
+  SetTextColor 100 100 100
+  SetBorderColor 100 100 100
+  SetBackgroundColor 25 25 25
 
+
+## EQUIPMENT
 Show
-  SocketGroup RGB
-  Width <= 1
-  Height <= 3
-  SetBorderColor 128 128 128
-  SetTextColor 128 128 128
-  SetBackgroundColor 32 32 32
-
-Show
-  SocketGroup RGB
-  SetBorderColor 128 128 128
-  SetTextColor 128 128 128
-  SetBackgroundColor 32 32 32
-
-##
-# Equipment
-##
-
-Show
+  Class "Gloves" "Boots" "Body Armours" "Helmets" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Amulets" "Rings" "Belts" "Quivers" "Shields" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" 
   Rarity Unique
-  BaseType "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
-  SetBorderColor 175 96 37
   SetTextColor 175 96 37
+  SetBorderColor 175 96 37
   SetBackgroundColor 43 24 9
 
 Show
+  Class "Gloves" "Boots" "Body Armours" "Helmets" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Amulets" "Rings" "Belts" "Quivers" "Shields" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" 
   Rarity Rare
-  BaseType "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
-  SetBorderColor 255 255 119
   SetTextColor 255 255 119
-  SetBackgroundColor 63 63 29
-
-Show
-  Rarity Magic
-  BaseType "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
-  SetBorderColor 136 136 255
-  SetTextColor 136 136 255
-  SetBackgroundColor 34 34 63
-
-Show
-  Rarity Normal
-  BaseType "Steel Ring" "Opal Ring" "Blue Pearl Amulet" "Marble Amulet" "Vanguard Belt" "Crystal Belt" "Bone Helmet" "Two-Toned Boots" "Spiked Gloves" "Gripped Gloves" "Fingerless Silk Gloves"
-  SetBorderColor 200 200 200
-  SetTextColor 200 200 200
-  SetBackgroundColor 50 50 50
-
-Show
-  Class Amulet
-  Rarity Rare
-  ItemLevel >= 60
   SetBorderColor 255 255 119
-  SetTextColor 255 255 119
   SetBackgroundColor 63 63 29
-  SetFontSize 42
-  CustomAlertSound "./audio/amulet.wav"
-  MinimapIcon 2 Yellow Star
-
-Show
-  Class Ring
-  Rarity Rare
-  ItemLevel >= 60
-  SetBorderColor 255 255 119
-  SetTextColor 255 255 119
-  SetBackgroundColor 63 63 29
-  SetFontSize 42
-  CustomAlertSound "./audio/ring.wav"
-  MinimapIcon 2 Yellow Star
-
-##
-# Equipment
-##
-
-Show
-  Rarity Unique
-  Class Claws Daggers Wands "One Hand" "Two Hand" Bows Staves Quivers Belts Gloves Boots "Body Armours" Helmets Shields Sceptres Amulet Ring Jewel
-  SetBorderColor 175 96 37
-  SetTextColor 175 96 37
-  SetBackgroundColor 43 24 9
-
-Show
-  Rarity Rare
-  Class Claws Daggers Wands "One Hand" "Two Hand" Bows Staves Quivers Belts Gloves Boots "Body Armours" Helmets Shields Sceptres Amulet Ring Jewel
-  SetBorderColor 255 255 119
-  SetTextColor 255 255 119
-  SetBackgroundColor 63 63 29
-
-Show
-  Rarity Magic
-  ItemLevel < 20
-  Class Claws Daggers Wands "One Hand" "Two Hand" Bows Staves Quivers Belts Gloves Boots "Body Armours" Helmets Shields Sceptres Amulet Ring Jewel
-  SetBorderColor 136 136 255
-  SetTextColor 136 136 255
-  SetBackgroundColor 34 34 63
-
-Show
-  Rarity Normal
-  ItemLevel < 20
-  Class Claws Daggers Wands "One Hand" "Two Hand" Bows Staves Quivers Belts Gloves Boots "Body Armours" Helmets Shields Sceptres Amulet Ring Jewel
-  SetBorderColor 200 200 200
-  SetTextColor 200 200 200
-  SetBackgroundColor 50 50 50
 
 Hide
+  Class "Gloves" "Boots" "Body Armours" "Helmets" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Amulets" "Rings" "Belts" "Quivers" "Shields" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" 
   Rarity Magic
-  Class Claws Daggers Wands "One Hand" "Two Hand" Bows Staves Quivers Belts Gloves Boots "Body Armours" Helmets Shields Sceptres Amulet Ring Jewel
-  SetBorderColor 136 136 255
   SetTextColor 136 136 255
+  SetBorderColor 136 136 255
   SetBackgroundColor 34 34 63
 
 Hide
+  Class "Gloves" "Boots" "Body Armours" "Helmets" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Amulets" "Rings" "Belts" "Quivers" "Shields" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" 
   Rarity Normal
-  Class Claws Daggers Wands "One Hand" "Two Hand" Bows Staves Quivers Belts Gloves Boots "Body Armours" Helmets Shields Sceptres Amulet Ring Jewel
-  SetBorderColor 200 200 200
   SetTextColor 200 200 200
+  SetBorderColor 200 200 200
   SetBackgroundColor 50 50 50
 
-##
-# Gems
-##
-
+## CATCH ALL
 Show
-  Class Gem
-  BaseType Portal Empower Enlighten Enhance "Detonate Mines" "Item Quantity" "Added Chaos Damage" Vaal "Vaal Breach"
-  SetBorderColor 27 162 155
-  SetTextColor 27 162 155
-  SetBackgroundColor 6 40 38
-  SetFontSize 42
-  CustomAlertSound "./audio/gem.wav"
-  MinimapIcon 2 Green Circle
+  SetFontSize 45
+  SetTextColor 1 1 1
+  SetBorderColor 1 1 1
+  SetBackgroundColor 0 0 0
 
-Show
-  Class Gem
-  Quality >= 1
-  SetBorderColor 27 162 155
-  SetTextColor 27 162 155
-  SetBackgroundColor 6 40 38
-  CustomAlertSound "./audio/gem.wav"
-  MinimapIcon 2 Green Circle
-
-Show
-  Class Gem
-  SetBorderColor 27 162 155
-  SetTextColor 27 162 155
-  SetBackgroundColor 6 40 38
-
-##
-# Divination
-##
-
-Show
-  Class Currency
-  BaseType "Stacked Deck"
-  SetBorderColor 14 186 255
-  SetTextColor 14 186 255
-  SetBackgroundColor 3 46 63
-  CustomAlertSound "./audio/rare.wav"
-  MinimapIcon 2 Blue Circle
-
-Show
-  Class "Divination Card"
-  SetBorderColor 14 186 255
-  SetTextColor 14 186 255
-  SetBackgroundColor 3 46 63
-  CustomAlertSound "./audio/rare.wav"
-  MinimapIcon 2 Blue Circle
-
-##
-# Flasks
-##
-
-Show
-  Rarity Unique
-  Quality >= 5
-  Class Flask
-  SetBorderColor 175 96 37
-  SetTextColor 175 96 37
-  SetBackgroundColor 43 24 9
-
-Show
-  Rarity Magic
-  Quality >= 5
-  Class Flask
-  SetBorderColor 136 136 255
-  SetTextColor 136 136 255
-  SetBackgroundColor 34 34 63
-
-Show
-  Rarity Normal
-  Quality >= 5
-  Class Flask
-  SetBorderColor 200 200 200
-  SetTextColor 200 200 200
-  SetBackgroundColor 50 50 50
-
-Show
-  Rarity Unique
-  Class Flask
-  SetBorderColor 175 96 37
-  SetTextColor 175 96 37
-  SetBackgroundColor 43 24 9
-
-Show
-  Rarity Magic
-  Class "Utility Flasks"
-  SetBorderColor 136 136 255
-  SetTextColor 136 136 255
-  SetBackgroundColor 34 34 63
-
-Show
-  Rarity Normal
-  Class "Utility Flasks"
-  SetBorderColor 200 200 200
-  SetTextColor 200 200 200
-  SetBackgroundColor 50 50 50
-
-Show
-  Rarity Magic
-  Class Flask
-  ItemLevel < 50
-  SetBorderColor 136 136 255
-  SetTextColor 136 136 255
-  SetBackgroundColor 34 34 63
-
-Show
-  Rarity Normal
-  Class Flask
-  ItemLevel < 50
-  SetBorderColor 200 200 200
-  SetTextColor 200 200 200
-  SetBackgroundColor 50 50 50
-
-Hide
-  Rarity Magic
-  Class Flask
-  SetBorderColor 136 136 255
-  SetTextColor 136 136 255
-  SetBackgroundColor 34 34 63
-
-Hide
-  Rarity Normal
-  Class Flask
-  SetBorderColor 200 200 200
-  SetTextColor 200 200 200
-  SetBackgroundColor 50 50 50
-
-##
-# Maps
-##
-
-Show
-  BaseType "Divine Vessel" "Offering to the Goddess"
-  SetBorderColor 210 0 220
-  SetTextColor 210 0 220
-  SetBackgroundColor 52 0 55
-  CustomAlertSound "./audio/collectable.mp3"
-  MinimapIcon 1 White Hexagon
-
-Show
-  Class "Map Fragments"
-  SetBorderColor 210 0 220
-  SetTextColor 210 0 220
-  SetBackgroundColor 52 0 55
-  CustomAlertSound "./audio/collectable.mp3"
-  MinimapIcon 1 White Hexagon
-
-Show
-  Rarity Unique
-  Class Maps
-  SetBorderColor 210 0 220
-  SetTextColor 210 0 220
-  SetBackgroundColor 52 0 55
-  CustomAlertSound "./audio/collectable.mp3"
-  MinimapIcon 1 White Hexagon
-
-Show
-  Rarity Rare
-  Class Maps
-  SetBorderColor 210 0 220
-  SetTextColor 210 0 220
-  SetBackgroundColor 52 0 55
-  CustomAlertSound "./audio/collectable.mp3"
-  MinimapIcon 1 White Hexagon
-
-Show
-  Rarity Magic
-  Class Maps
-  SetBorderColor 210 0 220
-  SetTextColor 210 0 220
-  SetBackgroundColor 52 0 55
-  CustomAlertSound "./audio/collectable.mp3"
-  MinimapIcon 1 White Hexagon
-
-Show
-  Rarity Normal
-  Class Maps
-  SetBorderColor 210 0 220
-  SetTextColor 210 0 220
-  SetBackgroundColor 52 0 55
-  CustomAlertSound "./audio/collectable.mp3"
-  MinimapIcon 1 White Hexagon

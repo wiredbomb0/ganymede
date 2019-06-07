@@ -1,0 +1,33 @@
+## FLASKS
+Show
+  Class Flasks
+  Rarity Unique
+  Quality >= 5
+  {{EquipmentUnique}}
+
+Show
+  Class Flasks
+  Rarity Magic
+  Quality >= 5
+  {{EquipmentMagic}}
+
+Show
+  Class Flasks
+  Rarity Normal
+  Quality >= 5
+  {{EquipmentNormal}}
+
+Show
+  Class "Utility Flasks"
+  Rarity Unique
+  {{EquipmentUnique}}
+
+Show
+  Class "Utility Flasks"
+  Rarity Magic
+  {{EquipmentMagic}}
+
+Show
+  Class "Utility Flasks"
+  Rarity Normal
+  {{EquipmentNormal}}
