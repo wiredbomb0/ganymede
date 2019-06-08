@@ -27,7 +27,7 @@ Show
   {{EquipmentValuable}}
 
 Show
-  LinkedSockets 5
+  Sockets 6
   PlayAlertSound 6
   SetFontSize 45
   {{EquipmentValuable}}

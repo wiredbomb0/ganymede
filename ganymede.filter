@@ -1,6 +1,6 @@
 # Ganymede
 # Version: 3.7.0--S1.0
-# 2019-06-07 20:40:50.711000
+# 2019-06-08 06:40:11.074000
 
 ## QUEST
 Show
@@ -403,7 +403,7 @@ Show
 
 Show
   Class Currency
-  BaseType "Chaos Orb" "Vaal Orb" "Regal Orb" "Gemcutter's Prism" "Orb of Scouring" "Orb of Regret" "Orb of Fusing" "Orb of Alchemy" "Orb of Annulment" "Divine Orb" "Master Cartographer's Sextant" "Journeyman Cartographer's Sextant" "Apprentice Cartographer's Sextant"
+  BaseType "Chaos Orb" "Vaal Orb" "Regal Orb" "Gemcutter's Prism" "Orb of Scouring" "Orb of Regret" "Orb of Fusing" "Orb of Alchemy" "Orb of Annulment" "Divine Orb" "Master Cartographer's Sextant" "Journeyman Cartographer's Sextant" "Apprentice Cartographer's Sextant" "Blessed Orb"
   CustomAlertSound "./audio/currency_medium.wav"
   MinimapIcon 1 White Circle
   PlayEffect White Temp
@@ -414,7 +414,7 @@ Show
 
 Show
   Class Currency
-  BaseType "Blacksmith's Whetstone" "Armourer's Scrap" "Orb of Transmutation" "Orb of Chance" "Blessed Orb" "Orb of Augmentation" "Glassblower's Bauble" "Jeweller's Orb" "Orb of Alteration" "Chromatic Orb" "Cartographer's Chisel"
+  BaseType "Blacksmith's Whetstone" "Armourer's Scrap" "Orb of Transmutation" "Orb of Chance" "Orb of Augmentation" "Glassblower's Bauble" "Jeweller's Orb" "Orb of Alteration" "Chromatic Orb" "Cartographer's Chisel"
   SetTextColor 170 158 130
   SetBorderColor 170 158 130
   SetBackgroundColor 42 39 32
@@ -950,7 +950,7 @@ Show
   SetBackgroundColor 29 29 63
 
 Show
-  LinkedSockets 5
+  Sockets 6
   PlayAlertSound 6
   SetFontSize 45
   SetTextColor 119 119 255
