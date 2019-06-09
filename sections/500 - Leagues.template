@@ -113,7 +113,7 @@ Show
   {{Currency}}
 
 Show
-  Class Currency
+  Class Currency "Stackable Currency"
   BaseType "Harbinger's Shard" "Annulment Shard" "Ancient Orb" "Ancient Shard" "Binding Shard" "Chaos Shard" "Engineer's Orb" "Engineer's Shard" "Horizon Shard" "Orb of Binding" "Orb of Horizons" "Regal Shard"
   CustomAlertSound "./audio/currency_medium.wav"
   MinimapIcon 1 White Circle
@@ -121,6 +121,13 @@ Show
   SetFontSize 45
   {{Currency}}
 
+Show
+  Class "Stackable Currency"
+  BaseType "Shard"
+  CustomAlertSound "./audio/currency_low.wav"
+  MinimapIcon 2 White Circle
+  PlayEffect White Temp
+  {{Currency}}
 
 ## Legacy
 Show

@@ -1,6 +1,6 @@
 # Ganymede
 # Version: 3.7.0--S1.0
-# 2019-06-09 00:00:55.993000
+# 2019-06-09 04:12:17.239000
 
 ## QUEST
 Show
@@ -176,7 +176,7 @@ Show
   SetBackgroundColor 42 39 32
 
 Show
-  Class Currency
+  Class Currency "Stackable Currency"
   BaseType "Harbinger's Shard" "Annulment Shard" "Ancient Orb" "Ancient Shard" "Binding Shard" "Chaos Shard" "Engineer's Orb" "Engineer's Shard" "Horizon Shard" "Orb of Binding" "Orb of Horizons" "Regal Shard"
   CustomAlertSound "./audio/currency_medium.wav"
   MinimapIcon 1 White Circle
@@ -186,6 +186,15 @@ Show
   SetBorderColor 170 158 130
   SetBackgroundColor 42 39 32
 
+Show
+  Class "Stackable Currency"
+  BaseType "Shard"
+  CustomAlertSound "./audio/currency_low.wav"
+  MinimapIcon 2 White Circle
+  PlayEffect White Temp
+  SetTextColor 170 158 130
+  SetBorderColor 170 158 130
+  SetBackgroundColor 42 39 32
 
 ## Legacy
 Show
@@ -719,12 +728,30 @@ Show
 Show
   Class "Life Flasks"
   BaseType "Eternal Life Flask"
+  ItemLevel < 70
   Rarity Magic
   SetTextColor 136 136 255
   SetBorderColor 136 136 255
   SetBackgroundColor 34 34 63
 
 Show
+  Class "Life Flasks"
+  BaseType "Eternal Life Flask"
+  ItemLevel < 70
+  Rarity Normal
+  SetTextColor 200 200 200
+  SetBorderColor 200 200 200
+  SetBackgroundColor 50 50 50
+
+Hide
+  Class "Life Flasks"
+  BaseType "Eternal Life Flask"
+  Rarity Magic
+  SetTextColor 136 136 255
+  SetBorderColor 136 136 255
+  SetBackgroundColor 34 34 63
+
+Hide
   Class "Life Flasks"
   BaseType "Eternal Life Flask"
   Rarity Normal
@@ -897,12 +924,30 @@ Show
 Show
   Class "Mana Flasks"
   BaseType "Eternal Mana Flask"
+  ItemLevel < 70
   Rarity Magic
   SetTextColor 136 136 255
   SetBorderColor 136 136 255
   SetBackgroundColor 34 34 63
 
 Show
+  Class "Mana Flasks"
+  BaseType "Eternal Mana Flask"
+  ItemLevel < 70
+  Rarity Normal
+  SetTextColor 200 200 200
+  SetBorderColor 200 200 200
+  SetBackgroundColor 50 50 50
+
+Hide
+  Class "Mana Flasks"
+  BaseType "Eternal Mana Flask"
+  Rarity Magic
+  SetTextColor 136 136 255
+  SetBorderColor 136 136 255
+  SetBackgroundColor 34 34 63
+
+Hide
   Class "Mana Flasks"
   BaseType "Eternal Mana Flask"
   Rarity Normal

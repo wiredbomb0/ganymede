@@ -128,10 +128,24 @@ Show
 Show
   Class "Life Flasks"
   BaseType "Eternal Life Flask"
+  ItemLevel < 70
   Rarity Magic
   {{EquipmentMagic}}
 
 Show
+  Class "Life Flasks"
+  BaseType "Eternal Life Flask"
+  ItemLevel < 70
+  Rarity Normal
+  {{EquipmentNormal}}
+
+Hide
+  Class "Life Flasks"
+  BaseType "Eternal Life Flask"
+  Rarity Magic
+  {{EquipmentMagic}}
+
+Hide
   Class "Life Flasks"
   BaseType "Eternal Life Flask"
   Rarity Normal
@@ -266,10 +280,24 @@ Show
 Show
   Class "Mana Flasks"
   BaseType "Eternal Mana Flask"
+  ItemLevel < 70
   Rarity Magic
   {{EquipmentMagic}}
 
 Show
+  Class "Mana Flasks"
+  BaseType "Eternal Mana Flask"
+  ItemLevel < 70
+  Rarity Normal
+  {{EquipmentNormal}}
+
+Hide
+  Class "Mana Flasks"
+  BaseType "Eternal Mana Flask"
+  Rarity Magic
+  {{EquipmentMagic}}
+
+Hide
   Class "Mana Flasks"
   BaseType "Eternal Mana Flask"
   Rarity Normal
