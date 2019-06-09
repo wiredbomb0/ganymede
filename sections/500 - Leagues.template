@@ -1,14 +1,14 @@
 ## Legion
 Show
   Class Incubator
-  CustomAlertSound "./audio/rare.wav"
+  CustomAlertSound "./audio/incubator.wav"
   SetFontSize 45
   {{LeagueSpecific}}
 
 Show
-  Class "Map Fragments"
+  Class "Stackable Currency"
   BaseType "Emblem" "Splinter"
-  CustomAlertSound "./audio/rare.wav"
+  CustomAlertSound "./audio/incubator.wav"
   SetFontSize 45
   {{LeagueSpecific}}
 
@@ -99,6 +99,7 @@ Show
   Class "Map"
   BaseType "Harbinger Map"
   CustomAlertSound "./audio/rare.wav"
+  MinimapIcon 2 White Circle
   SetFontSize 45
   {{LeagueSpecific}}
 
@@ -126,6 +127,7 @@ Show
   Class "Misc Map Items"
   BaseType "Ancient Reliquary Key" "Timeworn Reliquary Key"
   CustomAlertSound "./audio/currency_high.wav"
+  MinimapIcon 1 White Circle
   SetFontSize 45
   {{LeagueSpecific}}
 
@@ -135,6 +137,7 @@ Show
   Class Gem
   BaseType "Vaal Breach"
   CustomAlertSound "./audio/gem.wav"
+  MinimapIcon 2 White Circle
   SetFontSize 45
   {{LeagueSpecific}}
 
@@ -142,6 +145,7 @@ Show
   Class Currency
   BaseType "Blessing of Chayula" "Blessing of Uul-Netol"  "Blessing of Tul" "Blessing of Xoph" "Blessing of Esh" 
   CustomAlertSound "./audio/rare.wav"
+  MinimapIcon 2 White Circle
   DisableDropSound
   SetFontSize 45
   {{LeagueSpecific}}
@@ -150,6 +154,7 @@ Show
   Class Currency
   BaseType "Splinter of Chayula" "Splinter of Uul-Netol" "Splinter of Tul" "Splinter of Xoph" "Splinter of Esh"
   CustomAlertSound "./audio/rare.wav"
+  MinimapIcon 2 White Circle
   DisableDropSound
   SetFontSize 45
   {{LeagueSpecific}}
@@ -158,6 +163,7 @@ Show
   Class Currency
   BaseType "Chayula's Breachstone" "Uul-Netol's Breachstone" "Tul's Breachstone" "Xoph's Breachstone" "Esh's Breachstone" 
   CustomAlertSound "./audio/rare.wav"
+  MinimapIcon 2 White Circle
   DisableDropSound
   SetFontSize 45
   {{LeagueSpecific}}
@@ -168,6 +174,7 @@ Show
   Class "Stackable Currency"
   BaseType "Essence of Hysteria" "Essence of Insanity" "Essence of Horror" "Essence of Delirium" "Remnant of Corruption"
   CustomAlertSound "./audio/currency_medium.wav"
+  MinimapIcon 2 White Circle
   DisableDropSound
   SetFontSize 45
   {{LeagueSpecific}}
@@ -176,6 +183,7 @@ Show
   Class "Stackable Currency"
   BaseType "Essence of"
   CustomAlertSound "./audio/rare.wav"
+  MinimapIcon 2 White Circle
   DisableDropSound
   SetFontSize 45
   {{LeagueSpecific}}
@@ -183,8 +191,10 @@ Show
 
 ## Prophecy
 Show
+  Class "Stackable Currency"
   BaseType "Prophecy"
   CustomAlertSound "./audio/rare.wav"
+  MinimapIcon 2 White Circle
   DisableDropSound
   SetFontSize 45
   {{LeagueSpecific}}
@@ -193,6 +203,7 @@ Show
   Class Currency
   BaseType "Silver Coin"
   CustomAlertSound "./audio/currency_low.wav"
+  MinimapIcon 2 White Circle
   DisableDropSound
   {{LeagueSpecific}}
 
@@ -200,6 +211,7 @@ Show
   Class "Map Fragment"
   BaseType "Eber's Key" "Inya's Key" "Volkuur's Key" "Yriel's Key"
   CustomAlertSound "./audio/rare.wav"
+  MinimapIcon 2 White Circle
   DisableDropSound
   SetFontSize 45
   {{LeagueSpecific}}
@@ -210,6 +222,7 @@ Show
   Class Currency
   BaseType "Perandus Coin"
   CustomAlertSound "./audio/currency_low.wav"
+  MinimapIcon 2 White Circle
   {{LeagueSpecific}}
 
 
@@ -217,4 +230,5 @@ Show
 Show
   BaseType "Talisman"
   CustomAlertSound "./audio/rare.wav"
+  MinimapIcon 2 White Circle
   {{LeagueSpecific}}

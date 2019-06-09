@@ -3,4 +3,5 @@ Show
   Class Quest
   SetFontSize 45
   CustomAlertSound "./audio/token.wav"
+  MinimapIcon 2 Green Circle
   {{Quest}}

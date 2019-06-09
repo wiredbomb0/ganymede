@@ -1,35 +1,40 @@
 ## MAPS
 Show
   Class "Map Fragment"
-  CustomAlertSound "./audio/map.wav" 300
+  CustomAlertSound "./audio/currency_medium.wav" 300
+  MinimapIcon 2 White Circle
   DisableDropSound
   SetFontSize 45
   {{Maps}}
 
 Show
   Class Maps
-  CustomAlertSound "./audio/map.wav" 300
+  CustomAlertSound "./audio/currency_medium.wav" 300
+  MinimapIcon 2 White Circle
   Rarity Unique
   SetFontSize 38
   {{Maps}}
 
 Show
   Class Maps
-  CustomAlertSound "./audio/map.wav" 300
+  CustomAlertSound "./audio/currency_medium.wav" 300
+  MinimapIcon 2 White Circle
   Rarity Rare
   SetFontSize 38
   {{Maps}}
 
 Show
   Class Maps
-  CustomAlertSound "./audio/map.wav" 300
+  CustomAlertSound "./audio/currency_medium.wav" 300
+  MinimapIcon 2 White Circle
   Rarity Magic
   SetFontSize 38
   {{Maps}}
 
 Show
   Class Maps
-  CustomAlertSound "./audio/map.wav" 300
+  CustomAlertSound "./audio/currency_medium.wav" 300
+  MinimapIcon 2 White Circle
   Rarity Normal
   SetFontSize 38
   {{Maps}}

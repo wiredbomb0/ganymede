@@ -6,16 +6,19 @@
 ## SHAPER
 Show
   ShaperItem True
+  MinimapIcon 2 White Circle
   {{ShapedItem}}
 
 Show
   BaseType "The Shaper's Key"
+  MinimapIcon 2 White Circle
   {{ShapedItem}}
 
 
 ## ELDER
 Show
   ElderItem True
+  MinimapIcon 2 White Circle
   {{ShapedItem}}
 
 
@@ -23,12 +26,14 @@ Show
 Show
   LinkedSockets 5
   PlayAlertSound 6
+  MinimapIcon 2 White Circle
   SetFontSize 45
   {{EquipmentValuable}}
 
 Show
   Sockets 6
   PlayAlertSound 6
+  MinimapIcon 2 White Circle
   SetFontSize 45
   {{EquipmentValuable}}
   

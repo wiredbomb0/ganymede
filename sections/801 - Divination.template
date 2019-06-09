@@ -3,9 +3,11 @@ Show
   Class Currency
   BaseType "Stacked Deck"
   CustomAlertSound "./audio/rare.wav"
+  MinimapIcon 2 Blue Circle
   {{Divination}}
 
 Show
   Class "Divination Card"
   CustomAlertSound "./audio/rare.wav"
+  MinimapIcon 2 Blue Circle
   {{Divination}}

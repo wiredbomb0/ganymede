@@ -19,13 +19,13 @@ stache = {
   "Labyrinth": create_color_statements(254, 179, 37),
   "Chromatic": create_color_statements(100, 100, 100),
   "Flask": create_color_statements(150, 33, 72),
-  "Maps": create_color_statements(112, 11, 185),
+  "Maps": create_color_statements(244, 137, 66),
   "EquipmentValuable": create_color_statements(119, 119, 255),
   "EquipmentNormal": create_color_statements(200, 200, 200),
   "EquipmentMagic": create_color_statements(136, 136, 255),
   "EquipmentRare": create_color_statements(255, 255, 119),
   "EquipmentUnique": create_color_statements(175, 96, 37),
-  "LeagueSpecific": create_color_statements(75, 200, 150),
+  "LeagueSpecific": create_color_statements(75, 160, 180),
   "Catch": create_color_statements(1, 1, 1)
 }
 

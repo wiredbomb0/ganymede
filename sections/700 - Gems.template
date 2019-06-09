@@ -3,12 +3,14 @@ Show
   Class Gem
   BaseType Portal Empower Enlighten Enhance "Detonate Mines" "Item Quantity" "Added Chaos Damage" Vaal
   CustomAlertSound "./audio/gem.wav"
+  MinimapIcon 2 White Circle
   SetFontSize 45
   {{Gem}}
 
 Show
   Class Gem
   CustomAlertSound "./audio/gem.wav"
+  MinimapIcon 2 White Circle
   SetFontSize 45
   Quality >= 1
   {{Gem}}

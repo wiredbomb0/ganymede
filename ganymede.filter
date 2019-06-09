@@ -1,12 +1,13 @@
 # Ganymede
 # Version: 3.7.0--S1.0
-# 2019-06-08 06:40:11.074000
+# 2019-06-09 00:00:55.993000
 
 ## QUEST
 Show
   Class Quest
   SetFontSize 45
   CustomAlertSound "./audio/token.wav"
+  MinimapIcon 2 Green Circle
   SetTextColor 74 230 58
   SetBorderColor 74 230 58
   SetBackgroundColor 18 57 14
@@ -33,34 +34,34 @@ Show
 ## Legion
 Show
   Class Incubator
-  CustomAlertSound "./audio/rare.wav"
+  CustomAlertSound "./audio/incubator.wav"
   SetFontSize 45
-  SetTextColor 75 200 150
-  SetBorderColor 75 200 150
-  SetBackgroundColor 18 50 37
+  SetTextColor 75 160 180
+  SetBorderColor 75 160 180
+  SetBackgroundColor 18 40 45
 
 Show
-  Class "Map Fragments"
+  Class "Stackable Currency"
   BaseType "Emblem" "Splinter"
-  CustomAlertSound "./audio/rare.wav"
+  CustomAlertSound "./audio/incubator.wav"
   SetFontSize 45
-  SetTextColor 75 200 150
-  SetBorderColor 75 200 150
-  SetBackgroundColor 18 50 37
+  SetTextColor 75 160 180
+  SetBorderColor 75 160 180
+  SetBackgroundColor 18 40 45
 
 
 ## Synthesis
 Show
   FracturedItem True
-  SetTextColor 75 200 150
-  SetBorderColor 75 200 150
-  SetBackgroundColor 18 50 37
+  SetTextColor 75 160 180
+  SetBorderColor 75 160 180
+  SetBackgroundColor 18 40 45
 
 Show
   SynthesisedItem True
-  SetTextColor 75 200 150
-  SetBorderColor 75 200 150
-  SetBackgroundColor 18 50 37
+  SetTextColor 75 160 180
+  SetBorderColor 75 160 180
+  SetBackgroundColor 18 40 45
   
 
 ## Betrayal
@@ -69,9 +70,9 @@ Show
   HasExplicitMod "Veil"
   CustomAlertSound "./audio/rare.wav"
   SetFontSize 45
-  SetTextColor 75 200 150
-  SetBorderColor 75 200 150
-  SetBackgroundColor 18 50 37
+  SetTextColor 75 160 180
+  SetBorderColor 75 160 180
+  SetBackgroundColor 18 40 45
 
 
 ## Delve
@@ -80,18 +81,18 @@ Show
   HasExplicitMod "of the Underground" "Subterranean"
   CustomAlertSound "./audio/rare.wav"
   SetFontSize 45
-  SetTextColor 75 200 150
-  SetBorderColor 75 200 150
-  SetBackgroundColor 18 50 37
+  SetTextColor 75 160 180
+  SetBorderColor 75 160 180
+  SetBackgroundColor 18 40 45
 
 Show
   Class "Delve Socketable Currency"
   BaseType "Potent Alchemical Resonator" "Powerful Alchemical Resonator" "Primitive Alchemical Resonator" "Potent Chaotic Resonator" "Powerful Chaotic Resonator" "Primitive Chaotic Resonator" "Prime Alchemical Resonator" "Prime Chaotic Resonator"
   CustomAlertSound "./audio/rare.wav"
   SetFontSize 45
-  SetTextColor 75 200 150
-  SetBorderColor 75 200 150
-  SetBackgroundColor 18 50 37
+  SetTextColor 75 160 180
+  SetBorderColor 75 160 180
+  SetBackgroundColor 18 40 45
 
 Show
   Class Currency
@@ -105,25 +106,25 @@ Show
   BaseType "Flashpowder Keg" "Stone of Passage"
   CustomAlertSound "./audio/rare.wav"
   SetFontSize 45
-  SetTextColor 75 200 150
-  SetBorderColor 75 200 150
-  SetBackgroundColor 18 50 37
+  SetTextColor 75 160 180
+  SetBorderColor 75 160 180
+  SetBackgroundColor 18 40 45
 
 Show
   Class "Stackable Currency"
   BaseType "Vial Of"
   CustomAlertSound "./audio/rare.wav"
   SetFontSize 45
-  SetTextColor 75 200 150
-  SetBorderColor 75 200 150
-  SetBackgroundColor 18 50 37
+  SetTextColor 75 160 180
+  SetBorderColor 75 160 180
+  SetBackgroundColor 18 40 45
 
 Show
   HasExplicitMod "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec" "Betrayer's" "Brinerot" "Deceiver's" "Mutewind" "Redblade" "Turncoat's"
   SetFontSize 45
-  SetTextColor 75 200 150
-  SetBorderColor 75 200 150
-  SetBackgroundColor 18 50 37
+  SetTextColor 75 160 180
+  SetBorderColor 75 160 180
+  SetBackgroundColor 18 40 45
 
 
 ## Bestiary
@@ -131,25 +132,25 @@ Show
   HasExplicitMod "of Farrul" "of Craiceann" "of Fenumus" "of Saqawal"
   CustomAlertSound "./audio/rare.wav"
   SetFontSize 45  
-  SetTextColor 75 200 150
-  SetBorderColor 75 200 150
-  SetBackgroundColor 18 50 37
+  SetTextColor 75 160 180
+  SetBorderColor 75 160 180
+  SetBackgroundColor 18 40 45
 
 
 ## Abyss
 Show
   BaseType "Stygian Vise"
   SetFontSize 45
-  SetTextColor 75 200 150
-  SetBorderColor 75 200 150
-  SetBackgroundColor 18 50 37
+  SetTextColor 75 160 180
+  SetBorderColor 75 160 180
+  SetBackgroundColor 18 40 45
 
 Show
   Class "Abyss Jewel"
   SetFontSize 45
-  SetTextColor 75 200 150
-  SetBorderColor 75 200 150
-  SetBackgroundColor 18 50 37
+  SetTextColor 75 160 180
+  SetBorderColor 75 160 180
+  SetBackgroundColor 18 40 45
 
 
 ## Harbinger
@@ -157,10 +158,11 @@ Show
   Class "Map"
   BaseType "Harbinger Map"
   CustomAlertSound "./audio/rare.wav"
+  MinimapIcon 2 White Circle
   SetFontSize 45
-  SetTextColor 75 200 150
-  SetBorderColor 75 200 150
-  SetBackgroundColor 18 50 37
+  SetTextColor 75 160 180
+  SetBorderColor 75 160 180
+  SetBackgroundColor 18 40 45
 
 Show
   Class Currency
@@ -190,10 +192,11 @@ Show
   Class "Misc Map Items"
   BaseType "Ancient Reliquary Key" "Timeworn Reliquary Key"
   CustomAlertSound "./audio/currency_high.wav"
+  MinimapIcon 1 White Circle
   SetFontSize 45
-  SetTextColor 75 200 150
-  SetBorderColor 75 200 150
-  SetBackgroundColor 18 50 37
+  SetTextColor 75 160 180
+  SetBorderColor 75 160 180
+  SetBackgroundColor 18 40 45
 
 
 ## Breach
@@ -201,40 +204,44 @@ Show
   Class Gem
   BaseType "Vaal Breach"
   CustomAlertSound "./audio/gem.wav"
+  MinimapIcon 2 White Circle
   SetFontSize 45
-  SetTextColor 75 200 150
-  SetBorderColor 75 200 150
-  SetBackgroundColor 18 50 37
+  SetTextColor 75 160 180
+  SetBorderColor 75 160 180
+  SetBackgroundColor 18 40 45
 
 Show
   Class Currency
   BaseType "Blessing of Chayula" "Blessing of Uul-Netol"  "Blessing of Tul" "Blessing of Xoph" "Blessing of Esh" 
   CustomAlertSound "./audio/rare.wav"
+  MinimapIcon 2 White Circle
   DisableDropSound
   SetFontSize 45
-  SetTextColor 75 200 150
-  SetBorderColor 75 200 150
-  SetBackgroundColor 18 50 37
+  SetTextColor 75 160 180
+  SetBorderColor 75 160 180
+  SetBackgroundColor 18 40 45
   
 Show
   Class Currency
   BaseType "Splinter of Chayula" "Splinter of Uul-Netol" "Splinter of Tul" "Splinter of Xoph" "Splinter of Esh"
   CustomAlertSound "./audio/rare.wav"
+  MinimapIcon 2 White Circle
   DisableDropSound
   SetFontSize 45
-  SetTextColor 75 200 150
-  SetBorderColor 75 200 150
-  SetBackgroundColor 18 50 37
+  SetTextColor 75 160 180
+  SetBorderColor 75 160 180
+  SetBackgroundColor 18 40 45
 
 Show
   Class Currency
   BaseType "Chayula's Breachstone" "Uul-Netol's Breachstone" "Tul's Breachstone" "Xoph's Breachstone" "Esh's Breachstone" 
   CustomAlertSound "./audio/rare.wav"
+  MinimapIcon 2 White Circle
   DisableDropSound
   SetFontSize 45
-  SetTextColor 75 200 150
-  SetBorderColor 75 200 150
-  SetBackgroundColor 18 50 37
+  SetTextColor 75 160 180
+  SetBorderColor 75 160 180
+  SetBackgroundColor 18 40 45
 
 
 ## Essence
@@ -242,51 +249,57 @@ Show
   Class "Stackable Currency"
   BaseType "Essence of Hysteria" "Essence of Insanity" "Essence of Horror" "Essence of Delirium" "Remnant of Corruption"
   CustomAlertSound "./audio/currency_medium.wav"
+  MinimapIcon 2 White Circle
   DisableDropSound
   SetFontSize 45
-  SetTextColor 75 200 150
-  SetBorderColor 75 200 150
-  SetBackgroundColor 18 50 37
+  SetTextColor 75 160 180
+  SetBorderColor 75 160 180
+  SetBackgroundColor 18 40 45
 
 Show
   Class "Stackable Currency"
   BaseType "Essence of"
   CustomAlertSound "./audio/rare.wav"
+  MinimapIcon 2 White Circle
   DisableDropSound
   SetFontSize 45
-  SetTextColor 75 200 150
-  SetBorderColor 75 200 150
-  SetBackgroundColor 18 50 37
+  SetTextColor 75 160 180
+  SetBorderColor 75 160 180
+  SetBackgroundColor 18 40 45
 
 
 ## Prophecy
 Show
+  Class "Stackable Currency"
   BaseType "Prophecy"
   CustomAlertSound "./audio/rare.wav"
+  MinimapIcon 2 White Circle
   DisableDropSound
   SetFontSize 45
-  SetTextColor 75 200 150
-  SetBorderColor 75 200 150
-  SetBackgroundColor 18 50 37
+  SetTextColor 75 160 180
+  SetBorderColor 75 160 180
+  SetBackgroundColor 18 40 45
 
 Show
   Class Currency
   BaseType "Silver Coin"
   CustomAlertSound "./audio/currency_low.wav"
+  MinimapIcon 2 White Circle
   DisableDropSound
-  SetTextColor 75 200 150
-  SetBorderColor 75 200 150
-  SetBackgroundColor 18 50 37
+  SetTextColor 75 160 180
+  SetBorderColor 75 160 180
+  SetBackgroundColor 18 40 45
 
 Show
   Class "Map Fragment"
   BaseType "Eber's Key" "Inya's Key" "Volkuur's Key" "Yriel's Key"
   CustomAlertSound "./audio/rare.wav"
+  MinimapIcon 2 White Circle
   DisableDropSound
   SetFontSize 45
-  SetTextColor 75 200 150
-  SetBorderColor 75 200 150
-  SetBackgroundColor 18 50 37
+  SetTextColor 75 160 180
+  SetBorderColor 75 160 180
+  SetBackgroundColor 18 40 45
 
 
 ## Perandus
@@ -294,70 +307,78 @@ Show
   Class Currency
   BaseType "Perandus Coin"
   CustomAlertSound "./audio/currency_low.wav"
-  SetTextColor 75 200 150
-  SetBorderColor 75 200 150
-  SetBackgroundColor 18 50 37
+  MinimapIcon 2 White Circle
+  SetTextColor 75 160 180
+  SetBorderColor 75 160 180
+  SetBackgroundColor 18 40 45
 
 
 ## Talisman
 Show
   BaseType "Talisman"
   CustomAlertSound "./audio/rare.wav"
-  SetTextColor 75 200 150
-  SetBorderColor 75 200 150
-  SetBackgroundColor 18 50 37
+  MinimapIcon 2 White Circle
+  SetTextColor 75 160 180
+  SetBorderColor 75 160 180
+  SetBackgroundColor 18 40 45
 
 ## MAPS
 Show
   Class "Map Fragment"
-  CustomAlertSound "./audio/map.wav" 300
+  CustomAlertSound "./audio/currency_medium.wav" 300
+  MinimapIcon 2 White Circle
   DisableDropSound
   SetFontSize 45
-  SetTextColor 112 11 185
-  SetBorderColor 112 11 185
-  SetBackgroundColor 28 2 46
+  SetTextColor 244 137 66
+  SetBorderColor 244 137 66
+  SetBackgroundColor 61 34 16
 
 Show
   Class Maps
-  CustomAlertSound "./audio/map.wav" 300
+  CustomAlertSound "./audio/currency_medium.wav" 300
+  MinimapIcon 2 White Circle
   Rarity Unique
   SetFontSize 38
-  SetTextColor 112 11 185
-  SetBorderColor 112 11 185
-  SetBackgroundColor 28 2 46
+  SetTextColor 244 137 66
+  SetBorderColor 244 137 66
+  SetBackgroundColor 61 34 16
 
 Show
   Class Maps
-  CustomAlertSound "./audio/map.wav" 300
+  CustomAlertSound "./audio/currency_medium.wav" 300
+  MinimapIcon 2 White Circle
   Rarity Rare
   SetFontSize 38
-  SetTextColor 112 11 185
-  SetBorderColor 112 11 185
-  SetBackgroundColor 28 2 46
+  SetTextColor 244 137 66
+  SetBorderColor 244 137 66
+  SetBackgroundColor 61 34 16
 
 Show
   Class Maps
-  CustomAlertSound "./audio/map.wav" 300
+  CustomAlertSound "./audio/currency_medium.wav" 300
+  MinimapIcon 2 White Circle
   Rarity Magic
   SetFontSize 38
-  SetTextColor 112 11 185
-  SetBorderColor 112 11 185
-  SetBackgroundColor 28 2 46
+  SetTextColor 244 137 66
+  SetBorderColor 244 137 66
+  SetBackgroundColor 61 34 16
 
 Show
   Class Maps
-  CustomAlertSound "./audio/map.wav" 300
+  CustomAlertSound "./audio/currency_medium.wav" 300
+  MinimapIcon 2 White Circle
   Rarity Normal
   SetFontSize 38
-  SetTextColor 112 11 185
-  SetBorderColor 112 11 185
-  SetBackgroundColor 28 2 46
+  SetTextColor 244 137 66
+  SetBorderColor 244 137 66
+  SetBackgroundColor 61 34 16
 
 ## GEMS
 Show
   Class Gem
   BaseType Portal Empower Enlighten Enhance "Detonate Mines" "Item Quantity" "Added Chaos Damage" Vaal
   CustomAlertSound "./audio/gem.wav"
+  MinimapIcon 2 White Circle
   SetFontSize 45
   SetTextColor 27 162 155
   SetBorderColor 27 162 155
@@ -366,6 +387,7 @@ Show
 Show
   Class Gem
   CustomAlertSound "./audio/gem.wav"
+  MinimapIcon 2 White Circle
   SetFontSize 45
   Quality >= 1
   SetTextColor 27 162 155
@@ -431,6 +453,7 @@ Show
   Class Currency
   BaseType "Stacked Deck"
   CustomAlertSound "./audio/rare.wav"
+  MinimapIcon 2 Blue Circle
   SetTextColor 14 186 255
   SetBorderColor 14 186 255
   SetBackgroundColor 3 46 63
@@ -438,6 +461,7 @@ Show
 Show
   Class "Divination Card"
   CustomAlertSound "./audio/rare.wav"
+  MinimapIcon 2 Blue Circle
   SetTextColor 14 186 255
   SetBorderColor 14 186 255
   SetBackgroundColor 3 46 63
@@ -491,9 +515,11 @@ Show
 ## FISHING???
 Show
   BaseType "Fishing Rod"
-  SetTextColor 75 200 150
-  SetBorderColor 75 200 150
-  SetBackgroundColor 18 50 37
+  MinimapIcon 2 White Circle
+  SetFontSize 45
+  SetTextColor 75 160 180
+  SetBorderColor 75 160 180
+  SetBackgroundColor 18 40 45
 
 
 ## LEVELING
@@ -921,12 +947,14 @@ Hide
 ## SHAPER
 Show
   ShaperItem True
+  MinimapIcon 2 White Circle
   SetTextColor 128 64 128
   SetBorderColor 128 64 128
   SetBackgroundColor 32 16 32
 
 Show
   BaseType "The Shaper's Key"
+  MinimapIcon 2 White Circle
   SetTextColor 128 64 128
   SetBorderColor 128 64 128
   SetBackgroundColor 32 16 32
@@ -935,6 +963,7 @@ Show
 ## ELDER
 Show
   ElderItem True
+  MinimapIcon 2 White Circle
   SetTextColor 128 64 128
   SetBorderColor 128 64 128
   SetBackgroundColor 32 16 32
@@ -944,6 +973,7 @@ Show
 Show
   LinkedSockets 5
   PlayAlertSound 6
+  MinimapIcon 2 White Circle
   SetFontSize 45
   SetTextColor 119 119 255
   SetBorderColor 119 119 255
@@ -952,6 +982,7 @@ Show
 Show
   Sockets 6
   PlayAlertSound 6
+  MinimapIcon 2 White Circle
   SetFontSize 45
   SetTextColor 119 119 255
   SetBorderColor 119 119 255

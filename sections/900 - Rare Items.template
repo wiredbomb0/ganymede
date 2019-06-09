@@ -1,5 +1,7 @@
 ## FISHING???
 Show
   BaseType "Fishing Rod"
+  MinimapIcon 2 White Circle
+  SetFontSize 45
   {{LeagueSpecific}}
 
