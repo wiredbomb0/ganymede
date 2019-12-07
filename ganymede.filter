@@ -1,6 +1,6 @@
 # Ganymede
 # Version: 3.7.0--S1.0
-# 2019-06-09 04:12:17.239000
+# 2019-12-07 21:57:56.973000
 
 ## QUEST
 Show
@@ -334,7 +334,7 @@ Show
 ## MAPS
 Show
   Class "Map Fragment"
-  CustomAlertSound "./audio/currency_medium.wav" 300
+  CustomAlertSound "./audio/currency_medium.wav"
   MinimapIcon 2 White Circle
   DisableDropSound
   SetFontSize 45
@@ -344,7 +344,7 @@ Show
 
 Show
   Class Maps
-  CustomAlertSound "./audio/currency_medium.wav" 300
+  CustomAlertSound "./audio/currency_medium.wav"
   MinimapIcon 2 White Circle
   Rarity Unique
   SetFontSize 38
@@ -354,7 +354,7 @@ Show
 
 Show
   Class Maps
-  CustomAlertSound "./audio/currency_medium.wav" 300
+  CustomAlertSound "./audio/currency_medium.wav"
   MinimapIcon 2 White Circle
   Rarity Rare
   SetFontSize 38
@@ -364,7 +364,7 @@ Show
 
 Show
   Class Maps
-  CustomAlertSound "./audio/currency_medium.wav" 300
+  CustomAlertSound "./audio/currency_medium.wav"
   MinimapIcon 2 White Circle
   Rarity Magic
   SetFontSize 38
@@ -374,7 +374,7 @@ Show
 
 Show
   Class Maps
-  CustomAlertSound "./audio/currency_medium.wav" 300
+  CustomAlertSound "./audio/currency_medium.wav"
   MinimapIcon 2 White Circle
   Rarity Normal
   SetFontSize 38
