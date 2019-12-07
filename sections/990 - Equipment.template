@@ -48,21 +48,21 @@ Show
 
 ## EQUIPMENT
 Show
-  Class "Gloves" "Boots" "Body Armours" "Helmets" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Amulets" "Rings" "Belts" "Quivers" "Shields" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" 
+  Class "Gloves" "Boots" "Body Armours" "Helmets" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Amulets" "Rings" "Belts" "Quivers" "Shields" "Claws" "Dagger" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Bows" "Warstaff" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" 
   Rarity Unique
   {{EquipmentUnique}}
 
 Show
-  Class "Gloves" "Boots" "Body Armours" "Helmets" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Amulets" "Rings" "Belts" "Quivers" "Shields" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" 
+  Class "Gloves" "Boots" "Body Armours" "Helmets" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Amulets" "Rings" "Belts" "Quivers" "Shields" "Claws" "Dagger" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Bows" "Warstaff" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" 
   Rarity Rare
   {{EquipmentRare}}
 
 Hide
-  Class "Gloves" "Boots" "Body Armours" "Helmets" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Amulets" "Rings" "Belts" "Quivers" "Shields" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" 
+  Class "Gloves" "Boots" "Body Armours" "Helmets" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Amulets" "Rings" "Belts" "Quivers" "Shields" "Claws" "Dagger" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Bows" "Warstaff" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" 
   Rarity Magic
   {{EquipmentMagic}}
 
 Hide
-  Class "Gloves" "Boots" "Body Armours" "Helmets" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Amulets" "Rings" "Belts" "Quivers" "Shields" "Claws" "Daggers" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Bows" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" 
+  Class "Gloves" "Boots" "Body Armours" "Helmets" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Amulets" "Rings" "Belts" "Quivers" "Shields" "Claws" "Dagger" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Bows" "Warstaff" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" 
   Rarity Normal
   {{EquipmentNormal}}
