@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Item Filter Preview</title>
+  <meta charset="utf-8"/>
+</head>
+<body>
+<div style="margin:auto; width:120px">
+  <span id="target" style="text-align: center; display: block;">Orb of Alteration</span><br/>
+  <span id="target2" style="text-align: center; display: block;">Orb of Alteration</span>
+</div>
+<script>
+  
+
+  function create_color_statements(r, g, b) {
+    let light = `rgb(${r}, ${g}, ${b}`;
+    let dark  = `rgb(${r/4}, ${g/4}, ${b/4}`;
+
+    return `color: ${light}; border: 1px solid ${light}; background-color: ${dark}`;
+  }
+
+  function update_text(r, g, b) {
+    var target = document.getElementById("target");
+    target.style.color = `rgb(${r}, ${g}, ${b}`;
+    target.style.border = `1px solid rgb(${r}, ${g}, ${b}`;
+    target.style.backgroundColor = `rgb(${r/4}, ${g/4}, ${b/4}`;
+  }
+
+  document.addEventListener("keydown", function(evt) {
+    if (evt.keyCode == 32) {
+      if (document.body.style.backgroundColor == "black")
+      document.body.style.backgroundColor = "white";
+      else document.body.style.backgroundColor = "black"
+    };
+  });
+</script>
+</body>
+</html>
