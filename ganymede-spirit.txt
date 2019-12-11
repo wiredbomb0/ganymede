@@ -13,8 +13,11 @@ color_equipment_rare_dark  = RGB(63, 63, 29, 255)
 color_equipment_unique_light = RGB(175, 96, 37, 255)
 color_equipment_unique_dark  = RGB(43, 24, 9, 255)
 
-color_equipment_valuable_light = RGB(119, 119, 255, 255)
-color_equipment_valuable_dark  = RGB(29, 29, 63, 255)
+color_equipment_valuable_light = RGB(64, 192, 192, 255)
+color_equipment_valuable_dark  = RGB(16, 48, 48, 255)
+
+color_divination_card_light = RGB(14, 186, 255, 255)
+color_divination_card_dark  = RGB(3, 46, 63, 255)
 
 color_labyrinth_light = RGB(255, 128, 0, 255)
 color_labyrinth_dark  = RGB(63, 32, 0, 255)
@@ -23,6 +26,7 @@ color_quest_light = RGB(74, 230, 58, 255)
 color_quest_dark  = RGB(18, 57, 14, 255)
 
 audio_quest = "./audio/token.wav"
+audio_map = "./audio/collectable.mp3"
 
 ########
 # QUEST
@@ -34,7 +38,8 @@ Class "Quest" {
   SetBackgroundColor color_quest_dark
   SetFontSize 42
   SetAlertSound "token.wav"
-  SetMinimapIcon MinimapIcon(2, green, circle)
+  SetBeam green
+  SetMinimapIcon MinimapIcon(0, green, circle)
 
   Show
 }
@@ -48,6 +53,9 @@ Class "Labyrinth" {
   SetBorderColor color_labyrinth_light
   SetBackgroundColor color_labyrinth_dark
   SetFontSize 42
+  SetAlertSound "./audio/collectable.mp3"
+  SetBeam brown
+  SetMinimapIcon MinimapIcon(1, brown, hexagon)
 
   Show
 }
@@ -57,15 +65,105 @@ BaseType "Offering to the Goddess" {
   SetBorderColor color_labyrinth_light
   SetBackgroundColor color_labyrinth_dark
   SetFontSize 42
+  SetAlertSound "./audio/collectable.mp3"
+  SetBeam brown
+  SetMinimapIcon MinimapIcon(1, brown, hexagon)
 
   Show
 }
+
+########
+# MAPS
+########
+
+Class "Map" {
+  Rarity normal {
+    SetTextColor color_equipment_normal_light
+    SetBorderColor color_equipment_normal_light
+    SetBackgroundColor color_equipment_normal_dark
+    SetAlertSound audio_map
+
+    Show
+  }
+
+  Rarity magic {
+    SetTextColor color_equipment_magic_light
+    SetBorderColor color_equipment_magic_light
+    SetBackgroundColor color_equipment_magic_dark
+    SetAlertSound audio_map
+
+    Show
+  }
+
+  Rarity rare {
+    SetTextColor color_equipment_rare_light
+    SetBorderColor color_equipment_rare_light
+    SetBackgroundColor color_equipment_rare_dark
+    SetAlertSound audio_map
+
+    Show
+  }
+
+  Rarity unique {
+    SetTextColor color_equipment_unique_light
+    SetBorderColor color_equipment_unique_light
+    SetBackgroundColor color_equipment_unique_dark
+    SetAlertSound audio_map
+
+    Show
+  }
+}
+
+########
+# GEMS (TBA)
+########
+
+########
+# CURRENCY (TBA)
+########
+
+########
+# DIVINATION
+########
+
+Class "Divination Card" {
+  SetTextColor color_divination_card_light
+  SetBorderColor color_divination_card_light
+  SetBackgroundColor color_divination_card_dark
+  SetFontSize 42
+  SetBeam Beam(blue, true)
+
+  Show
+}
+
+BaseType "Stacked Deck" {
+  SetTextColor color_divination_card_light
+  SetBorderColor color_divination_card_light
+  SetBackgroundColor color_divination_card_dark
+  SetFontSize 42
+  SetBeam Beam(blue, true)
+
+  Show
+}
+
+########
+# GEMS (TBA)
+########
 
 ########
 # EQUIPMENT
 ########
 
 Sockets 6 {
+  Rarity unique {
+    SetTextColor color_equipment_unique_light
+    SetBorderColor color_equipment_unique_light
+    SetBackgroundColor color_equipment_unique_dark
+    SetFontSize 42
+
+    Show
+  }
+
   SetTextColor color_equipment_valuable_light
   SetBorderColor color_equipment_valuable_light
   SetBackgroundColor color_equipment_valuable_dark
@@ -74,7 +172,16 @@ Sockets 6 {
   Show
 }
 
-LinkedSockets 6 {
+LinkedSockets 5 {
+  Rarity unique {
+    SetTextColor color_equipment_unique_light
+    SetBorderColor color_equipment_unique_light
+    SetBackgroundColor color_equipment_unique_dark
+    SetFontSize 42
+
+    Show
+  }
+
   SetTextColor color_equipment_valuable_light
   SetBorderColor color_equipment_valuable_light
   SetBackgroundColor color_equipment_valuable_dark
