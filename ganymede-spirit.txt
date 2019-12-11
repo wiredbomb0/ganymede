@@ -1,0 +1,118 @@
+font_size_default = 32
+font_size_max = 42
+
+color_equipment_normal_light = RGB(200, 200, 200, 255)
+color_equipment_normal_dark  = RGB(50, 50, 50, 255)
+
+color_equipment_magic_light = RGB(136, 136, 255, 255)
+color_equipment_magic_dark  = RGB(34, 34, 63, 255)
+
+color_equipment_rare_light = RGB(255, 255, 119, 255)
+color_equipment_rare_dark  = RGB(63, 63, 29, 255)
+
+color_equipment_unique_light = RGB(175, 96, 37, 255)
+color_equipment_unique_dark  = RGB(43, 24, 9, 255)
+
+color_equipment_valuable_light = RGB(119, 119, 255, 255)
+color_equipment_valuable_dark  = RGB(29, 29, 63, 255)
+
+color_labyrinth_light = RGB(255, 128, 0, 255)
+color_labyrinth_dark  = RGB(63, 32, 0, 255)
+
+color_quest_light = RGB(74, 230, 58, 255)
+color_quest_dark  = RGB(18, 57, 14, 255)
+
+audio_quest = "./audio/token.wav"
+
+########
+# QUEST
+########
+
+Class "Quest" {
+  SetTextColor color_quest_light
+  SetBorderColor color_quest_light
+  SetBackgroundColor color_quest_dark
+  SetFontSize 42
+  SetAlertSound "token.wav"
+  SetMinimapIcon MinimapIcon(2, green, circle)
+
+  Show
+}
+
+########
+# LABYRINTH
+########
+
+Class "Labyrinth" {
+  SetTextColor color_labyrinth_light
+  SetBorderColor color_labyrinth_light
+  SetBackgroundColor color_labyrinth_dark
+  SetFontSize 42
+
+  Show
+}
+
+BaseType "Offering to the Goddess" {
+  SetTextColor color_labyrinth_light
+  SetBorderColor color_labyrinth_light
+  SetBackgroundColor color_labyrinth_dark
+  SetFontSize 42
+
+  Show
+}
+
+########
+# EQUIPMENT
+########
+
+Sockets 6 {
+  SetTextColor color_equipment_valuable_light
+  SetBorderColor color_equipment_valuable_light
+  SetBackgroundColor color_equipment_valuable_dark
+  SetFontSize 42
+
+  Show
+}
+
+LinkedSockets 6 {
+  SetTextColor color_equipment_valuable_light
+  SetBorderColor color_equipment_valuable_light
+  SetBackgroundColor color_equipment_valuable_dark
+  SetFontSize 42
+
+  Show
+}
+
+Class ["Gloves", "Boots", "Body Armours", "Helmets", "Life Flasks", "Mana Flasks", "Hybrid Flasks", "Utility Flasks", "Amulets", "Rings", "Belts", "Quivers", "Shields", "Claws", "Dagger", "Wands", "One Hand Swords", "Thrusting One Hand Swords", "One Hand Axes", "One Hand Maces", "Sceptres", "Bows", "Warstaff", "Staves", "Two Hand Swords", "Two Hand Axes", "Two Hand Maces"] {
+  Rarity normal {
+    SetTextColor color_equipment_normal_light
+    SetBorderColor color_equipment_normal_light
+    SetBackgroundColor color_equipment_normal_dark
+
+    Show
+  }
+
+  Rarity magic {
+    SetTextColor color_equipment_magic_light
+    SetBorderColor color_equipment_magic_light
+    SetBackgroundColor color_equipment_magic_dark
+
+    Show
+  }
+
+  Rarity rare {
+    SetTextColor color_equipment_rare_light
+    SetBorderColor color_equipment_rare_light
+    SetBackgroundColor color_equipment_rare_dark
+
+    Show
+  }
+
+  Rarity unique {
+    SetTextColor color_equipment_unique_light
+    SetBorderColor color_equipment_unique_light
+    SetBackgroundColor color_equipment_unique_dark
+
+    Show
+  }
+}
