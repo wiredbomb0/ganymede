@@ -16,6 +16,9 @@ color_equipment_unique_dark  = RGB(43, 24, 9, 255)
 color_equipment_valuable_light = RGB(64, 192, 192, 255)
 color_equipment_valuable_dark  = RGB(16, 48, 48, 255)
 
+color_equipment_chromatic_light = RGB(100, 100, 100, 255)
+color_equipment_chromatic_dark  = RGB(25, 25, 25, 255)
+
 color_divination_card_light = RGB(14, 186, 255, 255)
 color_divination_card_dark  = RGB(3, 46, 63, 255)
 
@@ -27,6 +30,7 @@ color_quest_dark  = RGB(18, 57, 14, 255)
 
 audio_quest = "./audio/token.wav"
 audio_map = "./audio/collectable.mp3"
+audio_gem = "./audio/gem.wav"
 
 ########
 # QUEST
@@ -37,7 +41,7 @@ Class "Quest" {
   SetBorderColor color_quest_light
   SetBackgroundColor color_quest_dark
   SetFontSize 42
-  SetAlertSound "token.wav"
+  SetAlertSound audio_quest
   SetBeam green
   SetMinimapIcon MinimapIcon(0, green, circle)
 
@@ -76,12 +80,26 @@ BaseType "Offering to the Goddess" {
 # MAPS
 ########
 
+BaseType "Divine Vessel" {
+  SetTextColor color_quest_light
+  SetBorderColor color_quest_light
+  SetBackgroundColor color_quest_dark
+  SetFontSize 42
+  SetAlertSound audio_quest
+  SetBeam green
+  SetMinimapIcon MinimapIcon(0, green, circle)
+
+  Show
+}
+
 Class "Map" {
+  SetAlertSound audio_map
+  SetMinimapIcon MinimapIcon(2, white, circle)
+
   Rarity normal {
     SetTextColor color_equipment_normal_light
     SetBorderColor color_equipment_normal_light
     SetBackgroundColor color_equipment_normal_dark
-    SetAlertSound audio_map
 
     Show
   }
@@ -90,7 +108,6 @@ Class "Map" {
     SetTextColor color_equipment_magic_light
     SetBorderColor color_equipment_magic_light
     SetBackgroundColor color_equipment_magic_dark
-    SetAlertSound audio_map
 
     Show
   }
@@ -99,7 +116,6 @@ Class "Map" {
     SetTextColor color_equipment_rare_light
     SetBorderColor color_equipment_rare_light
     SetBackgroundColor color_equipment_rare_dark
-    SetAlertSound audio_map
 
     Show
   }
@@ -108,15 +124,32 @@ Class "Map" {
     SetTextColor color_equipment_unique_light
     SetBorderColor color_equipment_unique_light
     SetBackgroundColor color_equipment_unique_dark
-    SetAlertSound audio_map
 
     Show
   }
 }
 
 ########
-# GEMS (TBA)
+# GEMS
 ########
+
+Class "Gem" {
+  SetAlertSound audio_gem
+
+  BaseType ["Portal", "Empower", "Enlighten", "Enhance", "Detonate Mines", "Item Quantity", "Added Chaos Damage", "Vaal"] {
+    SetFontSize 45
+    SetMinimapIcon MinimapIcon(2, white, circle)
+    Show
+  }
+
+  Quality >= 5 {
+    SetFontSize 45
+    SetMinimapIcon MinimapIcon(2, white, circle)
+    Show
+  }
+
+  Show
+}
 
 ########
 # CURRENCY (TBA)
@@ -147,8 +180,78 @@ BaseType "Stacked Deck" {
 }
 
 ########
-# GEMS (TBA)
+# FLASKS
 ########
+
+Class "Flasks" {
+  Quality >= 5 {
+    SetFontSize 42
+
+    Rarity normal {
+      SetTextColor color_equipment_normal_light
+      SetBorderColor color_equipment_normal_light
+      SetBackgroundColor color_equipment_normal_dark
+
+      Show
+    }
+
+    Rarity magic {
+      SetTextColor color_equipment_magic_light
+      SetBorderColor color_equipment_magic_light
+      SetBackgroundColor color_equipment_magic_dark
+
+      Show
+    }
+
+    Rarity rare {
+      SetTextColor color_equipment_rare_light
+      SetBorderColor color_equipment_rare_light
+      SetBackgroundColor color_equipment_rare_dark
+
+      Show
+    }
+
+    Rarity unique {
+      SetTextColor color_equipment_unique_light
+      SetBorderColor color_equipment_unique_light
+      SetBackgroundColor color_equipment_unique_dark
+
+      Show
+    }
+  }
+
+  Rarity normal {
+    SetTextColor color_equipment_normal_light
+    SetBorderColor color_equipment_normal_light
+    SetBackgroundColor color_equipment_normal_dark
+
+    Show
+  }
+
+  Rarity magic {
+    SetTextColor color_equipment_magic_light
+    SetBorderColor color_equipment_magic_light
+    SetBackgroundColor color_equipment_magic_dark
+
+    Show
+  }
+
+  Rarity rare {
+    SetTextColor color_equipment_rare_light
+    SetBorderColor color_equipment_rare_light
+    SetBackgroundColor color_equipment_rare_dark
+
+    Show
+  }
+
+  Rarity unique {
+    SetTextColor color_equipment_unique_light
+    SetBorderColor color_equipment_unique_light
+    SetBackgroundColor color_equipment_unique_dark
+
+    Show
+  }
+}
 
 ########
 # EQUIPMENT
@@ -190,7 +293,19 @@ LinkedSockets 5 {
   Show
 }
 
-Class ["Gloves", "Boots", "Body Armours", "Helmets", "Life Flasks", "Mana Flasks", "Hybrid Flasks", "Utility Flasks", "Amulets", "Rings", "Belts", "Quivers", "Shields", "Claws", "Dagger", "Wands", "One Hand Swords", "Thrusting One Hand Swords", "One Hand Axes", "One Hand Maces", "Sceptres", "Bows", "Warstaff", "Staves", "Two Hand Swords", "Two Hand Axes", "Two Hand Maces"] {
+SocketGroup "RGB" { 
+  Width <= 2 {
+    Height <= 2 {
+      SetTextColor color_equipment_rare_light
+      SetBorderColor color_equipment_rare_light
+      SetBackgroundColor color_equipment_rare_dark
+
+      Show
+    }
+  }
+}
+
+Class ["Gloves", "Boots", "Body Armours", "Helmets", "Life Flasks", "Mana Flasks", "Hybrid Flasks", "Utility Flasks", "Amulets", "Rings", "Belts", "Quivers", "Shields", "Claws", "Dagger", "Wands", "One Hand Swords", "Thrusting One Hand Swords", "One Hand Axes", "One Hand Maces", "Sceptres", "Bows", "Warstaff", "Staves", "Two Hand Swords", "Two Hand Axes", "Two Hand Maces", "Jewel"] {
   Rarity normal {
     SetTextColor color_equipment_normal_light
     SetBorderColor color_equipment_normal_light
