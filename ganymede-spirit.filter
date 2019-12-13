@@ -10,7 +10,7 @@
 #
 # Generation info:
 #     Filter Spirit version     : 0.3.0
-#     filter generation date    : 2019-12-13 11:10:53
+#     filter generation date    : 2019-12-13 11:19:00
 #     item price data downloaded: not-a-date-time 2562047788:00:54
 #     item price data from      : poe.watch
 #     item price data for league: 
@@ -100,6 +100,28 @@ Show
 	PlayEffect Red
 
 Show
+	Class "Map Fragment"
+	BaseType "Fragment of Enslavement" "Fragment of Eradication" "Fragment of Constriction" "Fragment of Purification" "Fragment of Shape" "Fragment of Knowledge" "Fragment of Terror" "Fragment of Emptiness"
+	SetBorderColor 75 160 180 255
+	SetTextColor 75 160 180 255
+	SetBackgroundColor 18 40 45 255
+	SetFontSize 42
+	CustomAlertSound "./audio/rare.wav"
+	MinimapIcon 2 Red Diamond
+	PlayEffect Red
+
+Show
+	Class "Atlas Region Upgrade Item"
+	BaseType "Ivory Watchstone"
+	SetBorderColor 75 160 180 255
+	SetTextColor 75 160 180 255
+	SetBackgroundColor 18 40 45 255
+	SetFontSize 42
+	CustomAlertSound "./audio/rare.wav"
+	MinimapIcon 2 Red Diamond
+	PlayEffect Red
+
+Show
 	Rarity = Normal
 	Class "Map"
 	SetBorderColor 200 200 200 255
@@ -144,6 +166,18 @@ Show
 	SetFontSize 45
 	CustomAlertSound "./audio/gem.wav"
 	MinimapIcon 2 Green Circle
+	PlayEffect Green
+
+Show
+	Class "Gem"
+	BaseType "Awakened"
+	SetBorderColor 27 162 155 255
+	SetTextColor 27 162 155 255
+	SetBackgroundColor 6 40 38 255
+	SetFontSize 45
+	CustomAlertSound "./audio/gem.wav"
+	MinimapIcon 0 Green Circle
+	PlayEffect Green
 
 Show
 	Quality >= 5
@@ -182,7 +216,7 @@ Show
 
 Show
 	Class "Currency"
-	BaseType "Alchemy Shard" "Ancient Orb" "Ancient Shard" "Annulment Shard" "Apprentice Cartographer's Sextant" "Bestiary Orb" "Binding Shard" "Blessed Orb" "Cartographer's Chisel" "Chaos Orb" "Chaos Shard" "Gemcutter's Prism" "Harbinger's Orb" "Harbinger's Shard" "Horizon Shard" "Journeyman Cartographer's Sextant" "Master Cartographer's Sextant" "Orb of Alchemy" "Orb of Annulment" "Orb of Binding" "Orb of Fusing" "Orb of Horizons" "Orb of Regret" "Orb of Scouring" "Perandus Coin" "Regal Orb" "Regal Shard" "Silver Coin" "Stacked Deck" "Vaal Orb" "Blessing of Chayula" "Blessing of Esh" "Blessing of Tul" "Blessing of Uul-Netol" "Blessing of Xoph" "Divine Orb" "Engineer's Orb" "Engineer's Shard"
+	BaseType "Alchemy Shard" "Ancient Orb" "Ancient Shard" "Annulment Shard" "Simple Sextant" "Bestiary Orb" "Binding Shard" "Blessed Orb" "Cartographer's Chisel" "Chaos Orb" "Chaos Shard" "Gemcutter's Prism" "Harbinger's Orb" "Harbinger's Shard" "Horizon Shard" "Prime Sextant" "Awakened Sextant" "Orb of Alchemy" "Orb of Annulment" "Orb of Binding" "Orb of Fusing" "Orb of Horizons" "Orb of Regret" "Orb of Scouring" "Perandus Coin" "Regal Orb" "Regal Shard" "Silver Coin" "Stacked Deck" "Vaal Orb" "Blessing of Chayula" "Blessing of Esh" "Blessing of Tul" "Blessing of Uul-Netol" "Blessing of Xoph" "Divine Orb" "Engineer's Orb" "Engineer's Shard"
 	SetBorderColor 170 158 130 255
 	SetTextColor 170 158 130 255
 	SetBackgroundColor 42 39 32 255
@@ -402,6 +436,17 @@ Show
 Show
 	AnyEnchantment True
 	Class "Gloves" "Boots" "Body Armours" "Helmets" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Amulets" "Rings" "Belts" "Quivers" "Shields" "Claws" "Dagger" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Bows" "Warstaff" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Jewel"
+	SetBorderColor 128 64 128 255
+	SetTextColor 128 64 128 255
+	SetBackgroundColor 32 16 32 255
+	SetFontSize 42
+	CustomAlertSound "./audio/incubator.wav"
+	MinimapIcon 1 Yellow Star
+	PlayEffect Yellow
+
+Show
+	Class "Gloves" "Boots" "Body Armours" "Helmets" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Amulets" "Rings" "Belts" "Quivers" "Shields" "Claws" "Dagger" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Bows" "Warstaff" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Jewel"
+	HasInfluence Shaper Elder Crusader Redeemer Hunter Warlord
 	SetBorderColor 128 64 128 255
 	SetTextColor 128 64 128 255
 	SetBackgroundColor 32 16 32 255

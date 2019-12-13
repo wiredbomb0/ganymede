@@ -50,6 +50,32 @@ audio_rare = "./audio/rare.wav"
 audio_incubator = "./audio/incubator.wav"
 
 ########
+# METAMORPH
+########
+
+Class "Metamorph Sample" {
+  SetTextColor color_league_specific_light
+  SetBorderColor color_league_specific_light
+  SetBackgroundColor color_league_specific_dark
+  SetFontSize 42
+  SetAlertSound audio_rare
+  SetBeam Red
+  SetMinimapIcon MinimapIcon(2, Red, Diamond)
+}
+
+Class "Stackable Currency" {
+  BaseType ["Turbulent Catalyst", "Imbued Catalyst", "Abrasive Catalyst", "Tempering Catalyst", "Fertile Catalyst", "Prismatic Catalyst", "Intrinsic Catalyst"] {
+    SetTextColor color_league_specific_light
+    SetBorderColor color_league_specific_light
+    SetBackgroundColor color_league_specific_dark
+    SetFontSize 42
+    SetAlertSound audio_rare
+    SetBeam Red
+    SetMinimapIcon MinimapIcon(2, Red, Diamond)
+  }
+}
+
+########
 # QUEST
 ########
 
@@ -176,6 +202,32 @@ Class "Map Fragment" {
 
     Show
   }
+
+  BaseType ["Fragment of Enslavement", "Fragment of Eradication" ,"Fragment of Constriction", "Fragment of Purification","Fragment of Shape", "Fragment of Knowledge", "Fragment of Terror", "Fragment of Emptiness"] {
+    SetTextColor color_league_specific_light
+    SetBorderColor color_league_specific_light
+    SetBackgroundColor color_league_specific_dark
+    SetFontSize 42
+    SetAlertSound audio_rare
+    SetBeam Red
+    SetMinimapIcon MinimapIcon(2, Red, Diamond)
+
+    Show
+  }
+}
+
+Class "Atlas Region Upgrade Item" {
+  BaseType "Ivory Watchstone" {
+    SetTextColor color_league_specific_light
+    SetBorderColor color_league_specific_light
+    SetBackgroundColor color_league_specific_dark
+    SetFontSize 42
+    SetAlertSound audio_rare
+    SetBeam Red
+    SetMinimapIcon MinimapIcon(2, Red, Diamond)
+
+    Show
+  }
 }
 
 Class "Map" {
@@ -228,6 +280,14 @@ Class "Gem" {
   BaseType ["Portal", "Empower", "Enlighten", "Enhance", "Detonate Mines", "Item Quantity", "Added Chaos Damage", "Vaal", "Vaal Breach"] {
     SetFontSize 45
     SetMinimapIcon MinimapIcon(2, Green, Circle)
+    SetBeam Green
+    Show
+  }
+
+  BaseType "Awakened" {
+    SetFontSize 45
+    SetMinimapIcon MinimapIcon(0, Green, Circle)
+    SetBeam Green
     Show
   }
 
@@ -270,7 +330,7 @@ Class "Currency" {
   }
 
   # Medium Value
-  BaseType ["Alchemy Shard", "Ancient Orb", "Ancient Shard", "Annulment Shard", "Apprentice Cartographer's Sextant", "Bestiary Orb", "Binding Shard", "Blessed Orb", "Cartographer's Chisel", "Chaos Orb", "Chaos Shard", "Gemcutter's Prism", "Harbinger's Orb", "Harbinger's Shard", "Horizon Shard", "Journeyman Cartographer's Sextant", "Master Cartographer's Sextant", "Orb of Alchemy", "Orb of Annulment", "Orb of Binding", "Orb of Fusing", "Orb of Horizons", "Orb of Regret", "Orb of Scouring", "Perandus Coin", "Regal Orb", "Regal Shard", "Silver Coin", "Stacked Deck", "Vaal Orb", "Blessing of Chayula", "Blessing of Esh", "Blessing of Tul", "Blessing of Uul-Netol", "Blessing of Xoph", "Divine Orb", "Engineer's Orb", "Engineer's Shard"] {
+  BaseType ["Alchemy Shard", "Ancient Orb", "Ancient Shard", "Annulment Shard", "Simple Sextant", "Bestiary Orb", "Binding Shard", "Blessed Orb", "Cartographer's Chisel", "Chaos Orb", "Chaos Shard", "Gemcutter's Prism", "Harbinger's Orb", "Harbinger's Shard", "Horizon Shard", "Prime Sextant", "Awakened Sextant", "Orb of Alchemy", "Orb of Annulment", "Orb of Binding", "Orb of Fusing", "Orb of Horizons", "Orb of Regret", "Orb of Scouring", "Perandus Coin", "Regal Orb", "Regal Shard", "Silver Coin", "Stacked Deck", "Vaal Orb", "Blessing of Chayula", "Blessing of Esh", "Blessing of Tul", "Blessing of Uul-Netol", "Blessing of Xoph", "Divine Orb", "Engineer's Orb", "Engineer's Shard"] {
     SetAlertSound audio_currency_medium
     SetFontSize 45
 
@@ -544,17 +604,17 @@ Class ["Gloves", "Boots", "Body Armours", "Helmets", "Life Flasks", "Mana Flasks
     Show
   }
 
-#  HasInfluence [Shaper, Elder, Crusader, Redeemer, Hunter, Warlord] {
-#    SetTextColor color_equipment_enchantment_light
-#    SetBorderColor color_equipment_enchantment_light
-#    SetBackgroundColor color_equipment_enchantment_dark
-#    SetAlertSound audio_incubator
-#    SetMinimapIcon MinimapIcon(1, Yellow, Star)
-#    SetBeam Yellow
-#    SetFontSize 42
-#    
-#    Show
-#  }
+  HasInfluence [Shaper, Elder, Crusader, Redeemer, Hunter, Warlord] {
+    SetTextColor color_equipment_enchantment_light
+    SetBorderColor color_equipment_enchantment_light
+    SetBackgroundColor color_equipment_enchantment_dark
+    SetAlertSound audio_incubator
+    SetMinimapIcon MinimapIcon(1, Yellow, Star)
+    SetBeam Yellow
+    SetFontSize 42
+    
+    Show
+  }
 
   BaseType "Talisman" {
     SetTextColor color_equipment_enchantment_light
