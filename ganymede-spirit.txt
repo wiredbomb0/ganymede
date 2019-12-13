@@ -19,6 +19,9 @@ color_equipment_valuable_dark  = RGB(16, 48, 48, 255)
 color_equipment_chromatic_light = RGB(100, 100, 100, 255)
 color_equipment_chromatic_dark  = RGB(25, 25, 25, 255)
 
+color_equipment_enchantment_light = RGB(128, 64, 128, 255)
+color_equipment_enchantment_dark  = RGB(32, 16, 32, 255)
+
 color_divination_card_light = RGB(14, 186, 255, 255)
 color_divination_card_dark  = RGB(3, 46, 63, 255)
 
@@ -28,9 +31,18 @@ color_labyrinth_dark  = RGB(63, 32, 0, 255)
 color_quest_light = RGB(74, 230, 58, 255)
 color_quest_dark  = RGB(18, 57, 14, 255)
 
+color_gem_light = RGB(27, 162, 155, 255)
+color_gem_dark  = RGB(6, 40, 38, 255)
+
+color_currency_light = RGB(170, 158, 130, 255)
+color_currency_dark  = RGB(42, 39, 32, 255)
+
 audio_quest = "./audio/token.wav"
 audio_map = "./audio/collectable.mp3"
 audio_gem = "./audio/gem.wav"
+audio_currency_high = "./audio/currency_high.wav"
+audio_currency_medium = "./audio/currency_medium.wav"
+audio_currency_low = "./audio/currency_low.wav"
 
 ########
 # QUEST
@@ -135,16 +147,19 @@ Class "Map" {
 
 Class "Gem" {
   SetAlertSound audio_gem
+  SetTextColor color_gem_light
+  SetBorderColor color_gem_light
+  SetBackgroundColor color_gem_dark
 
   BaseType ["Portal", "Empower", "Enlighten", "Enhance", "Detonate Mines", "Item Quantity", "Added Chaos Damage", "Vaal"] {
     SetFontSize 45
-    SetMinimapIcon MinimapIcon(2, white, circle)
+    SetMinimapIcon MinimapIcon(2, green, circle)
     Show
   }
 
   Quality >= 5 {
     SetFontSize 45
-    SetMinimapIcon MinimapIcon(2, white, circle)
+    SetMinimapIcon MinimapIcon(2, green, circle)
     Show
   }
 
@@ -152,8 +167,44 @@ Class "Gem" {
 }
 
 ########
-# CURRENCY (TBA)
+# CURRENCY
 ########
+
+Class "Currency" {
+  SetTextColor color_currency_light
+  SetBorderColor color_currency_light
+  SetBackgroundColor color_currency_dark
+
+  # High Value
+  BaseType ["Albino Rhoa Feather", "Exalted Orb", "Exalted Shard", "Mirror of Kalandra", "Mirror Shard"] {
+    SetAlertSound audio_currency_high
+    SetFontSize 45
+
+    Show
+  }
+
+  # Medium Value
+  BaseType ["Alchemy Shard", "Ancient Orb", "Ancient Shard", "Annulment Shard", "Apprentice Cartographer's Sextant", "Bestiary Orb", "Binding Shard", "Blessed Orb", "Cartographer's Chisel", "Chaos Orb", "Chaos Shard", "Gemcutter's Prism", "Harbinger's Orb", "Harbinger's Shard", "Horizon Shard", "Journeyman Cartographer's Sextant", "Master Cartographer's Sextant", "Orb of Alchemy", "Orb of Annulment", "Orb of Binding", "Orb of Fusing", "Orb of Horizons", "Orb of Regret", "Orb of Scouring", "Perandus Coin", "Regal Orb", "Regal Shard", "Silver Coin", "Splinter of Chayula", "Splinter of Esh", "Splinter of Tul", "Splinter of Uul-Netol", "Splinter of Xoph", "Stacked Deck", "Vaal Orb", "Blessing of Chayula", "Blessing of Esh", "Blessing of Tul", "Blessing of Uul-Netol", "Blessing of Xoph", "Divine Orb", "Engineer's Orb", "Engineer's Shard"] {
+    SetAlertSound audio_currency_medium
+    SetFontSize 45
+
+    Show
+  }
+
+  # Low Value
+  BaseType ["Alteration Shard", "Armourer's Scrap", "Blacksmith's Whetstone", "Chromatic Orb", "Glassblower's Bauble", "Jeweller's Orb", "Orb of Alteration", "Orb of Augmentation", "Orb of Chance", "Orb of Transmutation", "Transmutation Shard"] {
+    SetAlertSound audio_currency_low
+
+    Show
+  }
+
+  # Shown / Hidden
+  BaseType ["Portal Scroll", "Scroll Fragment", "Scroll of Wisdom"] {
+    Show
+  }
+
+  Show
+}
 
 ########
 # DIVINATION
@@ -257,6 +308,12 @@ Class "Flasks" {
 # EQUIPMENT
 ########
 
+BaseType "Fishing Rod" {
+  SetFontSize 42
+
+  Show
+}
+
 Sockets 6 {
   Rarity unique {
     SetTextColor color_equipment_unique_light
@@ -306,6 +363,28 @@ SocketGroup "RGB" {
 }
 
 Class ["Gloves", "Boots", "Body Armours", "Helmets", "Life Flasks", "Mana Flasks", "Hybrid Flasks", "Utility Flasks", "Amulets", "Rings", "Belts", "Quivers", "Shields", "Claws", "Dagger", "Wands", "One Hand Swords", "Thrusting One Hand Swords", "One Hand Axes", "One Hand Maces", "Sceptres", "Bows", "Warstaff", "Staves", "Two Hand Swords", "Two Hand Axes", "Two Hand Maces", "Jewel"] {
+  AnyEnchantment true {
+    SetTextColor color_equipment_enchantment_light
+    SetBorderColor color_equipment_enchantment_light
+    SetBackgroundColor color_equipment_enchantment_dark
+    SetMinimapIcon MinimapIcon(1, yellow, star)
+    SetBeam yellow
+    SetFontSize 42
+    
+    Show
+  }
+
+  HasInfluence ["shaper", "elder", "crusader", "redeemer", "hunter", "warlord"] {
+    SetTextColor color_equipment_enchantment_light
+    SetBorderColor color_equipment_enchantment_light
+    SetBackgroundColor color_equipment_enchantment_dark
+    SetMinimapIcon MinimapIcon(1, yellow, star)
+    SetBeam yellow
+    SetFontSize 42
+    
+    Show
+  }
+
   Rarity normal {
     SetTextColor color_equipment_normal_light
     SetBorderColor color_equipment_normal_light
