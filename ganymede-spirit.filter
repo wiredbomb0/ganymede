@@ -9,8 +9,8 @@
 #     in game: pathofexile.com/account/view-profile/Xeverous
 #
 # Generation info:
-#     Filter Spirit version     : 0.2.0
-#     filter generation date    : 2019-12-12 11:27:19
+#     Filter Spirit version     : 0.3.0
+#     filter generation date    : 2019-12-13 10:14:05
 #     item price data downloaded: not-a-date-time 2562047788:00:54
 #     item price data from      : poe.watch
 #     item price data for league: 
@@ -96,20 +96,68 @@ Show
 Show
 	Class "Gem"
 	BaseType "Portal" "Empower" "Enlighten" "Enhance" "Detonate Mines" "Item Quantity" "Added Chaos Damage" "Vaal"
+	SetBorderColor 27 162 155 255
+	SetTextColor 27 162 155 255
+	SetBackgroundColor 6 40 38 255
 	SetFontSize 45
 	CustomAlertSound "./audio/gem.wav"
-	MinimapIcon 2 White Circle
+	MinimapIcon 2 Green Circle
 
 Show
 	Quality >= 5
 	Class "Gem"
+	SetBorderColor 27 162 155 255
+	SetTextColor 27 162 155 255
+	SetBackgroundColor 6 40 38 255
 	SetFontSize 45
 	CustomAlertSound "./audio/gem.wav"
-	MinimapIcon 2 White Circle
+	MinimapIcon 2 Green Circle
 
 Show
 	Class "Gem"
+	SetBorderColor 27 162 155 255
+	SetTextColor 27 162 155 255
+	SetBackgroundColor 6 40 38 255
 	CustomAlertSound "./audio/gem.wav"
+
+Show
+	Class "Currency"
+	BaseType "Albino Rhoa Feather" "Exalted Orb" "Exalted Shard" "Mirror of Kalandra" "Mirror Shard"
+	SetBorderColor 170 158 130 255
+	SetTextColor 170 158 130 255
+	SetBackgroundColor 42 39 32 255
+	SetFontSize 45
+	CustomAlertSound "./audio/currency_high.wav"
+
+Show
+	Class "Currency"
+	BaseType "Alchemy Shard" "Ancient Orb" "Ancient Shard" "Annulment Shard" "Apprentice Cartographer's Sextant" "Bestiary Orb" "Binding Shard" "Blessed Orb" "Cartographer's Chisel" "Chaos Orb" "Chaos Shard" "Gemcutter's Prism" "Harbinger's Orb" "Harbinger's Shard" "Horizon Shard" "Journeyman Cartographer's Sextant" "Master Cartographer's Sextant" "Orb of Alchemy" "Orb of Annulment" "Orb of Binding" "Orb of Fusing" "Orb of Horizons" "Orb of Regret" "Orb of Scouring" "Perandus Coin" "Regal Orb" "Regal Shard" "Silver Coin" "Splinter of Chayula" "Splinter of Esh" "Splinter of Tul" "Splinter of Uul-Netol" "Splinter of Xoph" "Stacked Deck" "Vaal Orb" "Blessing of Chayula" "Blessing of Esh" "Blessing of Tul" "Blessing of Uul-Netol" "Blessing of Xoph" "Divine Orb" "Engineer's Orb" "Engineer's Shard"
+	SetBorderColor 170 158 130 255
+	SetTextColor 170 158 130 255
+	SetBackgroundColor 42 39 32 255
+	SetFontSize 45
+	CustomAlertSound "./audio/currency_medium.wav"
+
+Show
+	Class "Currency"
+	BaseType "Alteration Shard" "Armourer's Scrap" "Blacksmith's Whetstone" "Chromatic Orb" "Glassblower's Bauble" "Jeweller's Orb" "Orb of Alteration" "Orb of Augmentation" "Orb of Chance" "Orb of Transmutation" "Transmutation Shard"
+	SetBorderColor 170 158 130 255
+	SetTextColor 170 158 130 255
+	SetBackgroundColor 42 39 32 255
+	CustomAlertSound "./audio/currency_low.wav"
+
+Show
+	Class "Currency"
+	BaseType "Portal Scroll" "Scroll Fragment" "Scroll of Wisdom"
+	SetBorderColor 170 158 130 255
+	SetTextColor 170 158 130 255
+	SetBackgroundColor 42 39 32 255
+
+Show
+	Class "Currency"
+	SetBorderColor 170 158 130 255
+	SetTextColor 170 158 130 255
+	SetBackgroundColor 42 39 32 255
 
 Show
 	Class "Divination Card"
@@ -192,6 +240,10 @@ Show
 	SetBackgroundColor 43 24 9 255
 
 Show
+	BaseType "Fishing Rod"
+	SetFontSize 42
+
+Show
 	Rarity = Unique
 	Sockets = 6
 	SetBorderColor 175 96 37 255
@@ -230,6 +282,26 @@ Show
 	SetBackgroundColor 63 63 29 255
 
 Show
+	AnyEnchantment True
+	Class "Gloves" "Boots" "Body Armours" "Helmets" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Amulets" "Rings" "Belts" "Quivers" "Shields" "Claws" "Dagger" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Bows" "Warstaff" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Jewel"
+	SetBorderColor 128 64 128 255
+	SetTextColor 128 64 128 255
+	SetBackgroundColor 32 16 32 255
+	SetFontSize 42
+	MinimapIcon 1 Yellow Star
+	PlayEffect Yellow
+
+Show
+	Class "Gloves" "Boots" "Body Armours" "Helmets" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Amulets" "Rings" "Belts" "Quivers" "Shields" "Claws" "Dagger" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Bows" "Warstaff" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Jewel"
+	HasInfluence Shaper Elder Crusader Redeemer Hunter Warlord
+	SetBorderColor 128 64 128 255
+	SetTextColor 128 64 128 255
+	SetBackgroundColor 32 16 32 255
+	SetFontSize 42
+	MinimapIcon 1 Yellow Star
+	PlayEffect Yellow
+
+Show
 	Rarity = Normal
 	Class "Gloves" "Boots" "Body Armours" "Helmets" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Amulets" "Rings" "Belts" "Quivers" "Shields" "Claws" "Dagger" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Bows" "Warstaff" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Jewel"
 	SetBorderColor 200 200 200 255
@@ -256,6 +328,4 @@ Show
 	SetBorderColor 175 96 37 255
 	SetTextColor 175 96 37 255
 	SetBackgroundColor 43 24 9 255
-
-Show
 
