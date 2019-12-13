@@ -10,7 +10,7 @@
 #
 # Generation info:
 #     Filter Spirit version     : 0.3.0
-#     filter generation date    : 2019-12-13 10:14:05
+#     filter generation date    : 2019-12-13 10:19:32
 #     item price data downloaded: not-a-date-time 2562047788:00:54
 #     item price data from      : poe.watch
 #     item price data for league: 
@@ -19,6 +19,16 @@
 
 Show
 	Class "Quest"
+	SetBorderColor 74 230 58 255
+	SetTextColor 74 230 58 255
+	SetBackgroundColor 18 57 14 255
+	SetFontSize 42
+	CustomAlertSound "./audio/token.wav"
+	MinimapIcon 0 Green Circle
+	PlayEffect Green
+
+Show
+	BaseType "The Shaper's Key"
 	SetBorderColor 74 230 58 255
 	SetTextColor 74 230 58 255
 	SetBackgroundColor 18 57 14 255

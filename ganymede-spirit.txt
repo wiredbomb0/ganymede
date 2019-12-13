@@ -60,6 +60,18 @@ Class "Quest" {
   Show
 }
 
+BaseType "The Shaper's Key" {
+  SetTextColor color_quest_light
+  SetBorderColor color_quest_light
+  SetBackgroundColor color_quest_dark
+  SetFontSize 42
+  SetAlertSound audio_quest
+  SetBeam Green
+  SetMinimapIcon MinimapIcon(0, Green, Circle)
+
+  Show
+}
+
 ########
 # LABYRINTH
 ########
