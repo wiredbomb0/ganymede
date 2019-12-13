@@ -10,7 +10,7 @@
 #
 # Generation info:
 #     Filter Spirit version     : 0.3.0
-#     filter generation date    : 2019-12-13 11:19:00
+#     filter generation date    : 2019-12-13 19:45:36
 #     item price data downloaded: not-a-date-time 2562047788:00:54
 #     item price data from      : poe.watch
 #     item price data for league: 
@@ -64,7 +64,7 @@ Show
 	SetTextColor 255 128 0 255
 	SetBackgroundColor 63 32 0 255
 	SetFontSize 42
-	CustomAlertSound "./audio/collectable.mp3"
+	CustomAlertSound "./audio/collectable.wav"
 	MinimapIcon 1 Brown Hexagon
 	PlayEffect Brown
 
@@ -74,7 +74,7 @@ Show
 	SetTextColor 255 128 0 255
 	SetBackgroundColor 63 32 0 255
 	SetFontSize 42
-	CustomAlertSound "./audio/collectable.mp3"
+	CustomAlertSound "./audio/collectable.wav"
 	MinimapIcon 1 Brown Hexagon
 	PlayEffect Brown
 
