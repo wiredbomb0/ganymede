@@ -1,6 +1,9 @@
 font_size_default = 32
 font_size_max = 42
 
+color_league_specific_light = RGB(75, 160, 180, 255)
+color_league_specific_dark  = RGB(18, 40, 45, 255)
+
 color_equipment_normal_light = RGB(200, 200, 200, 255)
 color_equipment_normal_dark  = RGB(50, 50, 50, 255)
 
@@ -38,11 +41,13 @@ color_currency_light = RGB(170, 158, 130, 255)
 color_currency_dark  = RGB(42, 39, 32, 255)
 
 audio_quest = "./audio/token.wav"
-audio_map = "./audio/collectable.mp3"
+audio_map = "./audio/map.wav"
 audio_gem = "./audio/gem.wav"
 audio_currency_high = "./audio/currency_high.wav"
 audio_currency_medium = "./audio/currency_medium.wav"
 audio_currency_low = "./audio/currency_low.wav"
+audio_rare = "./audio/rare.wav"
+audio_incubator = "./audio/incubator.wav"
 
 ########
 # QUEST
@@ -71,6 +76,37 @@ BaseType "The Shaper's Key" {
 
   Show
 }
+
+Class "Incursion Item" {
+  SetTextColor color_quest_light
+  SetBorderColor color_quest_light
+  SetBackgroundColor color_quest_dark
+  SetFontSize 42
+  SetAlertSound audio_quest
+  SetBeam Green
+  SetMinimapIcon MinimapIcon(0, Green, Circle)
+
+  Show
+}
+
+Class "Stackable Currency" {
+  BaseType "Vial of" {
+    SetTextColor color_quest_light
+    SetBorderColor color_quest_light
+    SetBackgroundColor color_quest_dark
+    SetFontSize 42
+    SetAlertSound audio_quest
+    SetBeam Green
+    SetMinimapIcon MinimapIcon(0, Green, Circle)
+
+    Show
+  }
+}
+
+########
+# LEAGUES
+########
+
 
 ########
 # LABYRINTH
@@ -114,6 +150,32 @@ BaseType "Divine Vessel" {
   SetMinimapIcon MinimapIcon(0, Green, Circle)
 
   Show
+}
+
+Class "Misc Map Items" {
+  BaseType ["Ancient Reliquary Key", "Timeworn Reliquary Key"] {
+    SetTextColor color_league_specific_light
+    SetBorderColor color_league_specific_light
+    SetBackgroundColor color_league_specific_dark
+    SetFontSize 42
+    SetAlertSound audio_currency_high
+    SetBeam Red
+    SetMinimapIcon MinimapIcon(0, Red, Diamond)
+  }
+}
+
+Class "Map Fragment" {
+  BaseType ["Eber's Key", "Inya's Key", "Volkuur's Key", "Yriel's Key", "Chayula's Breachstone", "Uul-Netol's Breachstone", "Tul's Breachstone", "Xoph's Breachstone", "Esh's Breachstone", "Emblem", "Scarab"] {
+    SetTextColor color_league_specific_light
+    SetBorderColor color_league_specific_light
+    SetBackgroundColor color_league_specific_dark
+    SetFontSize 42
+    SetAlertSound audio_rare
+    SetBeam Red
+    SetMinimapIcon MinimapIcon(2, Red, Diamond)
+
+    Show
+  }
 }
 
 Class "Map" {
@@ -163,7 +225,7 @@ Class "Gem" {
   SetBorderColor color_gem_light
   SetBackgroundColor color_gem_dark
 
-  BaseType ["Portal", "Empower", "Enlighten", "Enhance", "Detonate Mines", "Item Quantity", "Added Chaos Damage", "Vaal"] {
+  BaseType ["Portal", "Empower", "Enlighten", "Enhance", "Detonate Mines", "Item Quantity", "Added Chaos Damage", "Vaal", "Vaal Breach"] {
     SetFontSize 45
     SetMinimapIcon MinimapIcon(2, Green, Circle)
     Show
@@ -182,6 +244,18 @@ Class "Gem" {
 # CURRENCY
 ########
 
+Class "Stackable Currency" {
+  BaseType ["Essence of", "Essence of Hysteria", "Essence of Insanity", "Essence of Horror", "Essence of Delirium", "Remnant of Corruption", "Splinter of Chayula", "Splinter of Esh", "Splinter of Tul", "Splinter of Uul-Netol", "Splinter of Xoph"] {
+    SetTextColor color_league_specific_light
+    SetBorderColor color_league_specific_light
+    SetBackgroundColor color_league_specific_dark
+    SetAlertSound audio_rare
+    SetFontSize 45
+
+    Show
+  }
+}
+
 Class "Currency" {
   SetTextColor color_currency_light
   SetBorderColor color_currency_light
@@ -196,7 +270,17 @@ Class "Currency" {
   }
 
   # Medium Value
-  BaseType ["Alchemy Shard", "Ancient Orb", "Ancient Shard", "Annulment Shard", "Apprentice Cartographer's Sextant", "Bestiary Orb", "Binding Shard", "Blessed Orb", "Cartographer's Chisel", "Chaos Orb", "Chaos Shard", "Gemcutter's Prism", "Harbinger's Orb", "Harbinger's Shard", "Horizon Shard", "Journeyman Cartographer's Sextant", "Master Cartographer's Sextant", "Orb of Alchemy", "Orb of Annulment", "Orb of Binding", "Orb of Fusing", "Orb of Horizons", "Orb of Regret", "Orb of Scouring", "Perandus Coin", "Regal Orb", "Regal Shard", "Silver Coin", "Splinter of Chayula", "Splinter of Esh", "Splinter of Tul", "Splinter of Uul-Netol", "Splinter of Xoph", "Stacked Deck", "Vaal Orb", "Blessing of Chayula", "Blessing of Esh", "Blessing of Tul", "Blessing of Uul-Netol", "Blessing of Xoph", "Divine Orb", "Engineer's Orb", "Engineer's Shard"] {
+  BaseType ["Alchemy Shard", "Ancient Orb", "Ancient Shard", "Annulment Shard", "Apprentice Cartographer's Sextant", "Bestiary Orb", "Binding Shard", "Blessed Orb", "Cartographer's Chisel", "Chaos Orb", "Chaos Shard", "Gemcutter's Prism", "Harbinger's Orb", "Harbinger's Shard", "Horizon Shard", "Journeyman Cartographer's Sextant", "Master Cartographer's Sextant", "Orb of Alchemy", "Orb of Annulment", "Orb of Binding", "Orb of Fusing", "Orb of Horizons", "Orb of Regret", "Orb of Scouring", "Perandus Coin", "Regal Orb", "Regal Shard", "Silver Coin", "Stacked Deck", "Vaal Orb", "Blessing of Chayula", "Blessing of Esh", "Blessing of Tul", "Blessing of Uul-Netol", "Blessing of Xoph", "Divine Orb", "Engineer's Orb", "Engineer's Shard"] {
+    SetAlertSound audio_currency_medium
+    SetFontSize 45
+
+    Show
+  }
+
+  BaseType ["Bloodstained Fossil", "Faceted Fossil", "Fractured Fossil", "Glyphic Fossil", "Hollow Fossil", "Sanctified Fossil", "Dense Fossil", "Gilded Fossil", "Aberrant Fossil", "Corroded Fossil", "Jagged Fossil", "Lucent Fossil", "Scorched Fossil", "Fossil", "Potent Alchemical Resonator", "Powerful Alchemical Resonator", "Primitive Alchemical Resonator", "Potent Chaotic Resonator", "Powerful Chaotic Resonator", "Primitive Chaotic Resonator", "Prime Alchemical Resonator", "Prime Chaotic Resonator"] {
+    SetTextColor color_league_specific_light
+    SetBorderColor color_league_specific_light
+    SetBackgroundColor color_league_specific_dark
     SetAlertSound audio_currency_medium
     SetFontSize 45
 
@@ -212,6 +296,16 @@ Class "Currency" {
 
   # Shown / Hidden
   BaseType ["Portal Scroll", "Scroll Fragment", "Scroll of Wisdom"] {
+    Show
+  }
+
+  BaseType ["Prophecy", "Shard", "Emblem", "Splinter", "Oil"] {
+    SetTextColor color_league_specific_light
+    SetBorderColor color_league_specific_light
+    SetBackgroundColor color_league_specific_dark
+    SetAlertSound audio_rare
+    SetFontSize 45
+
     Show
   }
 
@@ -317,10 +411,37 @@ Class "Flasks" {
 }
 
 ########
+# JEWELS
+########
+
+BaseType "Stygian Vise" {
+  SetTextColor color_league_specific_light
+  SetBorderColor color_league_specific_light
+  SetBackgroundColor color_league_specific_dark
+  SetFontSize 42
+
+  Show
+}
+
+Class "Abyss Jewel" {
+  SetTextColor color_league_specific_light
+  SetBorderColor color_league_specific_light
+  SetBackgroundColor color_league_specific_dark
+  SetFontSize 42
+
+  Show
+}
+
+########
 # EQUIPMENT
 ########
 
 BaseType "Fishing Rod" {
+  SetTextColor color_equipment_valuable_light
+  SetBorderColor color_equipment_valuable_light
+  SetBackgroundColor color_equipment_valuable_dark
+  SetAlertSound audio_currency_high
+  SetBeam Red
   SetFontSize 42
 
   Show
@@ -374,11 +495,48 @@ SocketGroup "RGB" {
   }
 }
 
+HasExplicitMod ["of Farrul", "of Craiceann", "of Fenumus", "of Saqawal", "Citaqualotl", "Guatelitzi", "Matatl", "Puhuarte", "Tacati", "Topotante", "Xopec", "Betrayer's", "Brinerot", "Deceiver's", "Mutewind", "Redblade", "Turncoat's", "of the Underground", "Subterranean", "Veil"] {
+  SetTextColor color_equipment_enchantment_light
+  SetBorderColor color_equipment_enchantment_light
+  SetBackgroundColor color_equipment_enchantment_dark
+  SetAlertSound audio_incubator
+  SetMinimapIcon MinimapIcon(1, Yellow, Star)
+  SetBeam Yellow
+  SetFontSize 42
+  
+  Show
+}
+
+FracturedItem True {
+  SetTextColor color_equipment_enchantment_light
+  SetBorderColor color_equipment_enchantment_light
+  SetBackgroundColor color_equipment_enchantment_dark
+  SetAlertSound audio_incubator
+  SetMinimapIcon MinimapIcon(1, Yellow, Star)
+  SetBeam Yellow
+  SetFontSize 42
+  
+  Show
+}
+
+SynthesisedItem True {
+  SetTextColor color_equipment_enchantment_light
+  SetBorderColor color_equipment_enchantment_light
+  SetBackgroundColor color_equipment_enchantment_dark
+  SetAlertSound audio_incubator
+  SetMinimapIcon MinimapIcon(1, Yellow, Star)
+  SetBeam Yellow
+  SetFontSize 42
+  
+  Show
+}
+
 Class ["Gloves", "Boots", "Body Armours", "Helmets", "Life Flasks", "Mana Flasks", "Hybrid Flasks", "Utility Flasks", "Amulets", "Rings", "Belts", "Quivers", "Shields", "Claws", "Dagger", "Wands", "One Hand Swords", "Thrusting One Hand Swords", "One Hand Axes", "One Hand Maces", "Sceptres", "Bows", "Warstaff", "Staves", "Two Hand Swords", "Two Hand Axes", "Two Hand Maces", "Jewel"] {
   AnyEnchantment True {
     SetTextColor color_equipment_enchantment_light
     SetBorderColor color_equipment_enchantment_light
     SetBackgroundColor color_equipment_enchantment_dark
+    SetAlertSound audio_incubator
     SetMinimapIcon MinimapIcon(1, Yellow, Star)
     SetBeam Yellow
     SetFontSize 42
@@ -386,10 +544,23 @@ Class ["Gloves", "Boots", "Body Armours", "Helmets", "Life Flasks", "Mana Flasks
     Show
   }
 
-  HasInfluence [Shaper, Elder, Crusader, Redeemer, Hunter, Warlord] {
+#  HasInfluence [Shaper, Elder, Crusader, Redeemer, Hunter, Warlord] {
+#    SetTextColor color_equipment_enchantment_light
+#    SetBorderColor color_equipment_enchantment_light
+#    SetBackgroundColor color_equipment_enchantment_dark
+#    SetAlertSound audio_incubator
+#    SetMinimapIcon MinimapIcon(1, Yellow, Star)
+#    SetBeam Yellow
+#    SetFontSize 42
+#    
+#    Show
+#  }
+
+  BaseType "Talisman" {
     SetTextColor color_equipment_enchantment_light
     SetBorderColor color_equipment_enchantment_light
     SetBackgroundColor color_equipment_enchantment_dark
+    SetAlertSound audio_incubator
     SetMinimapIcon MinimapIcon(1, Yellow, Star)
     SetBeam Yellow
     SetFontSize 42

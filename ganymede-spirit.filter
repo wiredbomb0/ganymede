@@ -10,7 +10,7 @@
 #
 # Generation info:
 #     Filter Spirit version     : 0.3.0
-#     filter generation date    : 2019-12-13 10:19:32
+#     filter generation date    : 2019-12-13 11:10:53
 #     item price data downloaded: not-a-date-time 2562047788:00:54
 #     item price data from      : poe.watch
 #     item price data for league: 
@@ -29,6 +29,27 @@ Show
 
 Show
 	BaseType "The Shaper's Key"
+	SetBorderColor 74 230 58 255
+	SetTextColor 74 230 58 255
+	SetBackgroundColor 18 57 14 255
+	SetFontSize 42
+	CustomAlertSound "./audio/token.wav"
+	MinimapIcon 0 Green Circle
+	PlayEffect Green
+
+Show
+	Class "Incursion Item"
+	SetBorderColor 74 230 58 255
+	SetTextColor 74 230 58 255
+	SetBackgroundColor 18 57 14 255
+	SetFontSize 42
+	CustomAlertSound "./audio/token.wav"
+	MinimapIcon 0 Green Circle
+	PlayEffect Green
+
+Show
+	Class "Stackable Currency"
+	BaseType "Vial of"
 	SetBorderColor 74 230 58 255
 	SetTextColor 74 230 58 255
 	SetBackgroundColor 18 57 14 255
@@ -68,12 +89,23 @@ Show
 	PlayEffect Green
 
 Show
+	Class "Map Fragment"
+	BaseType "Eber's Key" "Inya's Key" "Volkuur's Key" "Yriel's Key" "Chayula's Breachstone" "Uul-Netol's Breachstone" "Tul's Breachstone" "Xoph's Breachstone" "Esh's Breachstone" "Emblem" "Scarab"
+	SetBorderColor 75 160 180 255
+	SetTextColor 75 160 180 255
+	SetBackgroundColor 18 40 45 255
+	SetFontSize 42
+	CustomAlertSound "./audio/rare.wav"
+	MinimapIcon 2 Red Diamond
+	PlayEffect Red
+
+Show
 	Rarity = Normal
 	Class "Map"
 	SetBorderColor 200 200 200 255
 	SetTextColor 200 200 200 255
 	SetBackgroundColor 50 50 50 255
-	CustomAlertSound "./audio/collectable.mp3"
+	CustomAlertSound "./audio/map.wav"
 	MinimapIcon 2 White Circle
 
 Show
@@ -82,7 +114,7 @@ Show
 	SetBorderColor 136 136 255 255
 	SetTextColor 136 136 255 255
 	SetBackgroundColor 34 34 63 255
-	CustomAlertSound "./audio/collectable.mp3"
+	CustomAlertSound "./audio/map.wav"
 	MinimapIcon 2 White Circle
 
 Show
@@ -91,7 +123,7 @@ Show
 	SetBorderColor 255 255 119 255
 	SetTextColor 255 255 119 255
 	SetBackgroundColor 63 63 29 255
-	CustomAlertSound "./audio/collectable.mp3"
+	CustomAlertSound "./audio/map.wav"
 	MinimapIcon 2 White Circle
 
 Show
@@ -100,12 +132,12 @@ Show
 	SetBorderColor 175 96 37 255
 	SetTextColor 175 96 37 255
 	SetBackgroundColor 43 24 9 255
-	CustomAlertSound "./audio/collectable.mp3"
+	CustomAlertSound "./audio/map.wav"
 	MinimapIcon 2 White Circle
 
 Show
 	Class "Gem"
-	BaseType "Portal" "Empower" "Enlighten" "Enhance" "Detonate Mines" "Item Quantity" "Added Chaos Damage" "Vaal"
+	BaseType "Portal" "Empower" "Enlighten" "Enhance" "Detonate Mines" "Item Quantity" "Added Chaos Damage" "Vaal" "Vaal Breach"
 	SetBorderColor 27 162 155 255
 	SetTextColor 27 162 155 255
 	SetBackgroundColor 6 40 38 255
@@ -131,6 +163,15 @@ Show
 	CustomAlertSound "./audio/gem.wav"
 
 Show
+	Class "Stackable Currency"
+	BaseType "Essence of" "Essence of Hysteria" "Essence of Insanity" "Essence of Horror" "Essence of Delirium" "Remnant of Corruption" "Splinter of Chayula" "Splinter of Esh" "Splinter of Tul" "Splinter of Uul-Netol" "Splinter of Xoph"
+	SetBorderColor 75 160 180 255
+	SetTextColor 75 160 180 255
+	SetBackgroundColor 18 40 45 255
+	SetFontSize 45
+	CustomAlertSound "./audio/rare.wav"
+
+Show
 	Class "Currency"
 	BaseType "Albino Rhoa Feather" "Exalted Orb" "Exalted Shard" "Mirror of Kalandra" "Mirror Shard"
 	SetBorderColor 170 158 130 255
@@ -141,10 +182,19 @@ Show
 
 Show
 	Class "Currency"
-	BaseType "Alchemy Shard" "Ancient Orb" "Ancient Shard" "Annulment Shard" "Apprentice Cartographer's Sextant" "Bestiary Orb" "Binding Shard" "Blessed Orb" "Cartographer's Chisel" "Chaos Orb" "Chaos Shard" "Gemcutter's Prism" "Harbinger's Orb" "Harbinger's Shard" "Horizon Shard" "Journeyman Cartographer's Sextant" "Master Cartographer's Sextant" "Orb of Alchemy" "Orb of Annulment" "Orb of Binding" "Orb of Fusing" "Orb of Horizons" "Orb of Regret" "Orb of Scouring" "Perandus Coin" "Regal Orb" "Regal Shard" "Silver Coin" "Splinter of Chayula" "Splinter of Esh" "Splinter of Tul" "Splinter of Uul-Netol" "Splinter of Xoph" "Stacked Deck" "Vaal Orb" "Blessing of Chayula" "Blessing of Esh" "Blessing of Tul" "Blessing of Uul-Netol" "Blessing of Xoph" "Divine Orb" "Engineer's Orb" "Engineer's Shard"
+	BaseType "Alchemy Shard" "Ancient Orb" "Ancient Shard" "Annulment Shard" "Apprentice Cartographer's Sextant" "Bestiary Orb" "Binding Shard" "Blessed Orb" "Cartographer's Chisel" "Chaos Orb" "Chaos Shard" "Gemcutter's Prism" "Harbinger's Orb" "Harbinger's Shard" "Horizon Shard" "Journeyman Cartographer's Sextant" "Master Cartographer's Sextant" "Orb of Alchemy" "Orb of Annulment" "Orb of Binding" "Orb of Fusing" "Orb of Horizons" "Orb of Regret" "Orb of Scouring" "Perandus Coin" "Regal Orb" "Regal Shard" "Silver Coin" "Stacked Deck" "Vaal Orb" "Blessing of Chayula" "Blessing of Esh" "Blessing of Tul" "Blessing of Uul-Netol" "Blessing of Xoph" "Divine Orb" "Engineer's Orb" "Engineer's Shard"
 	SetBorderColor 170 158 130 255
 	SetTextColor 170 158 130 255
 	SetBackgroundColor 42 39 32 255
+	SetFontSize 45
+	CustomAlertSound "./audio/currency_medium.wav"
+
+Show
+	Class "Currency"
+	BaseType "Bloodstained Fossil" "Faceted Fossil" "Fractured Fossil" "Glyphic Fossil" "Hollow Fossil" "Sanctified Fossil" "Dense Fossil" "Gilded Fossil" "Aberrant Fossil" "Corroded Fossil" "Jagged Fossil" "Lucent Fossil" "Scorched Fossil" "Fossil" "Potent Alchemical Resonator" "Powerful Alchemical Resonator" "Primitive Alchemical Resonator" "Potent Chaotic Resonator" "Powerful Chaotic Resonator" "Primitive Chaotic Resonator" "Prime Alchemical Resonator" "Prime Chaotic Resonator"
+	SetBorderColor 75 160 180 255
+	SetTextColor 75 160 180 255
+	SetBackgroundColor 18 40 45 255
 	SetFontSize 45
 	CustomAlertSound "./audio/currency_medium.wav"
 
@@ -162,6 +212,15 @@ Show
 	SetBorderColor 170 158 130 255
 	SetTextColor 170 158 130 255
 	SetBackgroundColor 42 39 32 255
+
+Show
+	Class "Currency"
+	BaseType "Prophecy" "Shard" "Emblem" "Splinter" "Oil"
+	SetBorderColor 75 160 180 255
+	SetTextColor 75 160 180 255
+	SetBackgroundColor 18 40 45 255
+	SetFontSize 45
+	CustomAlertSound "./audio/rare.wav"
 
 Show
 	Class "Currency"
@@ -250,8 +309,27 @@ Show
 	SetBackgroundColor 43 24 9 255
 
 Show
-	BaseType "Fishing Rod"
+	BaseType "Stygian Vise"
+	SetBorderColor 75 160 180 255
+	SetTextColor 75 160 180 255
+	SetBackgroundColor 18 40 45 255
 	SetFontSize 42
+
+Show
+	Class "Abyss Jewel"
+	SetBorderColor 75 160 180 255
+	SetTextColor 75 160 180 255
+	SetBackgroundColor 18 40 45 255
+	SetFontSize 42
+
+Show
+	BaseType "Fishing Rod"
+	SetBorderColor 64 192 192 255
+	SetTextColor 64 192 192 255
+	SetBackgroundColor 16 48 48 255
+	SetFontSize 42
+	CustomAlertSound "./audio/currency_high.wav"
+	PlayEffect Red
 
 Show
 	Rarity = Unique
@@ -292,22 +370,54 @@ Show
 	SetBackgroundColor 63 63 29 255
 
 Show
+	HasExplicitMod "of Farrul" "of Craiceann" "of Fenumus" "of Saqawal" "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec" "Betrayer's" "Brinerot" "Deceiver's" "Mutewind" "Redblade" "Turncoat's" "of the Underground" "Subterranean" "Veil"
+	SetBorderColor 128 64 128 255
+	SetTextColor 128 64 128 255
+	SetBackgroundColor 32 16 32 255
+	SetFontSize 42
+	CustomAlertSound "./audio/incubator.wav"
+	MinimapIcon 1 Yellow Star
+	PlayEffect Yellow
+
+Show
+	FracturedItem True
+	SetBorderColor 128 64 128 255
+	SetTextColor 128 64 128 255
+	SetBackgroundColor 32 16 32 255
+	SetFontSize 42
+	CustomAlertSound "./audio/incubator.wav"
+	MinimapIcon 1 Yellow Star
+	PlayEffect Yellow
+
+Show
+	SynthesisedItem True
+	SetBorderColor 128 64 128 255
+	SetTextColor 128 64 128 255
+	SetBackgroundColor 32 16 32 255
+	SetFontSize 42
+	CustomAlertSound "./audio/incubator.wav"
+	MinimapIcon 1 Yellow Star
+	PlayEffect Yellow
+
+Show
 	AnyEnchantment True
 	Class "Gloves" "Boots" "Body Armours" "Helmets" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Amulets" "Rings" "Belts" "Quivers" "Shields" "Claws" "Dagger" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Bows" "Warstaff" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Jewel"
 	SetBorderColor 128 64 128 255
 	SetTextColor 128 64 128 255
 	SetBackgroundColor 32 16 32 255
 	SetFontSize 42
+	CustomAlertSound "./audio/incubator.wav"
 	MinimapIcon 1 Yellow Star
 	PlayEffect Yellow
 
 Show
 	Class "Gloves" "Boots" "Body Armours" "Helmets" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Amulets" "Rings" "Belts" "Quivers" "Shields" "Claws" "Dagger" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Bows" "Warstaff" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Jewel"
-	HasInfluence Shaper Elder Crusader Redeemer Hunter Warlord
+	BaseType "Talisman"
 	SetBorderColor 128 64 128 255
 	SetTextColor 128 64 128 255
 	SetBackgroundColor 32 16 32 255
 	SetFontSize 42
+	CustomAlertSound "./audio/incubator.wav"
 	MinimapIcon 1 Yellow Star
 	PlayEffect Yellow
 
