@@ -31,6 +31,9 @@ color_divination_card_dark  = RGB(3, 46, 63, 255)
 color_labyrinth_light = RGB(255, 128, 0, 255)
 color_labyrinth_dark  = RGB(63, 32, 0, 255)
 
+color_maps_light = RGB(237, 33, 124, 255)
+color_maps_dark  = RGB(59, 8, 31, 255)
+
 color_quest_light = RGB(74, 230, 58, 255)
 color_quest_dark  = RGB(18, 57, 14, 255)
 
@@ -61,6 +64,8 @@ Class "Metamorph Sample" {
   SetAlertSound audio_rare
   SetBeam Red
   SetMinimapIcon MinimapIcon(2, Red, Diamond)
+
+  Show
 }
 
 Class "Stackable Currency" {
@@ -231,40 +236,14 @@ Class "Atlas Region Upgrade Item" {
 }
 
 Class "Map" {
+  SetFontSize 32
   SetAlertSound audio_map
   SetMinimapIcon MinimapIcon(2, White, Circle)
+  SetTextColor color_maps_light
+  SetBorderColor color_maps_light
+  SetBackgroundColor color_maps_dark
 
-  Rarity Normal {
-    SetTextColor color_equipment_normal_light
-    SetBorderColor color_equipment_normal_light
-    SetBackgroundColor color_equipment_normal_dark
-
-    Show
-  }
-
-  Rarity Magic {
-    SetTextColor color_equipment_magic_light
-    SetBorderColor color_equipment_magic_light
-    SetBackgroundColor color_equipment_magic_dark
-
-    Show
-  }
-
-  Rarity Rare {
-    SetTextColor color_equipment_rare_light
-    SetBorderColor color_equipment_rare_light
-    SetBackgroundColor color_equipment_rare_dark
-
-    Show
-  }
-
-  Rarity Unique {
-    SetTextColor color_equipment_unique_light
-    SetBorderColor color_equipment_unique_light
-    SetBackgroundColor color_equipment_unique_dark
-
-    Show
-  }
+  Show
 }
 
 ########
@@ -272,12 +251,12 @@ Class "Map" {
 ########
 
 Class "Gem" {
-  SetAlertSound audio_gem
   SetTextColor color_gem_light
   SetBorderColor color_gem_light
   SetBackgroundColor color_gem_dark
 
   BaseType ["Portal", "Empower", "Enlighten", "Enhance", "Detonate Mines", "Item Quantity", "Added Chaos Damage", "Vaal", "Vaal Breach"] {
+    SetAlertSound audio_gem
     SetFontSize 45
     SetMinimapIcon MinimapIcon(2, Green, Circle)
     SetBeam Green
@@ -285,6 +264,7 @@ Class "Gem" {
   }
 
   BaseType "Awakened" {
+    SetAlertSound audio_gem
     SetFontSize 45
     SetMinimapIcon MinimapIcon(0, Green, Circle)
     SetBeam Green
@@ -292,6 +272,7 @@ Class "Gem" {
   }
 
   Quality >= 5 {
+    SetAlertSound audio_gem
     SetFontSize 45
     SetMinimapIcon MinimapIcon(2, Green, Circle)
     Show
@@ -356,7 +337,7 @@ Class "Currency" {
 
   # Shown / Hidden
   BaseType ["Portal Scroll", "Scroll Fragment", "Scroll of Wisdom"] {
-    Show
+    Hide
   }
 
   BaseType ["Prophecy", "Shard", "Emblem", "Splinter", "Oil"] {
@@ -380,8 +361,10 @@ Class "Divination Card" {
   SetTextColor color_divination_card_light
   SetBorderColor color_divination_card_light
   SetBackgroundColor color_divination_card_dark
+  SetAlertSound 6
   SetFontSize 42
   SetBeam Beam(Blue, True)
+  SetMinimapIcon MinimapIcon(2, Blue, Circle)
 
   Show
 }
@@ -390,8 +373,10 @@ BaseType "Stacked Deck" {
   SetTextColor color_divination_card_light
   SetBorderColor color_divination_card_light
   SetBackgroundColor color_divination_card_dark
+  SetAlertSound 6
   SetFontSize 42
   SetBeam Beam(Blue, True)
+  SetMinimapIcon MinimapIcon(2, Blue, Circle)
 
   Show
 }
@@ -420,14 +405,6 @@ Class "Flasks" {
       Show
     }
 
-    Rarity Rare {
-      SetTextColor color_equipment_rare_light
-      SetBorderColor color_equipment_rare_light
-      SetBackgroundColor color_equipment_rare_dark
-
-      Show
-    }
-
     Rarity Unique {
       SetTextColor color_equipment_unique_light
       SetBorderColor color_equipment_unique_light
@@ -442,7 +419,7 @@ Class "Flasks" {
     SetBorderColor color_equipment_normal_light
     SetBackgroundColor color_equipment_normal_dark
 
-    Show
+    Hide
   }
 
   Rarity Magic {
@@ -450,15 +427,7 @@ Class "Flasks" {
     SetBorderColor color_equipment_magic_light
     SetBackgroundColor color_equipment_magic_dark
 
-    Show
-  }
-
-  Rarity Rare {
-    SetTextColor color_equipment_rare_light
-    SetBorderColor color_equipment_rare_light
-    SetBackgroundColor color_equipment_rare_dark
-
-    Show
+    Hide
   }
 
   Rarity Unique {
@@ -512,6 +481,8 @@ Sockets 6 {
     SetTextColor color_equipment_unique_light
     SetBorderColor color_equipment_unique_light
     SetBackgroundColor color_equipment_unique_dark
+    SetAlertSound audio_rare
+    SetBeam Yellow
     SetFontSize 42
 
     Show
@@ -520,6 +491,8 @@ Sockets 6 {
   SetTextColor color_equipment_valuable_light
   SetBorderColor color_equipment_valuable_light
   SetBackgroundColor color_equipment_valuable_dark
+  SetAlertSound audio_rare
+  SetBeam Yellow
   SetFontSize 42
 
   Show
@@ -530,6 +503,8 @@ LinkedSockets 5 {
     SetTextColor color_equipment_unique_light
     SetBorderColor color_equipment_unique_light
     SetBackgroundColor color_equipment_unique_dark
+    SetAlertSound audio_rare
+    SetBeam Yellow
     SetFontSize 42
 
     Show
@@ -538,19 +513,23 @@ LinkedSockets 5 {
   SetTextColor color_equipment_valuable_light
   SetBorderColor color_equipment_valuable_light
   SetBackgroundColor color_equipment_valuable_dark
+  SetAlertSound audio_rare
+  SetBeam Yellow
   SetFontSize 42
 
   Show
 }
 
-SocketGroup "RGB" { 
-  Width <= 2 {
-    Height <= 2 {
-      SetTextColor color_equipment_rare_light
-      SetBorderColor color_equipment_rare_light
-      SetBackgroundColor color_equipment_rare_dark
+SocketGroup "RGB" {
+  Rarity <= Rare {
+    Width <= 2 {
+      Height <= 2 {
+        SetTextColor color_equipment_chromatic_light
+        SetBorderColor color_equipment_chromatic_light
+        SetBackgroundColor color_equipment_chromatic_dark
 
-      Show
+        Show
+      }
     }
   }
 }
@@ -591,7 +570,7 @@ SynthesisedItem True {
   Show
 }
 
-Class ["Gloves", "Boots", "Body Armours", "Helmets", "Life Flasks", "Mana Flasks", "Hybrid Flasks", "Utility Flasks", "Amulets", "Rings", "Belts", "Quivers", "Shields", "Claws", "Dagger", "Wands", "One Hand Swords", "Thrusting One Hand Swords", "One Hand Axes", "One Hand Maces", "Sceptres", "Bows", "Warstaff", "Staves", "Two Hand Swords", "Two Hand Axes", "Two Hand Maces", "Jewel"] {
+Class ["Gloves", "Boots", "Body Armours", "Helmets", "Amulets", "Rings", "Belts", "Quivers", "Shields", "Claws", "Dagger", "Wands", "One Hand Swords", "Thrusting One Hand Swords", "One Hand Axes", "One Hand Maces", "Sceptres", "Bows", "Warstave", "Staves", "Two Hand Swords", "Two Hand Axes", "Two Hand Maces", "Jewel"] {
   AnyEnchantment True {
     SetTextColor color_equipment_enchantment_light
     SetBorderColor color_equipment_enchantment_light
@@ -633,7 +612,7 @@ Class ["Gloves", "Boots", "Body Armours", "Helmets", "Life Flasks", "Mana Flasks
     SetBorderColor color_equipment_normal_light
     SetBackgroundColor color_equipment_normal_dark
 
-    Show
+    Hide
   }
 
   Rarity Magic {
@@ -641,7 +620,7 @@ Class ["Gloves", "Boots", "Body Armours", "Helmets", "Life Flasks", "Mana Flasks
     SetBorderColor color_equipment_magic_light
     SetBackgroundColor color_equipment_magic_dark
 
-    Show
+    Hide
   }
 
   Rarity Rare {

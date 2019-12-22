@@ -10,12 +10,22 @@
 #
 # Generation info:
 #     Filter Spirit version     : 0.3.0
-#     filter generation date    : 2019-12-13 19:45:36
+#     filter generation date    : 2019-12-22 03:14:10
 #     item price data downloaded: not-a-date-time 2562047788:00:54
 #     item price data from      : poe.watch
 #     item price data for league: 
 #
 # May the drops be with you.
+
+Show
+	Class "Metamorph Sample"
+	SetBorderColor 75 160 180 255
+	SetTextColor 75 160 180 255
+	SetBackgroundColor 18 40 45 255
+	SetFontSize 42
+	CustomAlertSound "./audio/rare.wav"
+	MinimapIcon 2 Red Diamond
+	PlayEffect Red
 
 Show
 	Class "Quest"
@@ -122,38 +132,11 @@ Show
 	PlayEffect Red
 
 Show
-	Rarity = Normal
 	Class "Map"
-	SetBorderColor 200 200 200 255
-	SetTextColor 200 200 200 255
-	SetBackgroundColor 50 50 50 255
-	CustomAlertSound "./audio/map.wav"
-	MinimapIcon 2 White Circle
-
-Show
-	Rarity = Magic
-	Class "Map"
-	SetBorderColor 136 136 255 255
-	SetTextColor 136 136 255 255
-	SetBackgroundColor 34 34 63 255
-	CustomAlertSound "./audio/map.wav"
-	MinimapIcon 2 White Circle
-
-Show
-	Rarity = Rare
-	Class "Map"
-	SetBorderColor 255 255 119 255
-	SetTextColor 255 255 119 255
-	SetBackgroundColor 63 63 29 255
-	CustomAlertSound "./audio/map.wav"
-	MinimapIcon 2 White Circle
-
-Show
-	Rarity = Unique
-	Class "Map"
-	SetBorderColor 175 96 37 255
-	SetTextColor 175 96 37 255
-	SetBackgroundColor 43 24 9 255
+	SetBorderColor 237 33 124 255
+	SetTextColor 237 33 124 255
+	SetBackgroundColor 59 8 31 255
+	SetFontSize 32
 	CustomAlertSound "./audio/map.wav"
 	MinimapIcon 2 White Circle
 
@@ -194,7 +177,6 @@ Show
 	SetBorderColor 27 162 155 255
 	SetTextColor 27 162 155 255
 	SetBackgroundColor 6 40 38 255
-	CustomAlertSound "./audio/gem.wav"
 
 Show
 	Class "Stackable Currency"
@@ -240,7 +222,7 @@ Show
 	SetBackgroundColor 42 39 32 255
 	CustomAlertSound "./audio/currency_low.wav"
 
-Show
+Hide
 	Class "Currency"
 	BaseType "Portal Scroll" "Scroll Fragment" "Scroll of Wisdom"
 	SetBorderColor 170 158 130 255
@@ -268,6 +250,8 @@ Show
 	SetTextColor 14 186 255 255
 	SetBackgroundColor 3 46 63 255
 	SetFontSize 42
+	PlayAlertSound 6
+	MinimapIcon 2 Blue Circle
 	PlayEffect Blue Temp
 
 Show
@@ -276,6 +260,8 @@ Show
 	SetTextColor 14 186 255 255
 	SetBackgroundColor 3 46 63 255
 	SetFontSize 42
+	PlayAlertSound 6
+	MinimapIcon 2 Blue Circle
 	PlayEffect Blue Temp
 
 Show
@@ -294,15 +280,6 @@ Show
 	SetBorderColor 136 136 255 255
 	SetTextColor 136 136 255 255
 	SetBackgroundColor 34 34 63 255
-	SetFontSize 42
-
-Show
-	Quality >= 5
-	Rarity = Rare
-	Class "Flasks"
-	SetBorderColor 255 255 119 255
-	SetTextColor 255 255 119 255
-	SetBackgroundColor 63 63 29 255
 	SetFontSize 42
 
 Show
@@ -314,26 +291,19 @@ Show
 	SetBackgroundColor 43 24 9 255
 	SetFontSize 42
 
-Show
+Hide
 	Rarity = Normal
 	Class "Flasks"
 	SetBorderColor 200 200 200 255
 	SetTextColor 200 200 200 255
 	SetBackgroundColor 50 50 50 255
 
-Show
+Hide
 	Rarity = Magic
 	Class "Flasks"
 	SetBorderColor 136 136 255 255
 	SetTextColor 136 136 255 255
 	SetBackgroundColor 34 34 63 255
-
-Show
-	Rarity = Rare
-	Class "Flasks"
-	SetBorderColor 255 255 119 255
-	SetTextColor 255 255 119 255
-	SetBackgroundColor 63 63 29 255
 
 Show
 	Rarity = Unique
@@ -372,6 +342,8 @@ Show
 	SetTextColor 175 96 37 255
 	SetBackgroundColor 43 24 9 255
 	SetFontSize 42
+	CustomAlertSound "./audio/rare.wav"
+	PlayEffect Yellow
 
 Show
 	Sockets = 6
@@ -379,6 +351,8 @@ Show
 	SetTextColor 64 192 192 255
 	SetBackgroundColor 16 48 48 255
 	SetFontSize 42
+	CustomAlertSound "./audio/rare.wav"
+	PlayEffect Yellow
 
 Show
 	Rarity = Unique
@@ -387,6 +361,8 @@ Show
 	SetTextColor 175 96 37 255
 	SetBackgroundColor 43 24 9 255
 	SetFontSize 42
+	CustomAlertSound "./audio/rare.wav"
+	PlayEffect Yellow
 
 Show
 	LinkedSockets = 5
@@ -394,14 +370,17 @@ Show
 	SetTextColor 64 192 192 255
 	SetBackgroundColor 16 48 48 255
 	SetFontSize 42
+	CustomAlertSound "./audio/rare.wav"
+	PlayEffect Yellow
 
 Show
+	Rarity <= Rare
 	Height <= 2
 	Width <= 2
 	SocketGroup RGB
-	SetBorderColor 255 255 119 255
-	SetTextColor 255 255 119 255
-	SetBackgroundColor 63 63 29 255
+	SetBorderColor 100 100 100 255
+	SetTextColor 100 100 100 255
+	SetBackgroundColor 25 25 25 255
 
 Show
 	HasExplicitMod "of Farrul" "of Craiceann" "of Fenumus" "of Saqawal" "Citaqualotl" "Guatelitzi" "Matatl" "Puhuarte" "Tacati" "Topotante" "Xopec" "Betrayer's" "Brinerot" "Deceiver's" "Mutewind" "Redblade" "Turncoat's" "of the Underground" "Subterranean" "Veil"
@@ -435,7 +414,7 @@ Show
 
 Show
 	AnyEnchantment True
-	Class "Gloves" "Boots" "Body Armours" "Helmets" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Amulets" "Rings" "Belts" "Quivers" "Shields" "Claws" "Dagger" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Bows" "Warstaff" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Jewel"
+	Class "Gloves" "Boots" "Body Armours" "Helmets" "Amulets" "Rings" "Belts" "Quivers" "Shields" "Claws" "Dagger" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Bows" "Warstave" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Jewel"
 	SetBorderColor 128 64 128 255
 	SetTextColor 128 64 128 255
 	SetBackgroundColor 32 16 32 255
@@ -445,7 +424,7 @@ Show
 	PlayEffect Yellow
 
 Show
-	Class "Gloves" "Boots" "Body Armours" "Helmets" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Amulets" "Rings" "Belts" "Quivers" "Shields" "Claws" "Dagger" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Bows" "Warstaff" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Jewel"
+	Class "Gloves" "Boots" "Body Armours" "Helmets" "Amulets" "Rings" "Belts" "Quivers" "Shields" "Claws" "Dagger" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Bows" "Warstave" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Jewel"
 	HasInfluence Shaper Elder Crusader Redeemer Hunter Warlord
 	SetBorderColor 128 64 128 255
 	SetTextColor 128 64 128 255
@@ -456,7 +435,7 @@ Show
 	PlayEffect Yellow
 
 Show
-	Class "Gloves" "Boots" "Body Armours" "Helmets" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Amulets" "Rings" "Belts" "Quivers" "Shields" "Claws" "Dagger" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Bows" "Warstaff" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Jewel"
+	Class "Gloves" "Boots" "Body Armours" "Helmets" "Amulets" "Rings" "Belts" "Quivers" "Shields" "Claws" "Dagger" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Bows" "Warstave" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Jewel"
 	BaseType "Talisman"
 	SetBorderColor 128 64 128 255
 	SetTextColor 128 64 128 255
@@ -466,30 +445,30 @@ Show
 	MinimapIcon 1 Yellow Star
 	PlayEffect Yellow
 
-Show
+Hide
 	Rarity = Normal
-	Class "Gloves" "Boots" "Body Armours" "Helmets" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Amulets" "Rings" "Belts" "Quivers" "Shields" "Claws" "Dagger" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Bows" "Warstaff" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Jewel"
+	Class "Gloves" "Boots" "Body Armours" "Helmets" "Amulets" "Rings" "Belts" "Quivers" "Shields" "Claws" "Dagger" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Bows" "Warstave" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Jewel"
 	SetBorderColor 200 200 200 255
 	SetTextColor 200 200 200 255
 	SetBackgroundColor 50 50 50 255
 
-Show
+Hide
 	Rarity = Magic
-	Class "Gloves" "Boots" "Body Armours" "Helmets" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Amulets" "Rings" "Belts" "Quivers" "Shields" "Claws" "Dagger" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Bows" "Warstaff" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Jewel"
+	Class "Gloves" "Boots" "Body Armours" "Helmets" "Amulets" "Rings" "Belts" "Quivers" "Shields" "Claws" "Dagger" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Bows" "Warstave" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Jewel"
 	SetBorderColor 136 136 255 255
 	SetTextColor 136 136 255 255
 	SetBackgroundColor 34 34 63 255
 
 Show
 	Rarity = Rare
-	Class "Gloves" "Boots" "Body Armours" "Helmets" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Amulets" "Rings" "Belts" "Quivers" "Shields" "Claws" "Dagger" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Bows" "Warstaff" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Jewel"
+	Class "Gloves" "Boots" "Body Armours" "Helmets" "Amulets" "Rings" "Belts" "Quivers" "Shields" "Claws" "Dagger" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Bows" "Warstave" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Jewel"
 	SetBorderColor 255 255 119 255
 	SetTextColor 255 255 119 255
 	SetBackgroundColor 63 63 29 255
 
 Show
 	Rarity = Unique
-	Class "Gloves" "Boots" "Body Armours" "Helmets" "Life Flasks" "Mana Flasks" "Hybrid Flasks" "Utility Flasks" "Amulets" "Rings" "Belts" "Quivers" "Shields" "Claws" "Dagger" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Bows" "Warstaff" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Jewel"
+	Class "Gloves" "Boots" "Body Armours" "Helmets" "Amulets" "Rings" "Belts" "Quivers" "Shields" "Claws" "Dagger" "Wands" "One Hand Swords" "Thrusting One Hand Swords" "One Hand Axes" "One Hand Maces" "Sceptres" "Bows" "Warstave" "Staves" "Two Hand Swords" "Two Hand Axes" "Two Hand Maces" "Jewel"
 	SetBorderColor 175 96 37 255
 	SetTextColor 175 96 37 255
 	SetBackgroundColor 43 24 9 255
